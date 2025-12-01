@@ -324,8 +324,7 @@ Para Desarrolladores
      'Authorization': `Bearer ${token}`
    }
    
-   // ❌ INCORRECTO: Nunca guardar la contraseña
-   localStorage.setItem('password', password); // ¡NO HAGAS ESTO!
+   localStorage.setItem('password', password);
 
 .. note::
    

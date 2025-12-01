@@ -475,7 +475,7 @@ Al hacer clic en "Cancelar":
 2. Si confirmas → El préstamo se cancela
 3. La copia física queda disponible nuevamente
 
-.. image:: _static/cancelar_prestamo_confirm.png
+.. image:: _static/cancelar_prestamo.png
    :alt: Confirmar cancelación
    :align: center
    :width: 400px

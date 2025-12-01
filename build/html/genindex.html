@@ -5,30 +5,36 @@
     <meta name="color-scheme" content="light dark"><link rel="index" title="Índice" href="#"><link rel="search" title="Búsqueda" href="search.html">
         <link rel="prefetch" href="_static/aeternum_logo.png" as="image">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 --><title>Índice - Aeternum - Documentación</title>
-<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 --><title>Índice - Aeternum Docs</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5349f25f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f2f2f2;
-  --color-code-foreground: #1e1e1e;
+    --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #E91E8C;
+  --color-brand-content: #9B59B6;
+  --color-admonition-background: #f8f9fa;
+  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-stack--monospace: 'Fira Code', 'Courier New', monospace;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -160,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Aeternum - Documentación</div></a>
+      <a href="index.html"><div class="brand">Aeternum Docs</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -184,6 +190,7 @@
     <img class="sidebar-logo" src="_static/aeternum_logo.png" alt="Logo"/>
   </div>
   
+  <span class="sidebar-brand-text">Aeternum Docs</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
@@ -191,11 +198,32 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">Contenido</span></p>
+  <p class="caption" role="heading"><span class="caption-text">🎯 Comenzando</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🔐 Autenticación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">👤 Módulo de Usuarios</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">📚 Gestión de Libros</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">👨‍💼 Administración</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🔧 Técnico</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a></li>
@@ -251,13 +279,15 @@
             <div class="copyright">
                 Copyright &#169; 2025, Santiago Tuta
             </div>
-            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
-            
+            Made with 
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             
           </div>
           <div class="right-details">
-            
+            <div class="icons">
+              <a class="muted-link " href="https://github.com/Santixxtt/Aeternum" aria-label="GitHub"></a>
+              
+            </div>
           </div>
         </div>
         
@@ -269,7 +299,7 @@
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=2baa1e13"></script>
+</div><script src="_static/documentation_options.js?v=d764ce93"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
