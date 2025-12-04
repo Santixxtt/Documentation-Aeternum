@@ -1,0 +1,973 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Módulo de Usuario &#8212; Aeternum Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5349f25f" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=1fa7bee6"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'usuario';</script>
+    <script src="_static/custom.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Sistema de Préstamos" href="prestamos.html" />
+    <link rel="prev" title="Recuperación de Contraseña" href="password_reset.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Buscar..."
+         aria-label="Buscar..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/aeternum_logo.png" class="logo__image only-light" alt="Aeternum Docs - Home"/>
+    <script>document.write(`<img src="_static/aeternum_logo.png" class="logo__image only-dark" alt="Aeternum Docs - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Búsqueda</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Módulo de Usuario</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administración</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seguridad.html">Seguridad</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum/issues/new?title=Issue%20on%20page%20%2Fusuario.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Módulo de Usuario</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-inicio">🏠 Dashboard / Inicio</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-muestra">¿Qué muestra?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogo-de-libros">📚 Catálogo de Libros</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcionalidades">Funcionalidades</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#barra-de-busqueda">Barra de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-autenticar">Sin Autenticar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#con-autenticacion">Con Autenticación</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estados-de-disponibilidad">Estados de Disponibilidad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamo-fisico-desde-modal">📦 Préstamo Físico (Desde Modal)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccionar-fecha-de-recogida">Seleccionar Fecha de Recogida</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-a-lista-de-deseos">Agregar a Lista de Deseos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-lista-de-deseos">Ver Lista de Deseos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quitar-de-lista">Quitar de Lista</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-funciona">¿Cómo funciona?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mi-perfil">👤 Mi Perfil</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#informacion-mostrada">Información Mostrada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editar-perfil">Editar Perfil</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-cuenta">Eliminar Cuenta</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mis-prestamos-fisicos">📋 Mis Préstamos Físicos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Información Mostrada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estados">Estados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelar-prestamo">Cancelar Préstamo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones">🔔 Notificaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#privacidad-y-seguridad">🔒 Privacidad y Seguridad</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="modulo-de-usuario">
+<h1>Módulo de Usuario<a class="headerlink" href="#modulo-de-usuario" title="Link to this heading">#</a></h1>
+<p>Este módulo maneja toda la experiencia del usuario autenticado en Aeternum: desde el dashboard inicial hasta la gestión de su perfil y préstamos.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Todas las funcionalidades requieren que el usuario esté <strong>autenticado</strong> con un token JWT válido.</p>
+</div>
+<hr class="docutils" />
+<section id="dashboard-inicio">
+<h2>🏠 Dashboard / Inicio<a class="headerlink" href="#dashboard-inicio" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/user/me</span></code></p>
+<div class="endpoint-card">
+  <div class="endpoint-title">
+    <span class="http-method method-get">GET</span>
+    <code>/user/me</code>
+  </div>
+  <p>Página principal del usuario con bienvenida personalizada y libros recomendados.</p>
+</div><section id="que-muestra">
+<h3>¿Qué muestra?<a class="headerlink" href="#que-muestra" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Saludo personalizado con el nombre del usuario</p></li>
+<li><p><strong>Libros recomendados</strong> basados en:</p>
+<ul class="simple">
+<li><p>Historial de lectura</p></li>
+<li><p>Lista de deseos</p></li>
+<li><p>Libros populares</p></li>
+<li><p>Géneros favoritos</p></li>
+</ul>
+</li>
+<li><p>Acceso rápido a:</p>
+<ul class="simple">
+<li><p>Catálogo completo</p></li>
+<li><p>Lista de deseos</p></li>
+<li><p>Mis préstamos</p></li>
+<li><p>Mi perfil</p></li>
+</ul>
+</li>
+<li><p>Estadísticas personales:</p>
+<ul class="simple">
+<li><p>Libros leídos este mes</p></li>
+<li><p>Racha de lectura</p></li>
+<li><p>Próximos vencimientos</p></li>
+</ul>
+</li>
+</ol>
+<a class="reference internal image-reference" href="_images/dashboard_user.png"><img alt="Dashboard del usuario" class="align-center" src="_images/dashboard_user.png" style="width: 600px;" />
+</a>
+<p><strong>Respuesta del endpoint:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;apellido&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pérez&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;correo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;juan@ejemplo.com&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;recommended_books&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;openlibrary_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/works/OL45883W&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El Principito&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Antoine de Saint-Exupéry&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;cover_url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://covers.openlibrary.org/...&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;average_rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.5</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;stats&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;books_read_this_month&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;current_streak_days&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;upcoming_due_dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="catalogo-de-libros">
+<h2>📚 Catálogo de Libros<a class="headerlink" href="#catalogo-de-libros" title="Link to this heading">#</a></h2>
+<p><strong>URL:</strong> <code class="docutils literal notranslate"><span class="pre">/catalogo</span></code></p>
+<p>Exploración completa del catálogo de libros de Aeternum.</p>
+<section id="funcionalidades">
+<h3>Funcionalidades<a class="headerlink" href="#funcionalidades" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Búsqueda avanzada:</strong></p>
+<ul class="simple">
+<li><p>Por título</p></li>
+<li><p>Por autor</p></li>
+<li><p>Por ISBN</p></li>
+<li><p>Por palabras clave</p></li>
+</ul>
+</li>
+<li><p><strong>Filtros:</strong></p>
+<ul class="simple">
+<li><p>Género/Categoría</p></li>
+<li><p>Disponibilidad (físico/digital)</p></li>
+<li><p>Calificación mínima</p></li>
+<li><p>Año de publicación</p></li>
+</ul>
+</li>
+<li><p><strong>Ordenamiento:</strong></p>
+<ul class="simple">
+<li><p>Más recientes</p></li>
+<li><p>Mejor calificados</p></li>
+<li><p>Más populares</p></li>
+<li><p>A-Z / Z-A</p></li>
+</ul>
+</li>
+</ol>
+<a class="reference internal image-reference" href="_images/catalogo_logueado.png"><img alt="Catálogo de libros" class="align-center" src="_images/catalogo_logueado.png" style="width: 600px;" />
+</a>
+<section id="barra-de-busqueda">
+<h4>Barra de Búsqueda<a class="headerlink" href="#barra-de-busqueda" title="Link to this heading">#</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>[🔍 Buscar por título, autor o ISBN...] [Filtros ▼] [Ordenar ▼]
+</pre></div>
+</div>
+<p>Ejemplo de búsqueda:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET /api/books/search?q=principito&amp;genero=ficcion&amp;disponible=true
+</pre></div>
+</div>
+<hr class="docutils" />
+<blockquote>
+<div><p>Modal del Libro</p>
+</div></blockquote>
+<hr class="docutils" />
+<p>Al hacer clic en cualquier libro, se abre un modal con información detallada y opciones de acción.</p>
+</section>
+</section>
+<section id="sin-autenticar">
+<h3>Sin Autenticar<a class="headerlink" href="#sin-autenticar" title="Link to this heading">#</a></h3>
+<p>Si el usuario <strong>no ha iniciado sesión</strong>, el modal muestra:</p>
+<ul class="simple">
+<li><p>Información básica del libro</p></li>
+<li><p>Mensaje: «Inicia sesión para acceder a todas las funciones»</p></li>
+<li><p>Botón: «Iniciar Sesión»</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/modal_no_logueado.png"><img alt="Modal sin autenticación" class="align-center" src="_images/modal_no_logueado.png" style="width: 500px;" />
+</a>
+</section>
+<section id="con-autenticacion">
+<h3>Con Autenticación<a class="headerlink" href="#con-autenticacion" title="Link to this heading">#</a></h3>
+<p>Para usuarios autenticados, el modal incluye:</p>
+<p><strong>Información del libro:</strong></p>
+<ul class="simple">
+<li><p>Portada</p></li>
+<li><p>Título y autor</p></li>
+<li><p>Descripción completa</p></li>
+<li><p>Género</p></li>
+<li><p>Año de publicación</p></li>
+<li><p>ISBN</p></li>
+<li><p>Calificación promedio ()</p></li>
+<li><p>Reviews de usuarios</p></li>
+</ul>
+<p><strong>Acciones disponibles:</strong></p>
+<ul class="simple">
+<li><p><strong>Préstamo Digital</strong> (si está disponible digitalmente)</p></li>
+<li><p>📦 <strong>Préstamo Físico</strong> (si hay copias físicas)</p></li>
+<li><p><strong>Agregar a Lista de Deseos</strong></p></li>
+<li><p><strong>Descargar</strong> (si está habilitado)</p></li>
+<li><p><strong>Calificar y Comentar</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/modal_logueado.png"><img alt="Modal con funciones" class="align-center" src="_images/modal_logueado.png" style="width: 600px;" />
+</a>
+<section id="estados-de-disponibilidad">
+<h4>Estados de Disponibilidad<a class="headerlink" href="#estados-de-disponibilidad" title="Link to this heading">#</a></h4>
+<p>El modal muestra claramente el estado:</p>
+<div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; margin: 1rem 0;">
+  <p><strong>✅ Disponible:</strong> "Préstamo inmediato"</p>
+  <p><strong>⚠️ Pocas copias:</strong> "Solo 2 copias disponibles"</p>
+  <p><strong>❌ No disponible:</strong> "Agrega a tu lista de deseos para recibir notificación"</p>
+</div></section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="prestamo-fisico-desde-modal">
+<h2>📦 Préstamo Físico (Desde Modal)<a class="headerlink" href="#prestamo-fisico-desde-modal" title="Link to this heading">#</a></h2>
+<p>Al hacer clic en <strong>«Préstamo Físico»</strong>, se abre un segundo modal para seleccionar detalles.</p>
+<section id="seleccionar-fecha-de-recogida">
+<h3>Seleccionar Fecha de Recogida<a class="headerlink" href="#seleccionar-fecha-de-recogida" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="_images/prestamo_fisico.png"><img alt="Solicitar préstamo físico" class="align-center" src="_images/prestamo_fisico.png" style="width: 500px;" />
+</a>
+<p><strong>Campos del formulario:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Fecha</span> <span class="pre">de</span> <span class="pre">recogida</span></code>: Calendario (mínimo mañana, máximo 7 días)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Confirmar</span></code>: Botón para enviar solicitud</p></li>
+</ul>
+<p><strong>Al confirmar:</strong></p>
+<ol class="arabic simple">
+<li><p>Se crea el préstamo con estado «pendiente»</p></li>
+<li><p>Se envía correo de confirmación</p></li>
+<li><p>El modal se cierra y muestra mensaje de éxito</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/correo_prestamo_fisico.png"><img alt="Correo de confirmación" class="align-center" src="_images/correo_prestamo_fisico.png" style="width: 500px;" />
+</a>
+<hr class="docutils" />
+<blockquote>
+<div><p>Lista de Deseos</p>
+</div></blockquote>
+<hr class="docutils" />
+<p>Gestión de libros guardados para leer más tarde.</p>
+</section>
+<section id="agregar-a-lista-de-deseos">
+<h3>Agregar a Lista de Deseos<a class="headerlink" href="#agregar-a-lista-de-deseos" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/wishlist/add</span></code></p>
+<p>Desde el modal del libro, clic en el icono de corazón</p>
+<p><strong>Datos enviados:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;openlibrary_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/works/OL45883W&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;book_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El Principito&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;book_author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Antoine de Saint-Exupéry&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Respuesta:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Libro agregado a tu lista de deseos&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;wishlist_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/guarda_lista_deseos.png"><img alt="Agregar a lista de deseos" class="align-center" src="_images/guarda_lista_deseos.png" style="width: 400px;" />
+</a>
+</section>
+<section id="ver-lista-de-deseos">
+<h3>Ver Lista de Deseos<a class="headerlink" href="#ver-lista-de-deseos" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/wishlist/list</span></code></p>
+<p><strong>URL:</strong> <code class="docutils literal notranslate"><span class="pre">/lista-de-deseos</span></code></p>
+<p>Acceso desde el menú principal → «Lista de Deseos»</p>
+<a class="reference internal image-reference" href="_images/lista_deseos.png"><img alt="Lista de deseos completa" class="align-center" src="_images/lista_deseos.png" style="width: 600px;" />
+</a>
+<p><strong>Funcionalidades:</strong></p>
+<ul class="simple">
+<li><p>Ver todos los libros guardados</p></li>
+<li><p>Quitar libros (clic en ❌)</p></li>
+<li><p>Acceder directamente al libro (clic en el libro)</p></li>
+<li><p>Filtrar por disponibilidad</p></li>
+</ul>
+<section id="quitar-de-lista">
+<h4>Quitar de Lista<a class="headerlink" href="#quitar-de-lista" title="Link to this heading">#</a></h4>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/wishlist/delete/{book_id}</span></code></p>
+<p>Simplemente haz clic en el icono de eliminar (❌) junto al libro.</p>
+<p><strong>Respuesta:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Libro eliminado de tu lista de deseos&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<blockquote>
+<div><p>Descargas</p>
+</div></blockquote>
+<hr class="docutils" />
+<p>Algunos libros tienen habilitada la opción de descarga para leer offline.</p>
+</section>
+</section>
+<section id="como-funciona">
+<h3>¿Cómo funciona?<a class="headerlink" href="#como-funciona" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>En el modal del libro, si la descarga está habilitada, aparece el botón <strong>«Descargar PDF»</strong></p></li>
+<li><p>Al hacer clic:</p>
+<ul class="simple">
+<li><p>Si es un libro con archivo directo → Descarga inmediata</p></li>
+<li><p>Si no → Redirige a la página de lectura digital</p></li>
+</ul>
+</li>
+<li><p>El sistema registra la descarga para estadísticas</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/download_button.png"><img alt="Botón de descarga" class="align-center" src="_images/download_button.png" style="width: 400px;" />
+</a>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>No todos los libros permiten descarga por restricciones de derechos de autor. Solo los marcados por bibliotecarios como «permitir_descarga» tendrán esta opción.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mi-perfil">
+<h2>👤 Mi Perfil<a class="headerlink" href="#mi-perfil" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/users/me</span></code></p>
+<p><strong>URL:</strong> <code class="docutils literal notranslate"><span class="pre">/mi-perfil</span></code></p>
+<p>Ver y editar información personal de la cuenta.</p>
+<section id="informacion-mostrada">
+<h3>Información Mostrada<a class="headerlink" href="#informacion-mostrada" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="_images/mi_perfil.png"><img alt="Perfil del usuario" class="align-center" src="_images/mi_perfil.png" style="width: 600px;" />
+</a>
+<p><strong>Secciones del perfil:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Datos personales:</strong></p>
+<ul class="simple">
+<li><p>Nombre completo</p></li>
+<li><p>Correo electrónico</p></li>
+<li><p>Tipo y número de identificación</p></li>
+<li><p>Fecha de registro</p></li>
+</ul>
+</li>
+<li><p><strong>Estadísticas:</strong></p>
+<ul class="simple">
+<li><p>Libros leídos</p></li>
+<li><p>Calificaciones dadas</p></li>
+<li><p>Comentarios publicados</p></li>
+<li><p>Racha de lectura</p></li>
+</ul>
+</li>
+<li><p><strong>Configuración:</strong></p>
+<ul class="simple">
+<li><p>Notificaciones por correo</p></li>
+<li><p>Privacidad</p></li>
+<li><p>Preferencias de idioma</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="editar-perfil">
+<h3>Editar Perfil<a class="headerlink" href="#editar-perfil" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/users/me</span></code></p>
+<p><strong>Datos editables:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Juan Carlos&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;apellido&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pérez García&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;correo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nuevo_correo@ejemplo.com&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>No puedes editar tu número de identificación una vez registrado. Para cambios en este dato, contacta a un bibliotecario.</p>
+</div>
+</section>
+<section id="eliminar-cuenta">
+<h3>Eliminar Cuenta<a class="headerlink" href="#eliminar-cuenta" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/users/me</span></code></p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Esta acción es <strong>permanente</strong> y elimina:</p>
+<ul class="simple">
+<li><p>Tu perfil y datos personales</p></li>
+<li><p>Historial de préstamos (soft delete)</p></li>
+<li><p>Lista de deseos</p></li>
+<li><p>Calificaciones y comentarios</p></li>
+</ul>
+<p><strong>No puedes recuperar tu cuenta después de eliminarla.</strong></p>
+</div>
+<p>Al hacer clic en «Eliminar Cuenta»:</p>
+<ol class="arabic simple">
+<li><p>Se muestra confirmación con checkbox: «Entiendo que esta acción es irreversible»</p></li>
+<li><p>Se solicita ingresar contraseña para confirmar</p></li>
+<li><p>Se elimina la cuenta (soft delete)</p></li>
+<li><p>Se envía correo de confirmación de cierre</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/delete_account_confirm.png"><img alt="Confirmación eliminar cuenta" class="align-center" src="_images/delete_account_confirm.png" style="width: 400px;" />
+</a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mis-prestamos-fisicos">
+<h2>📋 Mis Préstamos Físicos<a class="headerlink" href="#mis-prestamos-fisicos" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/prestamos-fisicos/mis-prestamos</span></code></p>
+<p><strong>URL:</strong> <code class="docutils literal notranslate"><span class="pre">/mis-prestamos</span></code></p>
+<p>Vista completa de todos los préstamos físicos del usuario.</p>
+<a class="reference internal image-reference" href="_images/mis_prestamos.png"><img alt="Mis préstamos físicos" class="align-center" src="_images/mis_prestamos.png" style="width: 600px;" />
+</a>
+<section id="id1">
+<h3>Información Mostrada<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Para cada préstamo:</p>
+<ul class="simple">
+<li><p>Portada y título del libro</p></li>
+<li><p>📅 Fecha de solicitud</p></li>
+<li><p>📅 Fecha de recogida programada</p></li>
+<li><p>📅 Fecha de devolución</p></li>
+<li><p>🎯 Estado actual (badge con color)</p></li>
+<li><p>⏱️ Días restantes</p></li>
+<li><p>❌ Opción de cancelar (si aplica)</p></li>
+</ul>
+</section>
+<section id="estados">
+<h3>Estados<a class="headerlink" href="#estados" title="Link to this heading">#</a></h3>
+<div style="display: grid; gap: 0.5rem; margin: 1rem 0;">
+  <div style="padding: 0.5rem; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 4px;">
+    <strong>🟡 Pendiente:</strong> Esperando que recojas el libro
+  </div>
+  <div style="padding: 0.5rem; background: #d1e7dd; border-left: 4px solid #28a745; border-radius: 4px;">
+    <strong>🟢 Activo:</strong> Libro en tu poder
+  </div>
+  <div style="padding: 0.5rem; background: #f8d7da; border-left: 4px solid #dc3545; border-radius: 4px;">
+    <strong>🔴 Retrasado:</strong> Pasó la fecha de devolución
+  </div>
+  <div style="padding: 0.5rem; background: #e2e3e5; border-left: 4px solid #6c757d; border-radius: 4px;">
+    <strong>⚪ Devuelto:</strong> Préstamo completado
+  </div>
+</div></section>
+<section id="cancelar-prestamo">
+<h3>Cancelar Préstamo<a class="headerlink" href="#cancelar-prestamo" title="Link to this heading">#</a></h3>
+<p>Solo para préstamos en estado <strong>«Pendiente»</strong>.</p>
+<p>Al hacer clic en «Cancelar»:</p>
+<ol class="arabic simple">
+<li><p>Confirmación: «¿Estás seguro de cancelar este préstamo?»</p></li>
+<li><p>Si confirmas → El préstamo se cancela</p></li>
+<li><p>La copia física queda disponible nuevamente</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/cancelar_prestamo.png"><img alt="Confirmar cancelación" class="align-center" src="_images/cancelar_prestamo.png" style="width: 400px;" />
+</a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="notificaciones">
+<h2>🔔 Notificaciones<a class="headerlink" href="#notificaciones" title="Link to this heading">#</a></h2>
+<p>Los usuarios reciben notificaciones por correo para:</p>
+<ul class="simple">
+<li><p>✅ Confirmación de registro</p></li>
+<li><p>📚 Confirmación de préstamo físico</p></li>
+<li><p>⏰ Recordatorio de recogida (1 día antes)</p></li>
+<li><p>⏰ Recordatorio de devolución (2 días antes)</p></li>
+<li><p>⚠️ Alerta de retraso</p></li>
+<li><p>Libro disponible (si estaba en lista de deseos)</p></li>
+<li><p>💬 Respuesta a comentario</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Puedes configurar qué notificaciones recibir desde tu perfil en «Configuración de Notificaciones».</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="privacidad-y-seguridad">
+<h2>🔒 Privacidad y Seguridad<a class="headerlink" href="#privacidad-y-seguridad" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Tu información está protegida:</strong></p>
+<ul class="simple">
+<li><p>Nadie más puede ver tu historial de préstamos</p></li>
+<li><p>Tu lista de deseos es privada</p></li>
+<li><p>Solo tú y los bibliotecarios pueden ver tus datos personales</p></li>
+<li><p>Tus calificaciones son públicas pero anónimas (solo se muestra tu nombre de usuario)</p></li>
+<li><p>Puedes eliminar tu cuenta en cualquier momento</p></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="password_reset.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Recuperación de Contraseña</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="prestamos.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Sistema de Préstamos</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-inicio">🏠 Dashboard / Inicio</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-muestra">¿Qué muestra?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogo-de-libros">📚 Catálogo de Libros</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcionalidades">Funcionalidades</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#barra-de-busqueda">Barra de Búsqueda</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-autenticar">Sin Autenticar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#con-autenticacion">Con Autenticación</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estados-de-disponibilidad">Estados de Disponibilidad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamo-fisico-desde-modal">📦 Préstamo Físico (Desde Modal)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccionar-fecha-de-recogida">Seleccionar Fecha de Recogida</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-a-lista-de-deseos">Agregar a Lista de Deseos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-lista-de-deseos">Ver Lista de Deseos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quitar-de-lista">Quitar de Lista</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-funciona">¿Cómo funciona?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mi-perfil">👤 Mi Perfil</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#informacion-mostrada">Información Mostrada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editar-perfil">Editar Perfil</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-cuenta">Eliminar Cuenta</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mis-prestamos-fisicos">📋 Mis Préstamos Físicos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Información Mostrada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estados">Estados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelar-prestamo">Cancelar Préstamo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones">🔔 Notificaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#privacidad-y-seguridad">🔒 Privacidad y Seguridad</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Santiago Tuta
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Santiago Tuta.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
+        <div style="text-align: center; padding: 1rem; color: #888;">
+            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+        </div>
+    
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bienvenido a Aeternum &#8212; Aeternum Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5349f25f" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=1fa7bee6"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script src="_static/custom.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Introducción a Aeternum" href="introduccion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Buscar..."
+         aria-label="Buscar..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/aeternum_logo.png" class="logo__image only-light" alt="Aeternum Docs - Home"/>
+    <script>document.write(`<img src="_static/aeternum_logo.png" class="logo__image only-dark" alt="Aeternum Docs - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Búsqueda</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administración</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seguridad.html">Seguridad</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Bienvenido a Aeternum</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-principales">Características Principales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inicio-rapido">Inicio Rápido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-documentacion">Contenido de la Documentación</a><ul class="visible nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stack-tecnologico">Stack Tecnológico</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="bienvenido-a-aeternum">
+<h1>Bienvenido a Aeternum<a class="headerlink" href="#bienvenido-a-aeternum" title="Link to this heading">#</a></h1>
+<div style="text-align: center; padding: 2rem 0 3rem 0;">
+  <h2 style="font-size: 1.4rem; color: #b8b8b8; max-width: 800px; margin: 0 auto; line-height: 1.8; font-weight: 400;">
+    Una plataforma moderna de biblioteca virtual que revoluciona la forma en que accedes a los libros.
+    Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digital instantáneo.
+  </h2>
+</div><hr class="docutils" />
+<section id="caracteristicas-principales">
+<h2>Características Principales<a class="headerlink" href="#caracteristicas-principales" title="Link to this heading">#</a></h2>
+<div class="feature-grid">
+  <div class="feature-card">
+    <div class="feature-icon"></div>
+    <h3>Autenticación Segura</h3>
+    <p>Sistema robusto con JWT, recuperación de contraseña y protección contra ataques de fuerza bruta.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"></div>
+    <h3>Préstamos Duales</h3>
+    <p>Solicita libros físicos o accede a versiones digitales instantáneamente desde cualquier dispositivo.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"></div>
+    <h3>Lista de Deseos</h3>
+    <p>Guarda tus libros favoritos y recibe notificaciones cuando estén disponibles.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"></div>
+    <h3>Reviews & Ratings</h3>
+    <p>Califica y comenta libros. Ayuda a otros usuarios a descubrir grandes lecturas.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"></div>
+    <h3>Descargas</h3>
+    <p>Descarga libros para leer sin conexión cuando lo necesites.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"></div>
+    <h3>Panel Admin</h3>
+    <p>Gestión completa de libros, usuarios y préstamos para bibliotecarios.</p>
+  </div>
+</div></section>
+<hr class="docutils" />
+<section id="inicio-rapido">
+<h2>Inicio Rápido<a class="headerlink" href="#inicio-rapido" title="Link to this heading">#</a></h2>
+<p>¿Nuevo en Aeternum? Empieza aquí:</p>
+<ol class="arabic simple">
+<li><p>Lee la <a class="reference internal" href="introduccion.html"><span class="doc">Introducción a Aeternum</span></a> para conocer el proyecto</p></li>
+<li><p>Sigue la guía de <a class="reference internal" href="instalacion.html"><span class="doc">Instalación y Requisitos</span></a> para configurar el entorno</p></li>
+<li><p>Explora la <a class="reference internal" href="arquitectura.html"><span class="doc">Arquitectura del Sistema</span></a> del sistema</p></li>
+<li><p>Consulta la documentación de la <a class="reference internal" href="api.html"><span class="doc">Documentación API</span></a> para integrar</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="contenido-de-la-documentacion">
+<h2>Contenido de la Documentación<a class="headerlink" href="#contenido-de-la-documentacion" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#que-es-aeternum">¿Qué es Aeternum?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#caracteristicas-principales">✨ Características Principales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#arquitectura-del-sistema">🏗️ Arquitectura del Sistema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#roles-de-usuario">👥 Roles de Usuario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#flujos-principales">🚀 Flujos Principales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#casos-de-uso">📊 Casos de Uso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#beneficios-clave">🎯 Beneficios Clave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#roadmap-futuro">🗺️ Roadmap Futuro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#contribuir">🤝 Contribuir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html#soporte">📞 Soporte</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#iniciar-sesion">Iniciar Sesión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#registrar-nueva-cuenta">Registrar Nueva Cuenta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#notas-de-seguridad">Notas de Seguridad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#mejores-practicas">Mejores Prácticas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="password_reset.html#solicitar-recuperacion">Solicitar Recuperación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="password_reset.html#restablecer-contrasena">Restablecer Contraseña</a></li>
+<li class="toctree-l2"><a class="reference internal" href="password_reset.html#notas-de-seguridad">Notas de Seguridad</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#dashboard-inicio">🏠 Dashboard / Inicio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#catalogo-de-libros">📚 Catálogo de Libros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#prestamo-fisico-desde-modal">📦 Préstamo Físico (Desde Modal)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#mi-perfil">👤 Mi Perfil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#mis-prestamos-fisicos">📋 Mis Préstamos Físicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#notificaciones">🔔 Notificaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usuario.html#privacidad-y-seguridad">🔒 Privacidad y Seguridad</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#registrar-prestamo-digital">Registrar Préstamo Digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#solicitar-prestamo-fisico">Solicitar Préstamo Físico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#ver-mis-prestamos-fisicos">Ver Mis Préstamos Físicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#cancelar-prestamo-fisico">Cancelar Préstamo Físico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#notificaciones-por-correo">Notificaciones por Correo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#dashboard-personal">Dashboard Personal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#limites-y-restricciones">Límites y Restricciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#renovacion-de-prestamos">Renovación de Préstamos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#subir-calificacion">Subir Calificación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#subir-comentario">Subir Comentario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#actualizar-comentario">Actualizar Comentario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#eliminar-comentario">Eliminar Comentario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#para-usuarios">Para Usuarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#para-bibliotecarios">Para Bibliotecarios</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administración</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="administracion.html#funcionalidades-principales">🎯 Funcionalidades Principales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administracion.html#reportes-y-estadisticas">📊 Reportes y Estadísticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administracion.html#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-register">POST /auth/register</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-login">POST /auth/login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-recuperar-contrasena">POST /auth/recuperar-contrasena</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-restablecer-contrasena">POST /auth/restablecer-contrasena</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-user-me">GET /user/me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-users-me">PUT /users/me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#delete-users-me">DELETE /users/me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-users-reactivar-user-id">GET /users/reactivar/{user_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-wishlist-list">GET /wishlist/list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-wishlist-add">POST /wishlist/add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#delete-wishlist-delete-book-id">DELETE /wishlist/delete/{book_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-wishlist-buscar-libro-openlibrary-key">GET /wishlist/buscar-libro/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-reviews-rate">POST /reviews/rate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-reviews-ratings-openlibrary-key">GET /reviews/ratings/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-reviews-comment">POST /reviews/comment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-reviews-comments-openlibrary-key">GET /reviews/comments/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-reviews-comments-comment-id">PUT /reviews/comments/{comment_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#delete-reviews-comments-comment-id">DELETE /reviews/comments/{comment_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-reviews-user-rating-openlibrary-key">GET /reviews/user-rating/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-prestamos-digital">POST /prestamos/digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-prestamos-fisicos-solicitar">POST /prestamos-fisicos/solicitar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-prestamos-fisicos-mis-prestamos">GET /prestamos-fisicos/mis-prestamos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-prestamos-fisicos-cancelar-prestamo-id">PUT /prestamos-fisicos/cancelar/{prestamo_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-prestamos-fisicos-estado-prestamo-id">PUT /prestamos-fisicos/estado/{prestamo_id}</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="seguridad.html">Seguridad</a></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="stack-tecnologico">
+<h2>Stack Tecnológico<a class="headerlink" href="#stack-tecnologico" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tecnología</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Frontend</strong></p></td>
+<td><p>React 18 + Vite + TailwindCSS</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Backend</strong></p></td>
+<td><p>FastAPI (Python 3.11+)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Base de Datos</strong></p></td>
+<td><p>MySQL / Railway</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cache</strong></p></td>
+<td><p>Redis</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Autenticación</strong></p></td>
+<td><p>JWT (JSON Web Tokens)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Email</strong></p></td>
+<td><p>SMTP con templates HTML</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div style="background: rgba(255, 105, 180, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid #FF69B4;
+            margin: 3rem 0;">
+  <h3 style="color: #FF69B4; margin-top: 0;">¿Necesitas ayuda?</h3>
+  <p style="font-size: 1.1em; line-height: 1.7; margin-bottom: 1rem; color: #e8e8e8;">
+    Estamos aquí para ayudarte a sacar el máximo provecho de Aeternum.
+  </p>
+  <ul style="list-style: none; padding: 0; color: #b8b8b8;">
+    <li style="margin: 0.5rem 0;">📧 Email: soporte@aeternum.com</li>
+    <li style="margin: 0.5rem 0;">🐛 Reportar bug: <a href="https://github.com/Santixxtt/Aeternum/issues" style="color: #FF69B4;">GitHub Issues</a></li>
+    <li style="margin: 0.5rem 0;"> Documentación completa en esta misma página</li>
+  </ul>
+</div><hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Desarrollador:</strong> Santiago Tuta
+<strong>Versión actual:</strong> 1.0.0
+<strong>Última actualización:</strong> Enero 2025
+<strong>Licencia:</strong> MIT</p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="introduccion.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Introducción a Aeternum</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-principales">Características Principales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inicio-rapido">Inicio Rápido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-documentacion">Contenido de la Documentación</a><ul class="visible nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stack-tecnologico">Stack Tecnológico</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Santiago Tuta
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Santiago Tuta.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
+        <div style="text-align: center; padding: 1rem; color: #888;">
+            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+        </div>
+    
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

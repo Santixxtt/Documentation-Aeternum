@@ -1,0 +1,803 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sistema de Reviews y Calificaciones &#8212; Aeternum Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5349f25f" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=1fa7bee6"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reviews';</script>
+    <script src="_static/custom.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Panel de Administración" href="administracion.html" />
+    <link rel="prev" title="Sistema de Préstamos" href="prestamos.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Buscar..."
+         aria-label="Buscar..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/aeternum_logo.png" class="logo__image only-light" alt="Aeternum Docs - Home"/>
+    <script>document.write(`<img src="_static/aeternum_logo.png" class="logo__image only-dark" alt="Aeternum Docs - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Búsqueda</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistema de Reviews y Calificaciones</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administración</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seguridad.html">Seguridad</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum/issues/new?title=Issue%20on%20page%20%2Freviews.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sistema de Reviews y Calificaciones</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="sistema-de-reviews-y-calificaciones">
+<h1>Sistema de Reviews y Calificaciones<a class="headerlink" href="#sistema-de-reviews-y-calificaciones" title="Link to this heading">#</a></h1>
+<p>El sistema de reviews permite a los usuarios calificar y comentar libros, ayudando a la comunidad a descubrir grandes lecturas.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Solo usuarios autenticados pueden dejar calificaciones y comentarios.</p>
+</div>
+<hr class="docutils" />
+<blockquote>
+<div><p>Calificaciones</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="subir-calificacion">
+<h2>Subir Calificación<a class="headerlink" href="#subir-calificacion" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/rate</span></code></p>
+<p>Permite a un usuario calificar un libro con una puntuación de 1 a 5 estrellas.</p>
+<p><strong>¿Qué hace?</strong></p>
+<ol class="arabic simple">
+<li><p>Verifica que el usuario esté autenticado</p></li>
+<li><p>Valida que la calificación esté entre 1 y 5</p></li>
+<li><p>Guarda o actualiza la calificación del usuario</p></li>
+<li><p>Recalcula el promedio general del libro</p></li>
+</ol>
+<p><strong>Datos a enviar:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;openlibrary_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/works/OL45883W&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Respuesta exitosa:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calificación guardada exitosamente&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;average_rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.5</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;total_ratings&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">127</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/rate_book.png"><img alt="Calificar libro" class="align-center" src="_images/rate_book.png" style="width: 500px;" />
+</a>
+<p><strong>Validaciones:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rating</span></code> debe ser un número entre 1 y 5</p></li>
+<li><p>Solo una calificación por usuario por libro</p></li>
+<li><p>Si el usuario ya calificó, se actualiza su calificación anterior</p></li>
+</ul>
+<p><strong>Posibles errores:</strong></p>
+<ul class="simple">
+<li><p>Calificación inválida: «La calificación debe estar entre 1 y 5»</p></li>
+<li><p>Usuario no autenticado: «Debes iniciar sesión para calificar»</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="obtener-calificaciones-de-un-libro">
+<h2>Obtener Calificaciones de un Libro<a class="headerlink" href="#obtener-calificaciones-de-un-libro" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/reviews/ratings/{openlibrary_key}</span></code></p>
+<p>Obtiene estadísticas de calificaciones de un libro específico.</p>
+<p><strong>Respuesta:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;openlibrary_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/works/OL45883W&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;average_rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.5</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;total_ratings&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">127</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ratings_breakdown&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;5&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;4&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;3&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Información devuelta:</strong></p>
+<ul class="simple">
+<li><p>Promedio de calificaciones</p></li>
+<li><p>Total de usuarios que calificaron</p></li>
+<li><p>Distribución por estrellas (1-5)</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/ratings_stats.png"><img alt="Estadísticas de calificaciones" class="align-center" src="_images/ratings_stats.png" style="width: 500px;" />
+</a>
+</section>
+<hr class="docutils" />
+<section id="obtener-calificacion-del-usuario">
+<h2>Obtener Calificación del Usuario<a class="headerlink" href="#obtener-calificacion-del-usuario" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/reviews/user-rating/{openlibrary_key}</span></code></p>
+<p>Obtiene la calificación que el usuario actual ha dado a un libro específico.</p>
+<p><strong>Uso típico:</strong></p>
+<p>Se usa para mostrar al usuario su calificación previa cuando ve el detalle de un libro.</p>
+<p><strong>Respuesta si el usuario ya calificó:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;user_rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;rated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-15T10:30:00&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Respuesta si no ha calificado:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;user_rating&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<section id="comentarios">
+<h3>💬 Comentarios<a class="headerlink" href="#comentarios" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="subir-comentario">
+<h2>Subir Comentario<a class="headerlink" href="#subir-comentario" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/comment</span></code></p>
+<p>Permite a un usuario dejar un comentario sobre un libro.</p>
+<p><strong>Datos a enviar:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;openlibrary_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/works/OL45883W&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Una lectura increíble que me hizo reflexionar sobre la vida. Totalmente recomendado para amantes de la filosofía.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Respuesta exitosa:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Comentario publicado exitosamente&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;comment_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">456</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-15T14:20:00&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/post_comment.png"><img alt="Publicar comentario" class="align-center" src="_images/post_comment.png" style="width: 600px;" />
+</a>
+<p><strong>Validaciones:</strong></p>
+<ul class="simple">
+<li><p>El comentario debe tener entre 10 y 1000 caracteres</p></li>
+<li><p>No se permiten comentarios duplicados (mismo usuario, mismo libro, mismo texto)</p></li>
+<li><p>Se filtran palabras ofensivas (moderación automática)</p></li>
+</ul>
+<p><strong>Posibles errores:</strong></p>
+<ul class="simple">
+<li><p>Comentario muy corto: «El comentario debe tener al menos 10 caracteres»</p></li>
+<li><p>Comentario muy largo: «El comentario no puede superar los 1000 caracteres»</p></li>
+<li><p>Comentario duplicado: «Ya publicaste este comentario anteriormente»</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="obtener-comentarios-de-un-libro">
+<h2>Obtener Comentarios de un Libro<a class="headerlink" href="#obtener-comentarios-de-un-libro" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/reviews/comments/{openlibrary_key}</span></code></p>
+<p>Obtiene todos los comentarios de un libro ordenados por fecha (más recientes primero).</p>
+<p><strong>Parámetros opcionales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">page</span></code>: Número de página (default: 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">limit</span></code>: Comentarios por página (default: 10, max: 50)</p></li>
+</ul>
+<p><strong>Ejemplo de URL:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET /reviews/comments/OL45883W?page=1&amp;limit=10
+</pre></div>
+</div>
+<p><strong>Respuesta:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;total_comments&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;total_pages&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;comments&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;comment_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">789</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Juan Pérez&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Excelente libro, muy recomendado.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-15T14:20:00&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;is_owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;comment_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">788</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;María García&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Me cambió la perspectiva sobre muchas cosas.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-14T09:15:00&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-14T10:30:00&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;is_owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/view_comments.png"><img alt="Ver comentarios" class="align-center" src="_images/view_comments.png" style="width: 600px;" />
+</a>
+<p><strong>Campo ``is_owner``:</strong></p>
+<p>Indica si el comentario pertenece al usuario actual (para mostrar opciones de editar/eliminar).</p>
+</section>
+<hr class="docutils" />
+<section id="actualizar-comentario">
+<h2>Actualizar Comentario<a class="headerlink" href="#actualizar-comentario" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/reviews/comments/{comment_id}</span></code></p>
+<p>Permite editar un comentario existente (solo el autor puede editarlo).</p>
+<p><strong>Datos a enviar:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Actualicé mi opinión: es aún mejor de lo que pensaba inicialmente.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Respuesta exitosa:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Comentario actualizado exitosamente&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;comment_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">788</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-16T11:45:00&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/edit_comment.png"><img alt="Editar comentario" class="align-center" src="_images/edit_comment.png" style="width: 500px;" />
+</a>
+<p><strong>Restricciones:</strong></p>
+<ul class="simple">
+<li><p>Solo el autor del comentario puede editarlo</p></li>
+<li><p>No se puede editar después de 24 horas de publicado (opcional)</p></li>
+<li><p>Las mismas validaciones de longitud aplican</p></li>
+</ul>
+<p><strong>Posibles errores:</strong></p>
+<ul class="simple">
+<li><p>No autorizado: «No tienes permiso para editar este comentario»</p></li>
+<li><p>Tiempo expirado: «No puedes editar comentarios después de 24 horas»</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="eliminar-comentario">
+<h2>Eliminar Comentario<a class="headerlink" href="#eliminar-comentario" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/reviews/comments/{comment_id}</span></code></p>
+<p>Elimina un comentario (solo el autor o un administrador pueden hacerlo).</p>
+<p><strong>Respuesta exitosa:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Comentario eliminado exitosamente&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;comment_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">788</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/edit_comment.png"><img alt="Eliminar comentario" class="align-center" src="_images/edit_comment.png" style="width: 400px;" />
+</a>
+<p><strong>¿Quién puede eliminar?</strong></p>
+<ul class="simple">
+<li><p>El autor del comentario</p></li>
+<li><p>Usuarios con rol «bibliotecario» (moderación)</p></li>
+</ul>
+<p><strong>Posibles errores:</strong></p>
+<ul class="simple">
+<li><p>No autorizado: «No tienes permiso para eliminar este comentario»</p></li>
+<li><p>Comentario no encontrado: «El comentario no existe»</p></li>
+</ul>
+<hr class="docutils" />
+<section id="moderacion-solo-bibliotecarios">
+<h3>📊 Moderación (Solo Bibliotecarios)<a class="headerlink" href="#moderacion-solo-bibliotecarios" title="Link to this heading">#</a></h3>
+<p>Los bibliotecarios tienen funciones adicionales de moderación:</p>
+</section>
+</section>
+<section id="reportar-comentario-inapropiado">
+<h2>Reportar Comentario Inapropiado<a class="headerlink" href="#reportar-comentario-inapropiado" title="Link to this heading">#</a></h2>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/report/{comment_id}</span></code></p>
+<p>Los usuarios pueden reportar comentarios ofensivos o inapropiados.</p>
+<p><strong>Datos a enviar:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Contenido ofensivo / spam / acoso / otro&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Descripción del problema&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<section id="mejores-practicas">
+<h3>🎯 Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="para-usuarios">
+<h2>Para Usuarios<a class="headerlink" href="#para-usuarios" title="Link to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<ul class="simple">
+<li><p><strong>Sé constructivo</strong>: Los comentarios ayudan a otros usuarios</p></li>
+<li><p><strong>Evita spoilers</strong>: Si los incluyes, avisa al inicio</p></li>
+<li><p><strong>Sé respetuoso</strong>: No ataques a otros usuarios o al autor</p></li>
+<li><p><strong>Actualiza tu opinión</strong>: Puedes editar si cambias de parecer</p></li>
+</ul>
+</div>
+</section>
+<section id="para-bibliotecarios">
+<h2>Para Bibliotecarios<a class="headerlink" href="#para-bibliotecarios" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>Revisa comentarios reportados regularmente</p></li>
+<li><p>Elimina contenido ofensivo o spam rápidamente</p></li>
+<li><p>Contacta a usuarios que violen las reglas repetidamente</p></li>
+<li><p>Fomenta una comunidad positiva y constructiva</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<section id="notas-de-seguridad">
+<h3>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Protección contra spam</strong>: Límite de 5 comentarios por usuario por día</p></li>
+<li><p><strong>Filtro de contenido</strong>: Palabras ofensivas se detectan automáticamente</p></li>
+<li><p><strong>Edición limitada</strong>: Los comentarios no pueden editarse indefinidamente</p></li>
+<li><p><strong>Moderación</strong>: Los bibliotecarios pueden eliminar cualquier comentario</p></li>
+<li><p><strong>Anonimato</strong>: No se muestran correos ni datos sensibles en comentarios</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="prestamos.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Sistema de Préstamos</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="administracion.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Panel de Administración</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Santiago Tuta
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Santiago Tuta.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
+        <div style="text-align: center; padding: 1rem; color: #888;">
+            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+        </div>
+    
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

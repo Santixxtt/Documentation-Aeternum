@@ -1,0 +1,750 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Panel de Administración &#8212; Aeternum Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5349f25f" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=1fa7bee6"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'administracion';</script>
+    <script src="_static/custom.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Backend (FastAPI)" href="backend.html" />
+    <link rel="prev" title="Sistema de Reviews y Calificaciones" href="reviews.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Buscar..."
+         aria-label="Buscar..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/aeternum_logo.png" class="logo__image only-light" alt="Aeternum Docs - Home"/>
+    <script>document.write(`<img src="_static/aeternum_logo.png" class="logo__image only-dark" alt="Aeternum Docs - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Búsqueda</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administración</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Panel de Administración</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seguridad.html">Seguridad</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Santixxtt/Aeternum/issues/new?title=Issue%20on%20page%20%2Fadministracion.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Panel de Administración</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funcionalidades-principales">🎯 Funcionalidades Principales</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-usuarios">Gestión de Usuarios</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reactivar-cuenta-de-usuario">Reactivar Cuenta de Usuario</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-libros">Gestión de Libros</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-nuevo-libro">Agregar Nuevo Libro</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#editar-libro">Editar Libro</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-libro">Eliminar Libro</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-prestamos-fisicos">Gestión de Préstamos Físicos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cambiar-estado-de-prestamo">Cambiar Estado de Préstamo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportes-y-estadisticas">📊 Reportes y Estadísticas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-general">Dashboard General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporte-de-prestamos">Reporte de Préstamos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="panel-de-administracion">
+<h1>Panel de Administración<a class="headerlink" href="#panel-de-administracion" title="Link to this heading">#</a></h1>
+<p>El panel de administración está diseñado para <strong>bibliotecarios</strong> y permite gestionar todo el ecosistema de Aeternum: libros, usuarios, préstamos y más.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Solo los usuarios con rol <strong>«bibliotecario»</strong> tienen acceso a estas funcionalidades.</p>
+</div>
+<hr class="docutils" />
+<section id="funcionalidades-principales">
+<h2>🎯 Funcionalidades Principales<a class="headerlink" href="#funcionalidades-principales" title="Link to this heading">#</a></h2>
+<section id="gestion-de-usuarios">
+<h3>Gestión de Usuarios<a class="headerlink" href="#gestion-de-usuarios" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/admin/users</span></code></p>
+<p>Lista todos los usuarios registrados en el sistema con sus datos básicos y estado de cuenta.</p>
+<p><strong>¿Qué hace?</strong></p>
+<ol class="arabic simple">
+<li><p>Muestra todos los usuarios (activos e inactivos)</p></li>
+<li><p>Permite buscar y filtrar usuarios</p></li>
+<li><p>Ver detalles completos de cada usuario</p></li>
+<li><p>Activar/desactivar cuentas</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/admin_users.png"><img alt="Panel de gestión de usuarios" class="align-center" src="_images/admin_users.png" style="width: 600px;" />
+</a>
+<p><strong>Información mostrada:</strong></p>
+<ul class="simple">
+<li><p>Nombre completo</p></li>
+<li><p>Correo electrónico</p></li>
+<li><p>Tipo y número de identificación</p></li>
+<li><p>Estado de la cuenta (activa/inactiva)</p></li>
+<li><p>Fecha de registro</p></li>
+<li><p>Rol asignado</p></li>
+</ul>
+<hr class="docutils" />
+<section id="reactivar-cuenta-de-usuario">
+<h4>Reactivar Cuenta de Usuario<a class="headerlink" href="#reactivar-cuenta-de-usuario" title="Link to this heading">#</a></h4>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/users/reactivar/{user_id}</span></code></p>
+<p>Permite reactivar cuentas de usuarios que fueron eliminadas (soft delete).</p>
+<p><strong>¿Qué hace?</strong></p>
+<ol class="arabic simple">
+<li><p>Busca el usuario por ID</p></li>
+<li><p>Verifica que la cuenta esté inactiva</p></li>
+<li><p>Reactiva la cuenta restaurando el acceso</p></li>
+<li><p>Notifica al usuario por correo (opcional)</p></li>
+</ol>
+<p><strong>Parámetros:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">user_id</span></code>: ID del usuario a reactivar</p></li>
+</ul>
+<p><strong>Respuesta exitosa:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cuenta reactivada exitosamente&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;user_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/reactivar_cuenta.png"><img alt="Reactivación de cuenta" class="align-center" src="_images/reactivar_cuenta.png" style="width: 500px;" />
+</a>
+<p><strong>Posibles errores:</strong></p>
+<ul class="simple">
+<li><p>Usuario no encontrado: «Usuario no existe»</p></li>
+<li><p>Cuenta ya activa: «La cuenta ya está activa»</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="gestion-de-libros">
+<h3>Gestión de Libros<a class="headerlink" href="#gestion-de-libros" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/admin/books</span></code></p>
+<p>Panel completo para administrar el catálogo de libros.</p>
+<p><strong>¿Qué puedes hacer?</strong></p>
+<ul class="simple">
+<li><p>Ver todos los libros del catálogo</p></li>
+<li><p>Agregar nuevos libros al sistema</p></li>
+<li><p>Editar información de libros existentes</p></li>
+<li><p>Eliminar libros</p></li>
+<li><p>Gestionar disponibilidad (físicos y digitales)</p></li>
+<li><p>Habilitar/deshabilitar descargas</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin_books.png"><img alt="Gestión de libros" class="align-center" src="_images/admin_books.png" style="width: 600px;" />
+</a>
+<section id="agregar-nuevo-libro">
+<h4>Agregar Nuevo Libro<a class="headerlink" href="#agregar-nuevo-libro" title="Link to this heading">#</a></h4>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/admin/books/add</span></code></p>
+<p>Agrega un nuevo libro al catálogo.</p>
+<p><strong>Datos requeridos:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;titulo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El Principito&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;autor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Antoine de Saint-Exupéry&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;isbn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;978-0-123456-78-9&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;editorial&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Editorial Ejemplo&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;año_publicacion&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1943</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;genero&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ficción&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;copias_fisicas_disponibles&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;copias_digitales_disponibles&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;permitir_descarga&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url_portada&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url_digital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;descripcion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Una historia sobre...&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">copias_digitales_disponibles:</span> <span class="pre">-1</span></code> significa <strong>ilimitadas</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">permitir_descarga:</span> <span class="pre">true</span></code> habilita la descarga del PDF</p></li>
+</ul>
+</div>
+</section>
+<section id="editar-libro">
+<h4>Editar Libro<a class="headerlink" href="#editar-libro" title="Link to this heading">#</a></h4>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/admin/books/{book_id}</span></code></p>
+<p>Actualiza la información de un libro existente.</p>
+<a class="reference internal image-reference" href="_images/admin_edit_book.png"><img alt="Editar libro" class="align-center" src="_images/admin_edit_book.png" style="width: 500px;" />
+</a>
+</section>
+<section id="eliminar-libro">
+<h4>Eliminar Libro<a class="headerlink" href="#eliminar-libro" title="Link to this heading">#</a></h4>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/admin/books/{book_id}</span></code></p>
+<p>Elimina un libro del catálogo (soft delete).</p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Si el libro tiene préstamos activos, no se puede eliminar hasta que sean devueltos.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="gestion-de-prestamos-fisicos">
+<h3>Gestión de Préstamos Físicos<a class="headerlink" href="#gestion-de-prestamos-fisicos" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/admin/prestamos-fisicos</span></code></p>
+<p>Vista completa de todos los préstamos físicos del sistema.</p>
+<p><strong>Estados de préstamos:</strong></p>
+<ul class="simple">
+<li><p>🟡 <strong>Pendiente</strong>: Solicitado pero no recogido</p></li>
+<li><p>🟢 <strong>Activo</strong>: Libro entregado al usuario</p></li>
+<li><p>🔴 <strong>Retrasado</strong>: Pasó la fecha de devolución</p></li>
+<li><p>⚪ <strong>Devuelto</strong>: Préstamo completado</p></li>
+<li><p>❌ <strong>Cancelado</strong>: Préstamo cancelado</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin_prestamos.png"><img alt="Gestión de préstamos" class="align-center" src="_images/admin_prestamos.png" style="width: 600px;" />
+</a>
+<section id="cambiar-estado-de-prestamo">
+<h4>Cambiar Estado de Préstamo<a class="headerlink" href="#cambiar-estado-de-prestamo" title="Link to this heading">#</a></h4>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/prestamos-fisicos/estado/{prestamo_id}</span></code></p>
+<p>Actualiza el estado de un préstamo físico.</p>
+<p><strong>Flujo típico:</strong></p>
+<ol class="arabic simple">
+<li><p>Usuario solicita libro → <strong>Pendiente</strong></p></li>
+<li><p>Usuario recoge libro → <strong>Activo</strong> (bibliotecario cambia estado)</p></li>
+<li><p>Usuario devuelve libro → <strong>Devuelto</strong> (bibliotecario cambia estado)</p></li>
+</ol>
+<p><strong>Datos a enviar:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;nuevo_estado&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;activo&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Estados válidos:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pendiente</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">activo</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">devuelto</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cancelado</span></code></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/cambiar_estado_prestamo.png"><img alt="Cambiar estado de préstamo" class="align-center" src="_images/cambiar_estado_prestamo.png" style="width: 500px;" />
+</a>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="reportes-y-estadisticas">
+<h2>📊 Reportes y Estadísticas<a class="headerlink" href="#reportes-y-estadisticas" title="Link to this heading">#</a></h2>
+<section id="dashboard-general">
+<h3>Dashboard General<a class="headerlink" href="#dashboard-general" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/admin/dashboard</span></code></p>
+<p>Vista general con métricas clave del sistema.</p>
+<p><strong>Métricas mostradas:</strong></p>
+<ul class="simple">
+<li><p>Total de usuarios registrados</p></li>
+<li><p>Total de libros en catálogo</p></li>
+<li><p>Préstamos activos (físicos y digitales)</p></li>
+<li><p>Préstamos retrasados</p></li>
+<li><p>Libros más populares</p></li>
+<li><p>Usuarios más activos</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin_dashboard.png"><img alt="Dashboard administrativo" class="align-center" src="_images/admin_dashboard.png" style="width: 600px;" />
+</a>
+</section>
+<section id="reporte-de-prestamos">
+<h3>Reporte de Préstamos<a class="headerlink" href="#reporte-de-prestamos" title="Link to this heading">#</a></h3>
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/admin/reportes/prestamos</span></code></p>
+<p>Genera reportes detallados de préstamos filtrados por:</p>
+<ul class="simple">
+<li><p>Fecha (rango)</p></li>
+<li><p>Tipo (físico/digital)</p></li>
+<li><p>Estado</p></li>
+<li><p>Usuario específico</p></li>
+<li><p>Libro específico</p></li>
+</ul>
+<p><strong>Parámetros de filtro:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>/admin/reportes/prestamos?fecha_inicio=2025-01-01&amp;fecha_fin=2025-01-31&amp;tipo=fisico
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/admin_reportes.png"><img alt="Reportes de préstamos" class="align-center" src="_images/admin_reportes.png" style="width: 600px;" />
+</a>
+<hr class="docutils" />
+<blockquote>
+<div><p>Configuración del Sistema</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/admin/configuracion</span></code></p>
+<p>Ajustes generales del sistema:</p>
+<ul class="simple">
+<li><p><strong>Días de préstamo</strong>: Duración predeterminada (default: 12 días)</p></li>
+<li><p><strong>Límite de préstamos simultáneos</strong>: Máximo por usuario (default: 3)</p></li>
+<li><p><strong>Penalización por retraso</strong>: Tiempo de bloqueo por atraso</p></li>
+<li><p><strong>Notificaciones</strong>: Activar/desactivar recordatorios por correo</p></li>
+<li><p><strong>Mantenimiento</strong>: Poner el sitio en modo mantenimiento</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="notas-de-seguridad">
+<h2>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p><strong>Permisos de Administrador:</strong></p>
+<ul class="simple">
+<li><p>Solo usuarios con rol <code class="docutils literal notranslate"><span class="pre">bibliotecario</span></code> pueden acceder</p></li>
+<li><p>Todas las acciones administrativas quedan registradas (logs)</p></li>
+<li><p>Los tokens de administrador tienen menor tiempo de expiración</p></li>
+<li><p>Se requiere re-autenticación para acciones críticas (eliminar libros, usuarios)</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p><strong>Buenas prácticas:</strong></p>
+<ul class="simple">
+<li><p>Revisa los logs de actividad regularmente</p></li>
+<li><p>No compartas credenciales de administrador</p></li>
+<li><p>Realiza backups periódicos de la base de datos</p></li>
+<li><p>Verifica préstamos retrasados semanalmente</p></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="reviews.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Sistema de Reviews y Calificaciones</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="backend.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Backend (FastAPI)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funcionalidades-principales">🎯 Funcionalidades Principales</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-usuarios">Gestión de Usuarios</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reactivar-cuenta-de-usuario">Reactivar Cuenta de Usuario</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-libros">Gestión de Libros</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-nuevo-libro">Agregar Nuevo Libro</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#editar-libro">Editar Libro</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-libro">Eliminar Libro</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-prestamos-fisicos">Gestión de Préstamos Físicos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cambiar-estado-de-prestamo">Cambiar Estado de Préstamo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportes-y-estadisticas">📊 Reportes y Estadísticas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-general">Dashboard General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporte-de-prestamos">Reporte de Préstamos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Santiago Tuta
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Santiago Tuta.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
+        <div style="text-align: center; padding: 1rem; color: #888;">
+            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+        </div>
+    
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
