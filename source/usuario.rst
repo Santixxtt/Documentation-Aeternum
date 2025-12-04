@@ -43,12 +43,6 @@ Este módulo maneja toda la experiencia del usuario autenticado en Aeternum: des
    - Mis préstamos
    - Mi perfil
 
-4. Estadísticas personales:
-   
-   - Libros leídos este mes
-   - Racha de lectura
-   - Próximos vencimientos
-
 .. image:: _static/dashboard_user.png
    :alt: Dashboard del usuario
    :align: center
@@ -97,22 +91,12 @@ Funcionalidades
    
    - Por título
    - Por autor
-   - Por ISBN
    - Por palabras clave
 
 2. **Filtros:**
    
    - Género/Categoría
-   - Disponibilidad (físico/digital)
-   - Calificación mínima
-   - Año de publicación
-
-3. **Ordenamiento:**
-   
-   - Más recientes
-   - Mejor calificados
-   - Más populares
-   - A-Z / Z-A
+   - Autor
 
 .. image:: _static/catalogo_logueado.png
    :alt: Catálogo de libros
@@ -124,7 +108,7 @@ Barra de Búsqueda
 
 .. code-block:: text
 
-   [🔍 Buscar por título, autor o ISBN...] [Filtros ▼] [Ordenar ▼]
+   [🔍 Buscar por título, autor..]
 
 Ejemplo de búsqueda:
 
@@ -163,16 +147,13 @@ Para usuarios autenticados, el modal incluye:
 - Portada
 - Título y autor
 - Descripción completa
-- Género
-- Año de publicación
-- ISBN
 - Calificación promedio ()
 - Reviews de usuarios
 
 **Acciones disponibles:**
 
 -  **Préstamo Digital** (si está disponible digitalmente)
-- 📦 **Préstamo Físico** (si hay copias físicas)
+-  **Préstamo Físico** (si hay copias físicas)
 -  **Agregar a Lista de Deseos**
 -  **Descargar** (si está habilitado)
 -  **Calificar y Comentar**
@@ -197,7 +178,7 @@ El modal muestra claramente el estado:
 
 ----
 
-📦 Préstamo Físico (Desde Modal)
+Préstamo Físico (Desde Modal)
 ==================================
 
 Al hacer clic en **"Préstamo Físico"**, se abre un segundo modal para seleccionar detalles.
@@ -300,6 +281,11 @@ Simplemente haz clic en el icono de eliminar (❌) junto al libro.
      "message": "Libro eliminado de tu lista de deseos"
    }
 
+.. image:: _static/quitar_lista_de_deseos.jpg
+   :alt: Lista de deseos completa
+   :align: center
+   :width: 600px
+
 ----
 
  Descargas
@@ -313,8 +299,7 @@ Algunos libros tienen habilitada la opción de descarga para leer offline.
 1. En el modal del libro, si la descarga está habilitada, aparece el botón **"Descargar PDF"**
 2. Al hacer clic:
    
-   - Si es un libro con archivo directo → Descarga inmediata
-   - Si no → Redirige a la página de lectura digital
+   - Redirige a la página de lectura digital
 
 3. El sistema registra la descarga para estadísticas
 
@@ -355,18 +340,10 @@ Información Mostrada
    - Tipo y número de identificación
    - Fecha de registro
 
-2. **Estadísticas:**
-   
-   - Libros leídos
-   - Calificaciones dadas
-   - Comentarios publicados
-   - Racha de lectura
-
-3. **Configuración:**
+2. **Configuración:**
    
    - Notificaciones por correo
    - Privacidad
-   - Preferencias de idioma
 
 Editar Perfil
 --------------
@@ -426,7 +403,7 @@ Al hacer clic en "Eliminar Cuenta":
 
 Vista completa de todos los préstamos físicos del usuario.
 
-.. image:: _static/mis_prestamos.png
+.. image:: _static/mis_prestamos.jpg
    :alt: Mis préstamos físicos
    :align: center
    :width: 600px
@@ -493,13 +470,6 @@ Los usuarios reciben notificaciones por correo para:
 - ⏰ Recordatorio de devolución (2 días antes)
 - ⚠️ Alerta de retraso
 -  Libro disponible (si estaba en lista de deseos)
-- 💬 Respuesta a comentario
-
-.. tip::
-   
-   Puedes configurar qué notificaciones recibir desde tu perfil en "Configuración de Notificaciones".
-
-----
 
 🔒 Privacidad y Seguridad
 ===========================

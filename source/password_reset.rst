@@ -40,16 +40,15 @@ Envía un correo al usuario con un enlace de recuperación. El enlace contiene u
    :align: center
    :width: 400px
 
-
-**Posibles errores:**
-
-- Si el correo no existe: Por segurdad se envia el mismo mensaje "Si el correo existe revisa tu bandeja de entrada"
-
 .. image:: _static/recuperacion_confirmacion.png
    :alt: Pantalla de restablecimiento de contraseña
    :align: center
    :width: 400px
 
+
+**Posibles errores:**
+
+- Si el correo no existe: Por segurdad se envia el mismo mensaje "Si el correo existe revisa tu bandeja de entrada"
 - Si el servidor de correo falla: "No se pudo enviar el correo. Intenta más tarde"
 
 .. image:: _static/error_recuperacion.png

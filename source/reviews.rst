@@ -132,7 +132,7 @@ Se usa para mostrar al usuario su calificación previa cuando ve el detalle de u
 
 ----
 
-💬 Comentarios
+ Comentarios
 ================
 
 Subir Comentario
@@ -166,17 +166,11 @@ Permite a un usuario dejar un comentario sobre un libro.
    :align: center
    :width: 600px
 
-**Validaciones:**
-
-- El comentario debe tener entre 10 y 1000 caracteres
-- No se permiten comentarios duplicados (mismo usuario, mismo libro, mismo texto)
-- Se filtran palabras ofensivas (moderación automática)
 
 **Posibles errores:**
 
 - Comentario muy corto: "El comentario debe tener al menos 10 caracteres"
 - Comentario muy largo: "El comentario no puede superar los 1000 caracteres"
-- Comentario duplicado: "Ya publicaste este comentario anteriormente"
 
 ----
 
@@ -270,13 +264,10 @@ Permite editar un comentario existente (solo el autor puede editarlo).
 **Restricciones:**
 
 - Solo el autor del comentario puede editarlo
-- No se puede editar después de 24 horas de publicado (opcional)
-- Las mismas validaciones de longitud aplican
 
 **Posibles errores:**
 
 - No autorizado: "No tienes permiso para editar este comentario"
-- Tiempo expirado: "No puedes editar comentarios después de 24 horas"
 
 ----
 
@@ -304,35 +295,12 @@ Elimina un comentario (solo el autor o un administrador pueden hacerlo).
 **¿Quién puede eliminar?**
 
 - El autor del comentario
-- Usuarios con rol "bibliotecario" (moderación)
+- Usuarios con rol "bibliotecario" (proximamente)
 
 **Posibles errores:**
 
 - No autorizado: "No tienes permiso para eliminar este comentario"
 - Comentario no encontrado: "El comentario no existe"
-
-----
-
-📊 Moderación (Solo Bibliotecarios)
-=====================================
-
-Los bibliotecarios tienen funciones adicionales de moderación:
-
-Reportar Comentario Inapropiado
----------------------------------
-
-**Endpoint:** ``POST /reviews/report/{comment_id}``
-
-Los usuarios pueden reportar comentarios ofensivos o inapropiados.
-
-**Datos a enviar:**
-
-.. code-block:: json
-
-   {
-     "reason": "Contenido ofensivo / spam / acoso / otro",
-     "details": "Descripción del problema"
-   }
 
 ----
 
@@ -349,23 +317,10 @@ Para Usuarios
    - **Sé respetuoso**: No ataques a otros usuarios o al autor
    - **Actualiza tu opinión**: Puedes editar si cambias de parecer
 
-Para Bibliotecarios
---------------------
-
-.. note::
-   
-   - Revisa comentarios reportados regularmente
-   - Elimina contenido ofensivo o spam rápidamente
-   - Contacta a usuarios que violen las reglas repetidamente
-   - Fomenta una comunidad positiva y constructiva
-
 ----
 
 🔒 Notas de Seguridad
 ======================
 
-- **Protección contra spam**: Límite de 5 comentarios por usuario por día
-- **Filtro de contenido**: Palabras ofensivas se detectan automáticamente
 - **Edición limitada**: Los comentarios no pueden editarse indefinidamente
-- **Moderación**: Los bibliotecarios pueden eliminar cualquier comentario
 - **Anonimato**: No se muestran correos ni datos sensibles en comentarios

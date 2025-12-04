@@ -202,7 +202,7 @@ Lista todos los préstamos físicos del usuario actual.
      ]
    }
 
-.. image:: _static/mis_prestamos.png
+.. image:: _static/mis_prestamos.jpg
    :alt: Mis préstamos físicos
    :align: center
    :width: 600px
@@ -266,27 +266,13 @@ Notificaciones por Correo
    
    - Detalles del libro
    - Fecha de recogida
-   - Instrucciones
 
-2. **Recordatorio de recogida** (1 día antes)
-   
-   - Libro reservado te espera
-   - Horario de atención
-   - Link para cancelar si es necesario
-
-3. **Confirmación de entrega** (cuando el bibliotecario marca como "activo")
+2. **Confirmación de entrega** (cuando el bibliotecario marca como "activo")
    
    - Fecha de devolución
    - Consecuencias del retraso
-   - Renovación (si aplica)
 
-4. **Recordatorio de devolución** (2 días antes de vencer)
-   
-   - Libro próximo a vencer
-   - Fecha límite
-   - Instrucciones de devolución
-
-5. **Alerta de retraso** (si pasa la fecha)
+3. **Alerta de retraso** (si pasa la fecha)
    
    - Préstamo vencido
    - Posible penalización
@@ -348,31 +334,6 @@ Límites y Restricciones
    * - **Penalización por retraso**
      - 7 días sin poder solicitar nuevos préstamos
 
-Renovación de Préstamos
--------------------------
-
-**Endpoint:** ``PUT /prestamos-fisicos/renovar/{prestamo_id}``
-
-Extiende un préstamo físico por 12 días adicionales.
-
-**Condiciones:**
-
-- Solo 1 renovación permitida
-- No puede haber reservas del libro por otros usuarios
-- Debe renovarse antes de la fecha de devolución
-- No aplicable si hay retrasos previos
-
-**Respuesta exitosa:**
-
-.. code-block:: json
-
-   {
-     "message": "Préstamo renovado exitosamente",
-     "nueva_fecha_devolucion": "2025-02-13"
-   }
-
-----
-
 🔒 Notas de Seguridad
 ======================
 
@@ -389,7 +350,5 @@ Extiende un préstamo físico por 12 días adicionales.
    
    **Recomendaciones:**
    
-   - Configura notificaciones para no olvidar devoluciones
    - Devuelve libros a tiempo para mantener tu historial limpio
-   - Usa renovaciones si necesitas más tiempo
    - Cancela reservas si cambias de opinión (libera el libro para otros)

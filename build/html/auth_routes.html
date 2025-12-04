@@ -244,7 +244,7 @@
       
       
       
-      <li><a href="https://github.com/Santixxtt/aeternum-app" target="_blank"
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -388,10 +388,10 @@ document.write(`
 </div><section id="que-hace">
 <h3>¿Qué hace?<a class="headerlink" href="#que-hace" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Verifica que el correo esté registrado en el sistema</p></li>
-<li><p>Comprueba que la contraseña sea correcta (bcrypt)</p></li>
-<li><p>Si todo está bien, genera un <strong>token JWT</strong> para acceder al sistema</p></li>
-<li><p>Si fallas <strong>3 veces seguidas</strong>, bloquea tu cuenta por <strong>15 minutos</strong> (protección contra fuerza bruta)</p></li>
+<li><p>Verifica que el correo esté registrado en el sistema.</p></li>
+<li><p>Comprueba que la contraseña sea correcta (bcrypt).</p></li>
+<li><p>Si todo está bien, genera un <strong>token JWT</strong> para acceder al sistema.</p></li>
+<li><p>Si fallas <strong>3 veces seguidas</strong>, se bloquea la cuenta por <strong>15 minutos</strong> (protección contra fuerza bruta).</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/login.png"><img alt="Pantalla de inicio de sesión" class="align-center" src="_images/login.png" style="width: 500px;" />
 </a>
@@ -406,8 +406,8 @@ document.write(`
 </div>
 <p><strong>Campos:</strong></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">correo</span></code> (string, requerido): Tu correo electrónico registrado</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">clave</span></code> (string, requerido): Tu contraseña</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">correo</span></code> (string, requerido): Correo electrónico registrado.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clave</span></code> (string, requerido): Contraseña del usuario.</p></li>
 </ul>
 </section>
 <section id="respuesta-exitosa">
@@ -421,13 +421,14 @@ document.write(`
 </div>
 <p><strong>Campos de respuesta:</strong></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">access_token</span></code>: Token JWT para autenticación (válido por 24 horas)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">token_type</span></code>: Siempre «bearer»</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">rol</span></code>: Rol del usuario («usuario» o «bibliotecario»)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">access_token</span></code>: Token JWT para autenticación (válido por 24 horas).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">token_type</span></code>: Siempre <code class="docutils literal notranslate"><span class="pre">bearer</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rol</span></code>: Rol del usuario (<code class="docutils literal notranslate"><span class="pre">usuario</span></code> o <code class="docutils literal notranslate"><span class="pre">bibliotecario</span></code>).</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
-<p>Guarda el <code class="docutils literal notranslate"><span class="pre">access_token</span></code> de forma segura. Deberás incluirlo en el header <code class="docutils literal notranslate"><span class="pre">Authorization:</span> <span class="pre">Bearer</span> <span class="pre">{token}</span></code> para todas las peticiones autenticadas.</p>
+<p>Guarda el <code class="docutils literal notranslate"><span class="pre">access_token</span></code> de forma segura. Debes incluirlo en el header:
+<code class="docutils literal notranslate"><span class="pre">Authorization:</span> <span class="pre">Bearer</span> <span class="pre">{token}</span></code> para todas las peticiones autenticadas.</p>
 </div>
 </section>
 <section id="posibles-errores">
@@ -438,7 +439,7 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/correo_no_existe_login.png"><img alt="Error: correo no registrado" class="align-center" src="_images/correo_no_existe_login.png" style="width: 450px;" />
+<a class="reference internal image-reference" href="_images/correo_no_existe_login.png"><img alt="Error de correo no registrado" class="align-center" src="_images/correo_no_existe_login.png" style="width: 450px;" />
 </a>
 <p><strong>Contraseña incorrecta:</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -471,12 +472,12 @@ document.write(`
 </div><section id="id1">
 <h3>¿Qué hace?<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Verifica que el <strong>correo</strong> no esté usado por otra persona</p></li>
-<li><p>Verifica que el <strong>número de identificación</strong> sea único</p></li>
-<li><p>Encripta tu contraseña con <strong>bcrypt</strong> (nadie puede verla, ni nosotros)</p></li>
-<li><p>Guarda tu aceptación de la <strong>política de privacidad</strong></p></li>
-<li><p>Crea tu cuenta con rol «usuario» por defecto</p></li>
-<li><p>Registra metadata (IP, navegador, fecha) para cumplir GDPR</p></li>
+<li><p>Verifica que el <strong>correo</strong> no esté registrado.</p></li>
+<li><p>Valida que el <strong>número de identificación</strong> sea único.</p></li>
+<li><p>Encripta la contraseña con <strong>bcrypt</strong>.</p></li>
+<li><p>Guarda la aceptación de la <strong>política de privacidad</strong>.</p></li>
+<li><p>Crea la cuenta con rol <code class="docutils literal notranslate"><span class="pre">usuario</span></code> por defecto.</p></li>
+<li><p>Registra metadata (IP, navegador, fecha) para cumplimiento GDPR.</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/registro.png"><img alt="Formulario de registro" class="align-center" src="_images/registro.png" style="width: 500px;" />
 </a>
@@ -497,23 +498,17 @@ document.write(`
 </div>
 <p><strong>Campos:</strong></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">nombre</span></code> (string, requerido): Tu nombre</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">apellido</span></code> (string, requerido): Tu apellido</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tipo_identificacion</span></code> (string, requerido): Tipo de documento</p>
-<ul>
-<li><p>Valores válidos: <code class="docutils literal notranslate"><span class="pre">CC</span></code>, <code class="docutils literal notranslate"><span class="pre">TI</span></code>, <code class="docutils literal notranslate"><span class="pre">CE</span></code>, <code class="docutils literal notranslate"><span class="pre">PA</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">num_identificacion</span></code> (string, requerido): Número de tu documento</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">correo</span></code> (string, requerido): Tu correo electrónico (debe ser único)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">clave</span></code> (string, requerido): Una contraseña segura</p>
-<ul>
-<li><p>Mínimo 8 caracteres</p></li>
-<li><p>Al menos 1 mayúscula, 1 minúscula, 1 número</p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">rol</span></code> (string, opcional): Rol que tendrás (default: «usuario»)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">consent</span></code> (boolean, requerido): Debe ser <code class="docutils literal notranslate"><span class="pre">true</span></code> (aceptar política de privacidad)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nombre</span></code> (string, requerido): Nombre del usuario.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">apellido</span></code> (string, requerido): Apellido del usuario.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tipo_identificacion</span></code> (string, requerido): Tipo de documento
+- Valores válidos: <code class="docutils literal notranslate"><span class="pre">CC</span></code>, <code class="docutils literal notranslate"><span class="pre">TI</span></code>, <code class="docutils literal notranslate"><span class="pre">CE</span></code>, <code class="docutils literal notranslate"><span class="pre">PA</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_identificacion</span></code> (string, requerido): Número del documento.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">correo</span></code> (string, requerido): Correo electrónico único.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clave</span></code> (string, requerido): Contraseña segura
+- Mínimo 8 caracteres
+- 1 mayúscula, 1 minúscula y 1 número</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rol</span></code> (string, opcional): Rol asignado (default: <code class="docutils literal notranslate"><span class="pre">usuario</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">consent</span></code> (boolean, requerido): Debe ser <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p></li>
 </ul>
 </section>
 <section id="id3">
@@ -524,9 +519,12 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
+<p>Después de registrarte, recibirás un correo para verificar la cuenta.</p>
+<a class="reference internal image-reference" href="_images/correo_verificacion_cuenta.jpg"><img alt="Verificación de correo" class="align-center" src="_images/correo_verificacion_cuenta.jpg" style="width: 500px;" />
+</a>
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
-<p>Después de registrarte, usa el endpoint de <strong>login</strong> para obtener tu token y empezar a usar Aeternum.</p>
+<p>Después de registrarte, usa el endpoint de <strong>login</strong> para obtener tu token y comenzar a usar Aeternum.</p>
 </div>
 </section>
 <section id="id4">
@@ -537,7 +535,7 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/consent_required.png"><img alt="Error: consentimiento requerido" class="align-center" src="_images/consent_required.png" style="width: 450px;" />
+<a class="reference internal image-reference" href="_images/consent_required.png"><img alt="Consentimiento requerido" class="align-center" src="_images/consent_required.png" style="width: 450px;" />
 </a>
 <p><strong>Correo ya registrado:</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -545,7 +543,7 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/correo_registrado.jpeg"><img alt="Error: correo ya existe" class="align-center" src="_images/correo_registrado.jpeg" style="width: 450px;" />
+<a class="reference internal image-reference" href="_images/correo_registrado.jpeg"><img alt="Correo ya registrado" class="align-center" src="_images/correo_registrado.jpeg" style="width: 450px;" />
 </a>
 <p><strong>Documento ya registrado:</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -553,7 +551,7 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/numero_identificacion_registrado.jpeg"><img alt="Error: documento ya existe" class="align-center" src="_images/numero_identificacion_registrado.jpeg" style="width: 450px;" />
+<a class="reference internal image-reference" href="_images/numero_identificacion_registrado.jpeg"><img alt="Documento ya registrado" class="align-center" src="_images/numero_identificacion_registrado.jpeg" style="width: 450px;" />
 </a>
 <p><strong>Contraseña débil:</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -571,41 +569,38 @@ document.write(`
 <p><strong>Protecciones implementadas:</strong></p>
 </div>
 <p><strong>1. Encriptación de Contraseñas</strong></p>
-<p>Todas las contraseñas se encriptan usando <strong>bcrypt</strong> con factor de costo 12. Esto significa:</p>
 <ul class="simple">
-<li><p>Nadie puede ver tu contraseña real (ni administradores)</p></li>
-<li><p>Es computacionalmente costoso para atacantes hacer fuerza bruta</p></li>
-<li><p>Cada contraseña tiene un «salt» único</p></li>
+<li><p>bcrypt cost 12</p></li>
+<li><p>Cada contraseña posee «salt» único</p></li>
+<li><p>Ningún administrador puede ver la contraseña real</p></li>
 </ul>
 <p><strong>2. Protección contra Fuerza Bruta</strong></p>
-<p>Sistema de bloqueo progresivo:</p>
 <ul class="simple">
-<li><p><strong>Intento 1-2</strong>: Permite intentar</p></li>
-<li><p><strong>Intento 3</strong>: Bloquea la cuenta por <strong>15 minutos</strong></p></li>
-<li><p>Usa <strong>Redis</strong> para rastrear intentos en tiempo real</p></li>
-<li><p>El contador se resetea tras login exitoso</p></li>
+<li><p>Intentos 1 y 2 permitidos</p></li>
+<li><p>Intento 3 → bloqueo de <strong>15 minutos</strong></p></li>
+<li><p>Redis para rastreo</p></li>
+<li><p>Reset tras login exitoso</p></li>
 </ul>
 <p><strong>3. Registro de Consentimiento (GDPR)</strong></p>
-<p>Cumplimos con leyes de protección de datos guardando:</p>
 <ul class="simple">
 <li><p>Fecha y hora de aceptación</p></li>
-<li><p>Dirección IP del registro</p></li>
-<li><p>User-Agent (navegador usado)</p></li>
+<li><p>IP del usuario</p></li>
+<li><p>User-Agent</p></li>
 <li><p>Versión de la política aceptada</p></li>
 </ul>
 <p><strong>4. Tokens JWT</strong></p>
 <ul class="simple">
-<li><p>Expiración: <strong>24 horas</strong></p></li>
+<li><p>Expiración: <strong>8 horas</strong></p></li>
 <li><p>Firmados con clave secreta</p></li>
 <li><p>Incluyen: <code class="docutils literal notranslate"><span class="pre">user_id</span></code>, <code class="docutils literal notranslate"><span class="pre">correo</span></code>, <code class="docutils literal notranslate"><span class="pre">rol</span></code></p></li>
-<li><p>No almacenan información sensible</p></li>
+<li><p>No contienen información sensible</p></li>
 </ul>
 <p><strong>5. Validación de Datos</strong></p>
 <ul class="simple">
-<li><p>Correos deben ser válidos (formato email)</p></li>
-<li><p>Contraseñas deben cumplir requisitos mínimos</p></li>
-<li><p>Documentos deben ser únicos</p></li>
-<li><p>Sanitización de inputs para prevenir SQL Injection</p></li>
+<li><p>Formato email válido</p></li>
+<li><p>Contraseñas con requisitos mínimos</p></li>
+<li><p>Documentos únicos</p></li>
+<li><p>Sanitización de inputs</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -616,10 +611,10 @@ document.write(`
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
 <ul class="simple">
-<li><p><strong>Usa contraseñas únicas</strong>: No reutilices contraseñas de otros sitios</p></li>
-<li><p><strong>No compartas tu token</strong>: Trátalo como tu contraseña</p></li>
-<li><p><strong>Cierra sesión</strong>: Especialmente en dispositivos compartidos</p></li>
-<li><p><strong>Actualiza tu contraseña</strong>: Cada 3-6 meses</p></li>
+<li><p>Usa contraseñas únicas.</p></li>
+<li><p>No compartas tu token.</p></li>
+<li><p>Cierra sesión en dispositivos compartidos.</p></li>
+<li><p>Actualiza tu contraseña cada 3-6 meses.</p></li>
 </ul>
 </div>
 </section>
@@ -628,7 +623,7 @@ document.write(`
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// ✓ CORRECTO: Guardar token de forma segura</span>
 <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;token&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">access_token</span><span class="p">);</span>
 
-<span class="c1">// ✓ CORRECTO: Incluir en headers</span>
+<span class="c1">// ✓ CORRECTO: Usar token en headers</span>
 <span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="s1">&#39;Authorization&#39;</span><span class="o">:</span><span class="w"> </span><span class="sb">`Bearer </span><span class="si">${</span><span class="nx">token</span><span class="si">}</span><span class="sb">`</span>
 <span class="p">}</span>
@@ -639,7 +634,8 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>El token debe incluirse en todas las peticiones a endpoints protegidos usando el header <code class="docutils literal notranslate"><span class="pre">Authorization</span></code>.</p>
+<p>El token debe incluirse en todas las peticiones a endpoints protegidos usando
+el header <code class="docutils literal notranslate"><span class="pre">Authorization</span></code> para realizar pruebas (por ejemplo, en POSTMAN).</p>
 </div>
 </section>
 </section>
@@ -750,7 +746,7 @@ Por Santiago Tuta
 <div class="extra_footer">
   
         <div style="text-align: center; padding: 1rem; color: #888;">
-            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+            Hecho con por Santiago Tuta y Mariana Ruiz | © 2025 Aeternum
         </div>
     
 </div>

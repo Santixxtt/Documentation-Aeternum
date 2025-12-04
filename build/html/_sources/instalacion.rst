@@ -12,4 +12,4 @@ Clonar repositorio:
 
 .. code-block:: bash
 
-   git clone https://github.com/Santixxtt/Aeternum.git
+   git clone https://github.com/Santixxtt/aeternum-app.git

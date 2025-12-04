@@ -36,7 +36,7 @@ Características Principales
      <div class="feature-card">
        <div class="feature-icon"></div>
        <h3>Lista de Deseos</h3>
-       <p>Guarda tus libros favoritos y recibe notificaciones cuando estén disponibles.</p>
+       <p>Guarda tus libros favoritos y ten un acceso directo a los libros que mas te gusten.</p>
      </div>
      
      <div class="feature-card">

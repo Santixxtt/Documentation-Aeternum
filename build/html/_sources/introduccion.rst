@@ -38,7 +38,6 @@ Aeternum ofrece un ecosistema completo para gestionar tu experiencia de lectura:
 - Acceso inmediato sin esperas
 - Lectura en línea desde cualquier dispositivo
 - Marcadores y progreso sincronizado
-- Modo nocturno y ajustes de lectura
 - Sin límite de copias digitales
 
 📦 **Préstamos Físicos**
@@ -54,7 +53,7 @@ Aeternum ofrece un ecosistema completo para gestionar tu experiencia de lectura:
 
  **Lista de Deseos**
 
-Guarda libros para leer más tarde y recibe notificaciones cuando estén disponibles.
+Guarda libros para leer más tarde, seguimos implementando funciones para poder .
 
  **Sistema de Reviews**
 
@@ -62,13 +61,6 @@ Guarda libros para leer más tarde y recibe notificaciones cuando estén disponi
 - Deja comentarios y reseñas
 - Lee opiniones de otros usuarios
 - Descubre nuevas lecturas
-
-📊 **Estadísticas Personales**
-
-- Tracking de libros leídos
-- Racha de lectura continua
-- Tiempo invertido en lectura
-- Géneros favoritos
 
 3. Experiencia de Usuario
 ---------------------------
@@ -83,7 +75,6 @@ Guarda libros para leer más tarde y recibe notificaciones cuando estén disponi
 🔔 **Notificaciones Inteligentes**
 
 - Recordatorios de devolución
-- Alertas de disponibilidad
 - Confirmaciones por correo
 - Updates de estado en tiempo real
 
@@ -160,7 +151,7 @@ Diagrama de Arquitectura
 
 ----
 
-👥 Roles de Usuario
+Roles de Usuario
 ====================
 
 Aeternum maneja dos tipos de usuarios con diferentes permisos:
@@ -171,7 +162,7 @@ Usuario Regular
 .. raw:: html
 
    <div class="endpoint-card">
-     <h4>👤 Usuario</h4>
+     <h4>Usuario</h4>
      <p><strong>Permisos:</strong></p>
      <ul>
        <li>Ver catálogo completo de libros</li>
@@ -190,7 +181,7 @@ Bibliotecario
 .. raw:: html
 
    <div class="endpoint-card">
-     <h4>👨‍💼 Bibliotecario</h4>
+     <h4>Bibliotecario</h4>
      <p><strong>Permisos adicionales:</strong></p>
      <ul>
        <li>✅ Todos los permisos de usuario regular</li>
@@ -198,7 +189,6 @@ Bibliotecario
        <li>👥 Administrar usuarios del sistema</li>
        <li>📦 Gestionar estado de préstamos físicos</li>
        <li>📊 Acceder a reportes y estadísticas</li>
-       <li>💬 Moderar comentarios y reviews</li>
        <li> Configurar parámetros del sistema</li>
        <li>🔄 Reactivar cuentas eliminadas</li>
      </ul>
@@ -206,7 +196,7 @@ Bibliotecario
 
 ----
 
-🚀 Flujos Principales
+Flujos Principales
 ======================
 
 1. Flujo de Registro y Login
@@ -246,8 +236,6 @@ Bibliotecario
       │      ↓
       └─→ Redirige a lector online
              • Lee el libro
-             • Guarda progreso automático
-             • 12 días de acceso
 
 3. Flujo de Préstamo Físico
 -----------------------------
@@ -281,21 +269,11 @@ Bibliotecario
 📊 Casos de Uso
 ================
 
-Para Estudiantes
------------------
-
-- Acceso a libros académicos 24/7
-- Descargas para estudiar offline
-- Referencias bibliográficas completas
-- Historial organizado de lecturas
-
 Para Lectores Casuales
 ------------------------
 
 - Descubre nuevos libros mediante reviews
 - Lista de deseos para planificar lecturas
-- Recordatorios para no perder fechas
-- Estadísticas de progreso motivacionales
 
 Para Bibliotecas
 -----------------
@@ -303,7 +281,7 @@ Para Bibliotecas
 - Digitalización de catálogo
 - Gestión automatizada de préstamos
 - Reducción de trabajo manual
-- Reportes detallados de uso
+- Reportes en pdf y excel.
 - Mejor experiencia para usuarios
 
 ----
@@ -315,7 +293,7 @@ Para Bibliotecas
 
    <div class="feature-grid">
      <div class="feature-card">
-       <h4>⚡ Acceso Inmediato</h4>
+       <h4>⚡Acceso Inmediato</h4>
        <p>Lee libros al instante sin esperar disponibilidad física</p>
      </div>
      
@@ -326,7 +304,7 @@ Para Bibliotecas
      
      <div class="feature-card">
        <h4>📱 Multi-dispositivo</h4>
-       <p>Lee en PC, tablet, móvil - tu progreso se sincroniza</p>
+       <p>Lee en PC, tablet, móvil - tus cambios se guarda en tu cuenta.</p>
      </div>
      
      <div class="feature-card">
@@ -354,16 +332,15 @@ Funcionalidades planeadas para próximas versiones:
 
 **v2.0 - En Desarrollo**
 
+- 🖇️ Mejora en los mensajes y correo
 - 🎧 Audiolibros
 - 📱 App móvil nativa (iOS/Android)
 - 🤖 Recomendaciones con IA
-- 💬 Chat entre usuarios (club de lectura)
 - 🏆 Sistema de logros y gamificación
 
 **v3.0 - Planificado**
 
 - 🌐 Soporte multiidioma
-- 🎨 Temas personalizables
 - 📚 Integración con más APIs de libros
 - 🔗 Compartir en redes sociales
 -  Modo sin conexión (PWA)
@@ -390,16 +367,16 @@ Consulta la guía de contribución en el repositorio para más detalles.
 
 ¿Necesitas ayuda?
 
-- 📧 Email: soporte@aeternum.com
-- 💬 Discord: `Servidor de Aeternum <https://discord.gg/aeternum>`_
-- 🐛 Reportar bug: `GitHub Issues <https://github.com/Santixxtt/Aeternum/issues>`_
+- 📧 Email: aeternum538@aeternum.com
+- 🐛 Reportar bug: `GitHub Issues <https://github.com/Santixxtt/aeternum-app/issues>`_
 -  Documentación: Estás aquí 😊
 
 ----
 
 .. note::
    
-   **Desarrollador:** Santiago Tuta  
+   **Desarrollador Lider:** Santiago Tuta
+   **Desarrollador:** Mariana Ruiz
    **Versión actual:** 1.0.0  
-   **Última actualización:** Enero 2025  
-   **Licencia:** MIT
+   **Última actualización:** Diciembre
+    2025  

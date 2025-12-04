@@ -244,7 +244,7 @@
       
       
       
-      <li><a href="https://github.com/Santixxtt/aeternum-app" target="_blank"
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -339,23 +339,15 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
@@ -473,10 +465,11 @@ document.write(`
 </pre></div>
 </div>
 <hr class="docutils" />
-<section id="comentarios">
-<h3>💬 Comentarios<a class="headerlink" href="#comentarios" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>Comentarios</p>
+</div></blockquote>
 </section>
-</section>
+<hr class="docutils" />
 <section id="subir-comentario">
 <h2>Subir Comentario<a class="headerlink" href="#subir-comentario" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/comment</span></code></p>
@@ -498,17 +491,10 @@ document.write(`
 </div>
 <a class="reference internal image-reference" href="_images/post_comment.png"><img alt="Publicar comentario" class="align-center" src="_images/post_comment.png" style="width: 600px;" />
 </a>
-<p><strong>Validaciones:</strong></p>
-<ul class="simple">
-<li><p>El comentario debe tener entre 10 y 1000 caracteres</p></li>
-<li><p>No se permiten comentarios duplicados (mismo usuario, mismo libro, mismo texto)</p></li>
-<li><p>Se filtran palabras ofensivas (moderación automática)</p></li>
-</ul>
 <p><strong>Posibles errores:</strong></p>
 <ul class="simple">
 <li><p>Comentario muy corto: «El comentario debe tener al menos 10 caracteres»</p></li>
 <li><p>Comentario muy largo: «El comentario no puede superar los 1000 caracteres»</p></li>
-<li><p>Comentario duplicado: «Ya publicaste este comentario anteriormente»</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -580,13 +566,10 @@ document.write(`
 <p><strong>Restricciones:</strong></p>
 <ul class="simple">
 <li><p>Solo el autor del comentario puede editarlo</p></li>
-<li><p>No se puede editar después de 24 horas de publicado (opcional)</p></li>
-<li><p>Las mismas validaciones de longitud aplican</p></li>
 </ul>
 <p><strong>Posibles errores:</strong></p>
 <ul class="simple">
 <li><p>No autorizado: «No tienes permiso para editar este comentario»</p></li>
-<li><p>Tiempo expirado: «No puedes editar comentarios después de 24 horas»</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -606,30 +589,13 @@ document.write(`
 <p><strong>¿Quién puede eliminar?</strong></p>
 <ul class="simple">
 <li><p>El autor del comentario</p></li>
-<li><p>Usuarios con rol «bibliotecario» (moderación)</p></li>
+<li><p>Usuarios con rol «bibliotecario» (proximamente)</p></li>
 </ul>
 <p><strong>Posibles errores:</strong></p>
 <ul class="simple">
 <li><p>No autorizado: «No tienes permiso para eliminar este comentario»</p></li>
 <li><p>Comentario no encontrado: «El comentario no existe»</p></li>
 </ul>
-<hr class="docutils" />
-<section id="moderacion-solo-bibliotecarios">
-<h3>📊 Moderación (Solo Bibliotecarios)<a class="headerlink" href="#moderacion-solo-bibliotecarios" title="Link to this heading">#</a></h3>
-<p>Los bibliotecarios tienen funciones adicionales de moderación:</p>
-</section>
-</section>
-<section id="reportar-comentario-inapropiado">
-<h2>Reportar Comentario Inapropiado<a class="headerlink" href="#reportar-comentario-inapropiado" title="Link to this heading">#</a></h2>
-<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/report/{comment_id}</span></code></p>
-<p>Los usuarios pueden reportar comentarios ofensivos o inapropiados.</p>
-<p><strong>Datos a enviar:</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Contenido ofensivo / spam / acoso / otro&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Descripción del problema&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
 <hr class="docutils" />
 <section id="mejores-practicas">
 <h3>🎯 Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Link to this heading">#</a></h3>
@@ -646,26 +612,11 @@ document.write(`
 <li><p><strong>Actualiza tu opinión</strong>: Puedes editar si cambias de parecer</p></li>
 </ul>
 </div>
-</section>
-<section id="para-bibliotecarios">
-<h2>Para Bibliotecarios<a class="headerlink" href="#para-bibliotecarios" title="Link to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<ul class="simple">
-<li><p>Revisa comentarios reportados regularmente</p></li>
-<li><p>Elimina contenido ofensivo o spam rápidamente</p></li>
-<li><p>Contacta a usuarios que violen las reglas repetidamente</p></li>
-<li><p>Fomenta una comunidad positiva y constructiva</p></li>
-</ul>
-</div>
 <hr class="docutils" />
 <section id="notas-de-seguridad">
 <h3>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Protección contra spam</strong>: Límite de 5 comentarios por usuario por día</p></li>
-<li><p><strong>Filtro de contenido</strong>: Palabras ofensivas se detectan automáticamente</p></li>
 <li><p><strong>Edición limitada</strong>: Los comentarios no pueden editarse indefinidamente</p></li>
-<li><p><strong>Moderación</strong>: Los bibliotecarios pueden eliminar cualquier comentario</p></li>
 <li><p><strong>Anonimato</strong>: No se muestran correos ni datos sensibles en comentarios</p></li>
 </ul>
 </section>
@@ -719,23 +670,15 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
@@ -779,7 +722,7 @@ Por Santiago Tuta
 <div class="extra_footer">
   
         <div style="text-align: center; padding: 1rem; color: #888;">
-            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+            Hecho con por Santiago Tuta y Mariana Ruiz | © 2025 Aeternum
         </div>
     
 </div>

@@ -244,7 +244,7 @@
       
       
       
-      <li><a href="https://github.com/Santixxtt/aeternum-app" target="_blank"
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -349,19 +349,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrama-de-arquitectura">Diagrama de Arquitectura</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roles-de-usuario">👥 Roles de Usuario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roles-de-usuario">Roles de Usuario</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usuario-regular">Usuario Regular</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecario">Bibliotecario</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flujos-principales">🚀 Flujos Principales</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flujos-principales">Flujos Principales</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-registro-y-login">1. Flujo de Registro y Login</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-prestamo-digital">2. Flujo de Préstamo Digital</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-prestamo-fisico">3. Flujo de Préstamo Físico</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#casos-de-uso">📊 Casos de Uso</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-estudiantes">Para Estudiantes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-lectores-casuales">Para Lectores Casuales</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecas">Para Bibliotecas</a></li>
 </ul>
@@ -410,7 +409,6 @@ document.write(`
 <li><p>Acceso inmediato sin esperas</p></li>
 <li><p>Lectura en línea desde cualquier dispositivo</p></li>
 <li><p>Marcadores y progreso sincronizado</p></li>
-<li><p>Modo nocturno y ajustes de lectura</p></li>
 <li><p>Sin límite de copias digitales</p></li>
 </ul>
 <p>📦 <strong>Préstamos Físicos</strong></p>
@@ -427,7 +425,7 @@ document.write(`
 <blockquote>
 <div><p><strong>Lista de Deseos</strong></p>
 </div></blockquote>
-<p>Guarda libros para leer más tarde y recibe notificaciones cuando estén disponibles.</p>
+<p>Guarda libros para leer más tarde, seguimos implementando funciones para poder .</p>
 <blockquote>
 <div><p><strong>Sistema de Reviews</strong></p>
 </div></blockquote>
@@ -436,13 +434,6 @@ document.write(`
 <li><p>Deja comentarios y reseñas</p></li>
 <li><p>Lee opiniones de otros usuarios</p></li>
 <li><p>Descubre nuevas lecturas</p></li>
-</ul>
-<p>📊 <strong>Estadísticas Personales</strong></p>
-<ul class="simple">
-<li><p>Tracking de libros leídos</p></li>
-<li><p>Racha de lectura continua</p></li>
-<li><p>Tiempo invertido en lectura</p></li>
-<li><p>Géneros favoritos</p></li>
 </ul>
 </section>
 <section id="experiencia-de-usuario">
@@ -457,7 +448,6 @@ document.write(`
 <p>🔔 <strong>Notificaciones Inteligentes</strong></p>
 <ul class="simple">
 <li><p>Recordatorios de devolución</p></li>
-<li><p>Alertas de disponibilidad</p></li>
 <li><p>Confirmaciones por correo</p></li>
 <li><p>Updates de estado en tiempo real</p></li>
 </ul>
@@ -549,12 +539,12 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="roles-de-usuario">
-<h2>👥 Roles de Usuario<a class="headerlink" href="#roles-de-usuario" title="Link to this heading">#</a></h2>
+<h2>Roles de Usuario<a class="headerlink" href="#roles-de-usuario" title="Link to this heading">#</a></h2>
 <p>Aeternum maneja dos tipos de usuarios con diferentes permisos:</p>
 <section id="usuario-regular">
 <h3>Usuario Regular<a class="headerlink" href="#usuario-regular" title="Link to this heading">#</a></h3>
 <div class="endpoint-card">
-  <h4>👤 Usuario</h4>
+  <h4>Usuario</h4>
   <p><strong>Permisos:</strong></p>
   <ul>
     <li>Ver catálogo completo de libros</li>
@@ -569,7 +559,7 @@ document.write(`
 <section id="bibliotecario">
 <h3>Bibliotecario<a class="headerlink" href="#bibliotecario" title="Link to this heading">#</a></h3>
 <div class="endpoint-card">
-  <h4>👨‍💼 Bibliotecario</h4>
+  <h4>Bibliotecario</h4>
   <p><strong>Permisos adicionales:</strong></p>
   <ul>
     <li>✅ Todos los permisos de usuario regular</li>
@@ -577,7 +567,6 @@ document.write(`
     <li>👥 Administrar usuarios del sistema</li>
     <li>📦 Gestionar estado de préstamos físicos</li>
     <li>📊 Acceder a reportes y estadísticas</li>
-    <li>💬 Moderar comentarios y reviews</li>
     <li> Configurar parámetros del sistema</li>
     <li>🔄 Reactivar cuentas eliminadas</li>
   </ul>
@@ -585,7 +574,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="flujos-principales">
-<h2>🚀 Flujos Principales<a class="headerlink" href="#flujos-principales" title="Link to this heading">#</a></h2>
+<h2>Flujos Principales<a class="headerlink" href="#flujos-principales" title="Link to this heading">#</a></h2>
 <section id="flujo-de-registro-y-login">
 <h3>1. Flujo de Registro y Login<a class="headerlink" href="#flujo-de-registro-y-login" title="Link to this heading">#</a></h3>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Usuario nuevo
@@ -619,8 +608,6 @@ document.write(`
    │      ↓
    └─→ Redirige a lector online
           • Lee el libro
-          • Guarda progreso automático
-          • 12 días de acceso
 </pre></div>
 </div>
 </section>
@@ -654,22 +641,11 @@ document.write(`
 <hr class="docutils" />
 <section id="casos-de-uso">
 <h2>📊 Casos de Uso<a class="headerlink" href="#casos-de-uso" title="Link to this heading">#</a></h2>
-<section id="para-estudiantes">
-<h3>Para Estudiantes<a class="headerlink" href="#para-estudiantes" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Acceso a libros académicos 24/7</p></li>
-<li><p>Descargas para estudiar offline</p></li>
-<li><p>Referencias bibliográficas completas</p></li>
-<li><p>Historial organizado de lecturas</p></li>
-</ul>
-</section>
 <section id="para-lectores-casuales">
 <h3>Para Lectores Casuales<a class="headerlink" href="#para-lectores-casuales" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Descubre nuevos libros mediante reviews</p></li>
 <li><p>Lista de deseos para planificar lecturas</p></li>
-<li><p>Recordatorios para no perder fechas</p></li>
-<li><p>Estadísticas de progreso motivacionales</p></li>
 </ul>
 </section>
 <section id="para-bibliotecas">
@@ -678,7 +654,7 @@ document.write(`
 <li><p>Digitalización de catálogo</p></li>
 <li><p>Gestión automatizada de préstamos</p></li>
 <li><p>Reducción de trabajo manual</p></li>
-<li><p>Reportes detallados de uso</p></li>
+<li><p>Reportes en pdf y excel.</p></li>
 <li><p>Mejor experiencia para usuarios</p></li>
 </ul>
 </section>
@@ -688,7 +664,7 @@ document.write(`
 <h2>🎯 Beneficios Clave<a class="headerlink" href="#beneficios-clave" title="Link to this heading">#</a></h2>
 <div class="feature-grid">
   <div class="feature-card">
-    <h4>⚡ Acceso Inmediato</h4>
+    <h4>⚡Acceso Inmediato</h4>
     <p>Lee libros al instante sin esperar disponibilidad física</p>
   </div>
 
@@ -699,7 +675,7 @@ document.write(`
 
   <div class="feature-card">
     <h4>📱 Multi-dispositivo</h4>
-    <p>Lee en PC, tablet, móvil - tu progreso se sincroniza</p>
+    <p>Lee en PC, tablet, móvil - tus cambios se guarda en tu cuenta.</p>
   </div>
 
   <div class="feature-card">
@@ -723,16 +699,15 @@ document.write(`
 <p>Funcionalidades planeadas para próximas versiones:</p>
 <p><strong>v2.0 - En Desarrollo</strong></p>
 <ul class="simple">
+<li><p>🖇️ Mejora en los mensajes y correo</p></li>
 <li><p>🎧 Audiolibros</p></li>
 <li><p>📱 App móvil nativa (iOS/Android)</p></li>
 <li><p>🤖 Recomendaciones con IA</p></li>
-<li><p>💬 Chat entre usuarios (club de lectura)</p></li>
 <li><p>🏆 Sistema de logros y gamificación</p></li>
 </ul>
 <p><strong>v3.0 - Planificado</strong></p>
 <ul class="simple">
 <li><p>🌐 Soporte multiidioma</p></li>
-<li><p>🎨 Temas personalizables</p></li>
 <li><p>📚 Integración con más APIs de libros</p></li>
 <li><p>🔗 Compartir en redes sociales</p></li>
 <li><p>Modo sin conexión (PWA)</p></li>
@@ -756,18 +731,20 @@ document.write(`
 <h2>📞 Soporte<a class="headerlink" href="#soporte" title="Link to this heading">#</a></h2>
 <p>¿Necesitas ayuda?</p>
 <ul class="simple">
-<li><p>📧 Email: <a class="reference external" href="mailto:soporte&#37;&#52;&#48;aeternum&#46;com">soporte<span>&#64;</span>aeternum<span>&#46;</span>com</a></p></li>
-<li><p>💬 Discord: <a class="reference external" href="https://discord.gg/aeternum">Servidor de Aeternum</a></p></li>
-<li><p>🐛 Reportar bug: <a class="reference external" href="https://github.com/Santixxtt/Aeternum/issues">GitHub Issues</a></p></li>
+<li><p>📧 Email: <a class="reference external" href="mailto:aeternum538&#37;&#52;&#48;aeternum&#46;com">aeternum538<span>&#64;</span>aeternum<span>&#46;</span>com</a></p></li>
+<li><p>🐛 Reportar bug: <a class="reference external" href="https://github.com/Santixxtt/aeternum-app/issues">GitHub Issues</a></p></li>
 <li><p>Documentación: Estás aquí 😊</p></li>
 </ul>
 <hr class="docutils" />
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p><strong>Desarrollador:</strong> Santiago Tuta
+<p><strong>Desarrollador Lider:</strong> Santiago Tuta
+<strong>Desarrollador:</strong> Mariana Ruiz
 <strong>Versión actual:</strong> 1.0.0
-<strong>Última actualización:</strong> Enero 2025
-<strong>Licencia:</strong> MIT</p>
+<strong>Última actualización:</strong> Diciembre</p>
+<blockquote>
+<div><p>2025</p>
+</div></blockquote>
 </div>
 </section>
 </section>
@@ -829,19 +806,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrama-de-arquitectura">Diagrama de Arquitectura</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roles-de-usuario">👥 Roles de Usuario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roles-de-usuario">Roles de Usuario</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usuario-regular">Usuario Regular</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecario">Bibliotecario</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flujos-principales">🚀 Flujos Principales</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flujos-principales">Flujos Principales</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-registro-y-login">1. Flujo de Registro y Login</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-prestamo-digital">2. Flujo de Préstamo Digital</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-prestamo-fisico">3. Flujo de Préstamo Físico</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#casos-de-uso">📊 Casos de Uso</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-estudiantes">Para Estudiantes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-lectores-casuales">Para Lectores Casuales</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecas">Para Bibliotecas</a></li>
 </ul>
@@ -890,7 +866,7 @@ Por Santiago Tuta
 <div class="extra_footer">
   
         <div style="text-align: center; padding: 1rem; color: #888;">
-            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+            Hecho con por Santiago Tuta y Mariana Ruiz | © 2025 Aeternum
         </div>
     
 </div>

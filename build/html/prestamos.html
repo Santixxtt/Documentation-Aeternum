@@ -244,7 +244,7 @@
       
       
       
-      <li><a href="https://github.com/Santixxtt/aeternum-app" target="_blank"
+      <li><a href="https://github.com/Santixxtt/Aeternum" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,8 +352,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-personal">Dashboard Personal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renovacion-de-prestamos">Renovación de Préstamos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
@@ -536,7 +535,7 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="_images/mis_prestamos.png"><img alt="Mis préstamos físicos" class="align-center" src="_images/mis_prestamos.png" style="width: 600px;" />
+<a class="reference internal image-reference" href="_images/mis_prestamos.jpg"><img alt="Mis préstamos físicos" class="align-center" src="_images/mis_prestamos.jpg" style="width: 600px;" />
 </a>
 <p><strong>Estados explicados:</strong></p>
 <ul class="simple">
@@ -587,28 +586,12 @@ document.write(`
 <ul class="simple">
 <li><p>Detalles del libro</p></li>
 <li><p>Fecha de recogida</p></li>
-<li><p>Instrucciones</p></li>
-</ul>
-</li>
-<li><p><strong>Recordatorio de recogida</strong> (1 día antes)</p>
-<ul class="simple">
-<li><p>Libro reservado te espera</p></li>
-<li><p>Horario de atención</p></li>
-<li><p>Link para cancelar si es necesario</p></li>
 </ul>
 </li>
 <li><p><strong>Confirmación de entrega</strong> (cuando el bibliotecario marca como «activo»)</p>
 <ul class="simple">
 <li><p>Fecha de devolución</p></li>
 <li><p>Consecuencias del retraso</p></li>
-<li><p>Renovación (si aplica)</p></li>
-</ul>
-</li>
-<li><p><strong>Recordatorio de devolución</strong> (2 días antes de vencer)</p>
-<ul class="simple">
-<li><p>Libro próximo a vencer</p></li>
-<li><p>Fecha límite</p></li>
-<li><p>Instrucciones de devolución</p></li>
 </ul>
 </li>
 <li><p><strong>Alerta de retraso</strong> (si pasa la fecha)</p>
@@ -684,26 +667,6 @@ document.write(`
 </tbody>
 </table>
 </div>
-</section>
-<section id="renovacion-de-prestamos">
-<h2>Renovación de Préstamos<a class="headerlink" href="#renovacion-de-prestamos" title="Link to this heading">#</a></h2>
-<p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/prestamos-fisicos/renovar/{prestamo_id}</span></code></p>
-<p>Extiende un préstamo físico por 12 días adicionales.</p>
-<p><strong>Condiciones:</strong></p>
-<ul class="simple">
-<li><p>Solo 1 renovación permitida</p></li>
-<li><p>No puede haber reservas del libro por otros usuarios</p></li>
-<li><p>Debe renovarse antes de la fecha de devolución</p></li>
-<li><p>No aplicable si hay retrasos previos</p></li>
-</ul>
-<p><strong>Respuesta exitosa:</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Préstamo renovado exitosamente&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;nueva_fecha_devolucion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-02-13&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<hr class="docutils" />
 <section id="notas-de-seguridad">
 <h3>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h3>
 <div class="admonition warning">
@@ -720,9 +683,7 @@ document.write(`
 <p class="admonition-title">Truco</p>
 <p><strong>Recomendaciones:</strong></p>
 <ul class="simple">
-<li><p>Configura notificaciones para no olvidar devoluciones</p></li>
 <li><p>Devuelve libros a tiempo para mantener tu historial limpio</p></li>
-<li><p>Usa renovaciones si necesitas más tiempo</p></li>
 <li><p>Cancela reservas si cambias de opinión (libera el libro para otros)</p></li>
 </ul>
 </div>
@@ -790,8 +751,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-personal">Dashboard Personal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renovacion-de-prestamos">Renovación de Préstamos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
@@ -835,7 +795,7 @@ Por Santiago Tuta
 <div class="extra_footer">
   
         <div style="text-align: center; padding: 1rem; color: #888;">
-            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+            Hecho con por Santiago Tuta y Mariana Ruiz | © 2025 Aeternum
         </div>
     
 </div>

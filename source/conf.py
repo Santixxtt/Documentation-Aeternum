@@ -78,7 +78,7 @@ html_theme_options = {
     # Footer
     "extra_footer": """
         <div style="text-align: center; padding: 1rem; color: #888;">
-            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+            Hecho con por Santiago Tuta y Mariana Ruiz | © 2025 Aeternum
         </div>
     """,
 }

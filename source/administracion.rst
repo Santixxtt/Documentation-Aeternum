@@ -27,7 +27,7 @@ Lista todos los usuarios registrados en el sistema con sus datos básicos y esta
 3. Ver detalles completos de cada usuario
 4. Activar/desactivar cuentas
 
-.. image:: _static/admin_users.png
+.. image:: _static/usuarios_biblio.jpg
    :alt: Panel de gestión de usuarios
    :align: center
    :width: 600px
