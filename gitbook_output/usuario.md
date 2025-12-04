@@ -120,7 +120,7 @@ GET /api/books/search?q=principito&genero=ficcion&disponible=true
 
 ---
 
-# 📖 Modal del Libro
+#  Modal del Libro
 
 Al hacer clic en cualquier libro, se abre un modal con información detallada y opciones de acción.
 
@@ -146,16 +146,16 @@ Para usuarios autenticados, el modal incluye:
 - Género
 - Año de publicación
 - ISBN
-- Calificación promedio (⭐)
+- Calificación promedio ()
 - Reviews de usuarios
 
 **Acciones disponibles:**
 
-- 📖 **Préstamo Digital** (si está disponible digitalmente)
+-  **Préstamo Digital** (si está disponible digitalmente)
 - 📦 **Préstamo Físico** (si hay copias físicas)
-- 💝 **Agregar a Lista de Deseos**
-- 📥 **Descargar** (si está habilitado)
-- ⭐ **Calificar y Comentar**
+-  **Agregar a Lista de Deseos**
+-  **Descargar** (si está habilitado)
+-  **Calificar y Comentar**
 
 ![Modal con funciones](.gitbook/assets/_static/modal_logueado.png)
 
@@ -194,7 +194,7 @@ Al hacer clic en **"Préstamo Físico"**, se abre un segundo modal para seleccio
 
 ---
 
-# 💝 Lista de Deseos
+#  Lista de Deseos
 
 Gestión de libros guardados para leer más tarde.
 
@@ -202,7 +202,7 @@ Gestión de libros guardados para leer más tarde.
 
 **Endpoint:** `POST /wishlist/add`
 
-Desde el modal del libro, clic en el icono de corazón 💝
+Desde el modal del libro, clic en el icono de corazón 
 
 **Datos enviados:**
 
@@ -258,7 +258,7 @@ Simplemente haz clic en el icono de eliminar (❌) junto al libro.
 
 ---
 
-# 📥 Descargas
+#  Descargas
 
 Algunos libros tienen habilitada la opción de descarga para leer offline.
 
@@ -372,7 +372,7 @@ Vista completa de todos los préstamos físicos del usuario.
 
 Para cada préstamo:
 
-- 📖 Portada y título del libro
+-  Portada y título del libro
 - 📅 Fecha de solicitud
 - 📅 Fecha de recogida programada
 - 📅 Fecha de devolución
@@ -420,7 +420,7 @@ Los usuarios reciben notificaciones por correo para:
 - ⏰ Recordatorio de recogida (1 día antes)
 - ⏰ Recordatorio de devolución (2 días antes)
 - ⚠️ Alerta de retraso
-- 📖 Libro disponible (si estaba en lista de deseos)
+-  Libro disponible (si estaba en lista de deseos)
 - 💬 Respuesta a comentario
 
 .. tip::

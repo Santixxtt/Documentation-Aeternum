@@ -9,7 +9,7 @@ El sistema de reviews permite a los usuarios calificar y comentar libros, ayudan
 
 ---
 
-# ⭐ Calificaciones
+#  Calificaciones
 
 ## Subir Calificación
 

@@ -9,7 +9,7 @@ Aeternum ofrece dos tipos de préstamos: **digitales** (lectura online instantá
 
 ---
 
-# 📖 Préstamos Digitales
+#  Préstamos Digitales
 
 Los préstamos digitales permiten acceso inmediato a la versión digital de un libro para leerlo en línea.
 
@@ -295,7 +295,7 @@ Obtiene estadísticas personales de préstamos del usuario.
 
 ---
 
-# ⚙️ Políticas de Préstamos
+#  Políticas de Préstamos
 
 ## Límites y Restricciones
 

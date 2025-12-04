@@ -24,7 +24,7 @@ Aeternum ofrece un ecosistema completo para gestionar tu experiencia de lectura:
 
 ## 1. Sistema Dual de Préstamos
 
-📖 **Préstamos Digitales**
+ **Préstamos Digitales**
 
 - Acceso inmediato sin esperas
 - Lectura en línea desde cualquier dispositivo
@@ -42,11 +42,11 @@ Aeternum ofrece un ecosistema completo para gestionar tu experiencia de lectura:
 
 ## 2. Gestión Inteligente
 
-💝 **Lista de Deseos**
+ **Lista de Deseos**
 
 Guarda libros para leer más tarde y recibe notificaciones cuando estén disponibles.
 
-⭐ **Sistema de Reviews**
+ **Sistema de Reviews**
 
 - Califica libros del 1 al 5
 - Deja comentarios y reseñas
@@ -76,7 +76,7 @@ Guarda libros para leer más tarde y recibe notificaciones cuando estén disponi
 - Confirmaciones por correo
 - Updates de estado en tiempo real
 
-🔐 **Seguridad Robusta**
+ **Seguridad Robusta**
 
 - Autenticación JWT
 - Encriptación de contraseñas (bcrypt)
@@ -178,7 +178,7 @@ Aeternum maneja dos tipos de usuarios con diferentes permisos:
        <li>📦 Gestionar estado de préstamos físicos</li>
        <li>📊 Acceder a reportes y estadísticas</li>
        <li>💬 Moderar comentarios y reviews</li>
-       <li>⚙️ Configurar parámetros del sistema</li>
+       <li> Configurar parámetros del sistema</li>
        <li>🔄 Reactivar cuentas eliminadas</li>
      </ul>
    </div>
@@ -333,7 +333,7 @@ Funcionalidades planeadas para próximas versiones:
 - 🎨 Temas personalizables
 - 📚 Integración con más APIs de libros
 - 🔗 Compartir en redes sociales
-- 📖 Modo sin conexión (PWA)
+-  Modo sin conexión (PWA)
 
 ---
 
@@ -358,7 +358,7 @@ Consulta la guía de contribución en el repositorio para más detalles.
 - 📧 Email: soporte@aeternum.com
 - 💬 Discord: `Servidor de Aeternum ](https://discord.gg/aeternum)
 - 🐛 Reportar bug: [GitHub Issues ](https://github.com/Santixxtt/Aeternum/issues)
-- 📖 Documentación: Estás aquí 😊
+-  Documentación: Estás aquí 😊
 
 ---
 

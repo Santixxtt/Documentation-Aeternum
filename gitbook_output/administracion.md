@@ -227,7 +227,7 @@ Genera reportes detallados de préstamos filtrados por:
 
 ---
 
-# ⚙️ Configuración del Sistema
+#  Configuración del Sistema
 
 **Endpoint:** `GET /admin/configuracion`
 

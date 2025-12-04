@@ -16,37 +16,37 @@
 
    <div class="feature-grid">
      <div class="feature-card">
-       <div class="feature-icon">🔐</div>
+       <div class="feature-icon"></div>
        <h3>Autenticación Segura</h3>
        <p>Sistema robusto con JWT, recuperación de contraseña y protección contra ataques de fuerza bruta.</p>
      </div>
      
      <div class="feature-card">
-       <div class="feature-icon">📖</div>
+       <div class="feature-icon"></div>
        <h3>Préstamos Duales</h3>
        <p>Solicita libros físicos o accede a versiones digitales instantáneamente desde cualquier dispositivo.</p>
      </div>
      
      <div class="feature-card">
-       <div class="feature-icon">💝</div>
+       <div class="feature-icon"></div>
        <h3>Lista de Deseos</h3>
        <p>Guarda tus libros favoritos y recibe notificaciones cuando estén disponibles.</p>
      </div>
      
      <div class="feature-card">
-       <div class="feature-icon">⭐</div>
+       <div class="feature-icon"></div>
        <h3>Reviews & Ratings</h3>
        <p>Califica y comenta libros. Ayuda a otros usuarios a descubrir grandes lecturas.</p>
      </div>
      
      <div class="feature-card">
-       <div class="feature-icon">📥</div>
+       <div class="feature-icon"></div>
        <h3>Descargas</h3>
        <p>Descarga libros para leer sin conexión cuando lo necesites.</p>
      </div>
      
      <div class="feature-card">
-       <div class="feature-icon">⚙️</div>
+       <div class="feature-icon"></div>
        <h3>Panel Admin</h3>
        <p>Gestión completa de libros, usuarios y préstamos para bibliotecarios.</p>
      </div>
@@ -94,7 +94,7 @@
      <ul style="list-style: none; padding: 0; color: #b8b8b8;">
        <li style="margin: 0.5rem 0;">📧 Email: soporte@aeternum.com</li>
        <li style="margin: 0.5rem 0;">🐛 Reportar bug: <a href="https://github.com/Santixxtt/Aeternum/issues" style="color: #FF69B4;">GitHub Issues</a></li>
-       <li style="margin: 0.5rem 0;">📖 Documentación completa en esta misma página</li>
+       <li style="margin: 0.5rem 0;"> Documentación completa en esta misma página</li>
      </ul>
    </div>
 

@@ -8,7 +8,7 @@
 * [Instalación](instalacion.md)
 * [Arquitectura del Sistema](arquitectura.md)
 
-## 🔐 Autenticación
+##  Autenticación
 
 * [Sistema de Autenticación](auth_routes.md)
 * [Recuperación de Contraseña](password_reset.md)
@@ -22,7 +22,7 @@
 * [Sistema de Préstamos](prestamos.md)
 * [Reviews y Calificaciones](reviews.md)
 
-## ⚙️ Administración
+##  Administración
 
 * [Panel de Administración](administracion.md)
 

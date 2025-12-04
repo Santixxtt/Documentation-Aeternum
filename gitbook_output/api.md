@@ -12,7 +12,7 @@ Referencia completa de todos los endpoints de la API de Aeternum.
 
 ---
 
-# 🔐 Autenticación
+#  Autenticación
 
 ## POST /auth/register
 
@@ -269,7 +269,7 @@ Authorization: Bearer {token}
 
 ---
 
-# 💝 Lista de Deseos
+#  Lista de Deseos
 
 ## GET /wishlist/list
 
@@ -396,7 +396,7 @@ Authorization: Bearer {token}
 
 ---
 
-# ⭐ Reviews y Calificaciones
+#  Reviews y Calificaciones
 
 ## POST /reviews/rate
 
@@ -629,7 +629,7 @@ Authorization: Bearer {token}
 
 ---
 
-# 📖 Préstamos Digitales
+#  Préstamos Digitales
 
 ## POST /prestamos/digital
 
@@ -831,7 +831,7 @@ Authorization: Bearer {token}
 | **200** | ✅ Solicitud exitosa |
 | **201** | ✅ Recurso creado exitosamente |
 | **400** | ❌ Error en la solicitud (datos inválidos) |
-| **401** | 🔐 No autenticado (token faltante o inválido) |
+| **401** |  No autenticado (token faltante o inválido) |
 | **403** | 🚫 Prohibido (sin permisos suficientes) |
 | **404** | 🔍 Recurso no encontrado |
 | **409** | ⚠️ Conflicto (recurso ya existe) |
