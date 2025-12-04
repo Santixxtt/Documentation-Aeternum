@@ -20,23 +20,101 @@
   body {
     --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-problematic: #E91E8C;
+  --color-foreground-primary: black;
+  --color-foreground-secondary: #5a5c63;
+  --color-foreground-muted: #72747e;
+  --color-foreground-border: #878787;
+  --color-background-primary: white;
+  --color-background-secondary: #f8f9fb;
+  --color-background-hover: #efeff4;
+  --color-background-border: #eeebee;
   --color-brand-primary: #E91E8C;
   --color-brand-content: #9B59B6;
-  --color-admonition-background: #f8f9fa;
-  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-stack--monospace: 'Fira Code', 'Courier New', monospace;
+  --color-link: #E91E8C;
+  --color-link--hover: #9B59B6;
+  --color-link-underline: #E91E8C;
+  --color-link-underline--hover: #9B59B6;
   
   }
   @media not print {
     body[data-theme="dark"] {
       --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #FF69B4;
+  --color-brand-content: #BA8ED9;
+  --color-background-primary: #1a1a1a;
+  --color-background-secondary: #242424;
+  --color-background-hover: #2e2e2e;
+  --color-background-border: #3d3d3d;
+  --color-sidebar-background: #1a1a1a;
+  --color-sidebar-background-border: #3d3d3d;
+  --color-sidebar-brand-text: #FF69B4;
+  --color-sidebar-caption-text: #BA8ED9;
+  --color-sidebar-link-text: #b8b8b8;
+  --color-sidebar-link-text--top-level: #ffffff;
+  --color-sidebar-item-background--current: #2e2e2e;
+  --color-sidebar-item-background--hover: #2e2e2e;
+  --color-sidebar-item-expander-background: transparent;
+  --color-sidebar-item-expander-background--hover: #3d3d3d;
+  --color-sidebar-search-background: #242424;
+  --color-sidebar-search-background--focus: #2e2e2e;
+  --color-sidebar-search-border: #3d3d3d;
+  --color-sidebar-search-icon: #b8b8b8;
+  --color-foreground-primary: #e8e8e8;
+  --color-foreground-secondary: #b8b8b8;
+  --color-foreground-muted: #888888;
+  --color-foreground-border: #3d3d3d;
+  --color-link: #FF69B4;
+  --color-link--hover: #BA8ED9;
+  --color-link-underline: #FF69B4;
+  --color-link-underline--hover: #BA8ED9;
+  --color-admonition-background: #242424;
+  --color-admonition-title-background: #2e2e2e;
+  --color-inline-code-background: #2e2e2e;
+  --color-highlighted-background: #3d3d3d;
+  --color-header-background: #1a1a1a;
+  --color-header-border: #3d3d3d;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
         --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #FF69B4;
+  --color-brand-content: #BA8ED9;
+  --color-background-primary: #1a1a1a;
+  --color-background-secondary: #242424;
+  --color-background-hover: #2e2e2e;
+  --color-background-border: #3d3d3d;
+  --color-sidebar-background: #1a1a1a;
+  --color-sidebar-background-border: #3d3d3d;
+  --color-sidebar-brand-text: #FF69B4;
+  --color-sidebar-caption-text: #BA8ED9;
+  --color-sidebar-link-text: #b8b8b8;
+  --color-sidebar-link-text--top-level: #ffffff;
+  --color-sidebar-item-background--current: #2e2e2e;
+  --color-sidebar-item-background--hover: #2e2e2e;
+  --color-sidebar-item-expander-background: transparent;
+  --color-sidebar-item-expander-background--hover: #3d3d3d;
+  --color-sidebar-search-background: #242424;
+  --color-sidebar-search-background--focus: #2e2e2e;
+  --color-sidebar-search-border: #3d3d3d;
+  --color-sidebar-search-icon: #b8b8b8;
+  --color-foreground-primary: #e8e8e8;
+  --color-foreground-secondary: #b8b8b8;
+  --color-foreground-muted: #888888;
+  --color-foreground-border: #3d3d3d;
+  --color-link: #FF69B4;
+  --color-link--hover: #BA8ED9;
+  --color-link-underline: #FF69B4;
+  --color-link-underline--hover: #BA8ED9;
+  --color-admonition-background: #242424;
+  --color-admonition-title-background: #2e2e2e;
+  --color-inline-code-background: #2e2e2e;
+  --color-highlighted-background: #3d3d3d;
+  --color-header-background: #1a1a1a;
+  --color-header-border: #3d3d3d;
   
       }
     }
@@ -200,31 +278,31 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">🎯 Comenzando</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">🔐 Autenticación</span></p>
+<p class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Autenticación de Usuarios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">👤 Módulo de Usuarios</span></p>
+<p class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">📚 Gestión de Libros</span></p>
+<p class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">👨‍💼 Administración</span></p>
+<p class="caption" role="heading"><span class="caption-text">Administración</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">🔧 Técnico</span></p>
+<p class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
@@ -273,7 +351,7 @@
 </div>
 <hr class="docutils" />
 <section id="iniciar-sesion">
-<h2>🔐 Iniciar Sesión<a class="headerlink" href="#iniciar-sesion" title="Link to this heading">¶</a></h2>
+<h2>Iniciar Sesión<a class="headerlink" href="#iniciar-sesion" title="Link to this heading">¶</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/auth/login</span></code></p>
 <div class="endpoint-card">
   <div class="endpoint-title">
@@ -356,7 +434,7 @@
 </section>
 <hr class="docutils" />
 <section id="registrar-nueva-cuenta">
-<h2>📝 Registrar Nueva Cuenta<a class="headerlink" href="#registrar-nueva-cuenta" title="Link to this heading">¶</a></h2>
+<h2>Registrar Nueva Cuenta<a class="headerlink" href="#registrar-nueva-cuenta" title="Link to this heading">¶</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/auth/register</span></code></p>
 <div class="endpoint-card">
   <div class="endpoint-title">
@@ -397,7 +475,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">apellido</span></code> (string, requerido): Tu apellido</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tipo_identificacion</span></code> (string, requerido): Tipo de documento</p>
 <ul>
-<li><p>Valores válidos: <code class="docutils literal notranslate"><span class="pre">CC</span></code> (Cédula de Ciudadanía), <code class="docutils literal notranslate"><span class="pre">TI</span></code> (Tarjeta de Identidad), <code class="docutils literal notranslate"><span class="pre">CE</span></code> (Cédula de Extranjería), <code class="docutils literal notranslate"><span class="pre">PA</span></code> (Pasaporte)</p></li>
+<li><p>Valores válidos: <code class="docutils literal notranslate"><span class="pre">CC</span></code>, <code class="docutils literal notranslate"><span class="pre">TI</span></code>, <code class="docutils literal notranslate"><span class="pre">CE</span></code>, <code class="docutils literal notranslate"><span class="pre">PA</span></code></p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">num_identificacion</span></code> (string, requerido): Número de tu documento</p></li>
@@ -461,7 +539,7 @@
 </section>
 <hr class="docutils" />
 <section id="notas-de-seguridad">
-<h2>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">¶</a></h2>
+<h2>Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">¶</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Advertencia</p>
 <p><strong>Protecciones implementadas:</strong></p>
@@ -484,15 +562,15 @@
 <p><strong>3. Registro de Consentimiento (GDPR)</strong></p>
 <p>Cumplimos con leyes de protección de datos guardando:</p>
 <ul class="simple">
-<li><p>✅ Fecha y hora de aceptación</p></li>
-<li><p>✅ Dirección IP del registro</p></li>
-<li><p>✅ User-Agent (navegador usado)</p></li>
-<li><p>✅ Versión de la política aceptada</p></li>
+<li><p>Fecha y hora de aceptación</p></li>
+<li><p>Dirección IP del registro</p></li>
+<li><p>User-Agent (navegador usado)</p></li>
+<li><p>Versión de la política aceptada</p></li>
 </ul>
 <p><strong>4. Tokens JWT</strong></p>
 <ul class="simple">
 <li><p>Expiración: <strong>24 horas</strong></p></li>
-<li><p>Firmados con clave secreta (<code class="docutils literal notranslate"><span class="pre">SECRET_KEY</span></code>)</p></li>
+<li><p>Firmados con clave secreta</p></li>
 <li><p>Incluyen: <code class="docutils literal notranslate"><span class="pre">user_id</span></code>, <code class="docutils literal notranslate"><span class="pre">correo</span></code>, <code class="docutils literal notranslate"><span class="pre">rol</span></code></p></li>
 <li><p>No almacenan información sensible</p></li>
 </ul>
@@ -506,14 +584,13 @@
 </section>
 <hr class="docutils" />
 <section id="mejores-practicas">
-<h2>🛡️ Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Link to this heading">¶</a></h2>
+<h2>Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Link to this heading">¶</a></h2>
 <section id="para-usuarios">
 <h3>Para Usuarios<a class="headerlink" href="#para-usuarios" title="Link to this heading">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
 <ul class="simple">
 <li><p><strong>Usa contraseñas únicas</strong>: No reutilices contraseñas de otros sitios</p></li>
-<li><p><strong>Habilita autenticación de 2 factores</strong> (si está disponible)</p></li>
 <li><p><strong>No compartas tu token</strong>: Trátalo como tu contraseña</p></li>
 <li><p><strong>Cierra sesión</strong>: Especialmente en dispositivos compartidos</p></li>
 <li><p><strong>Actualiza tu contraseña</strong>: Cada 3-6 meses</p></li>
@@ -522,15 +599,16 @@
 </section>
 <section id="para-desarrolladores">
 <h3>Para Desarrolladores<a class="headerlink" href="#para-desarrolladores" title="Link to this heading">¶</a></h3>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// ✅ CORRECTO: Guardar token de forma segura</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// ✓ CORRECTO: Guardar token de forma segura</span>
 <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;token&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">access_token</span><span class="p">);</span>
 
-<span class="c1">// ✅ CORRECTO: Incluir en headers</span>
+<span class="c1">// ✓ CORRECTO: Incluir en headers</span>
 <span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="s1">&#39;Authorization&#39;</span><span class="o">:</span><span class="w"> </span><span class="sb">`Bearer </span><span class="si">${</span><span class="nx">token</span><span class="si">}</span><span class="sb">`</span>
 <span class="p">}</span>
 
-<span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">password</span><span class="p">);</span>
+<span class="c1">// ✗ INCORRECTO: Nunca guardes contraseñas</span>
+<span class="c1">// localStorage.setItem(&#39;password&#39;, password);</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -578,7 +656,11 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link " href="https://github.com/Santixxtt/Aeternum" aria-label="GitHub"></a>
+              <a class="muted-link " href="https://github.com/Santixxtt/Aeternum" aria-label="GitHub">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
               
             </div>
           </div>
@@ -599,22 +681,22 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Autenticación de Usuarios</a><ul>
-<li><a class="reference internal" href="#iniciar-sesion">🔐 Iniciar Sesión</a><ul>
+<li><a class="reference internal" href="#iniciar-sesion">Iniciar Sesión</a><ul>
 <li><a class="reference internal" href="#que-hace">¿Qué hace?</a></li>
 <li><a class="reference internal" href="#datos-a-enviar">Datos a Enviar</a></li>
 <li><a class="reference internal" href="#respuesta-exitosa">Respuesta Exitosa</a></li>
 <li><a class="reference internal" href="#posibles-errores">Posibles Errores</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#registrar-nueva-cuenta">📝 Registrar Nueva Cuenta</a><ul>
+<li><a class="reference internal" href="#registrar-nueva-cuenta">Registrar Nueva Cuenta</a><ul>
 <li><a class="reference internal" href="#id1">¿Qué hace?</a></li>
 <li><a class="reference internal" href="#id2">Datos a Enviar</a></li>
 <li><a class="reference internal" href="#id3">Respuesta Exitosa</a></li>
 <li><a class="reference internal" href="#id4">Posibles Errores</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
-<li><a class="reference internal" href="#mejores-practicas">🛡️ Mejores Prácticas</a><ul>
+<li><a class="reference internal" href="#notas-de-seguridad">Notas de Seguridad</a></li>
+<li><a class="reference internal" href="#mejores-practicas">Mejores Prácticas</a><ul>
 <li><a class="reference internal" href="#para-usuarios">Para Usuarios</a></li>
 <li><a class="reference internal" href="#para-desarrolladores">Para Desarrolladores</a></li>
 </ul>
@@ -630,10 +712,11 @@
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=d764ce93"></script>
+</div><script src="_static/documentation_options.js?v=54b199d4"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/custom.js"></script>
     </body>
 </html>

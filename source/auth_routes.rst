@@ -10,7 +10,7 @@ Este módulo maneja todo lo relacionado con el registro y login de usuarios en A
 
 ----
 
-🔐 Iniciar Sesión
+Iniciar Sesión
 ==================
 
 **Endpoint:** ``POST /auth/login``
@@ -118,7 +118,7 @@ Posibles Errores
 
 ----
 
-📝 Registrar Nueva Cuenta
+Registrar Nueva Cuenta
 ===========================
 
 **Endpoint:** ``POST /auth/register``
@@ -170,7 +170,7 @@ Datos a Enviar
 - ``apellido`` (string, requerido): Tu apellido  
 - ``tipo_identificacion`` (string, requerido): Tipo de documento
   
-  - Valores válidos: ``CC`` (Cédula de Ciudadanía), ``TI`` (Tarjeta de Identidad), ``CE`` (Cédula de Extranjería), ``PA`` (Pasaporte)
+  - Valores válidos: ``CC``, ``TI``, ``CE``, ``PA``
 
 - ``num_identificacion`` (string, requerido): Número de tu documento  
 - ``correo`` (string, requerido): Tu correo electrónico (debe ser único)  
@@ -248,7 +248,7 @@ Posibles Errores
 
 ----
 
-🔒 Notas de Seguridad
+Notas de Seguridad
 ======================
 
 .. warning::
@@ -276,15 +276,15 @@ Sistema de bloqueo progresivo:
 
 Cumplimos con leyes de protección de datos guardando:
 
-- ✅ Fecha y hora de aceptación
-- ✅ Dirección IP del registro
-- ✅ User-Agent (navegador usado)
-- ✅ Versión de la política aceptada
+- Fecha y hora de aceptación
+- Dirección IP del registro
+- User-Agent (navegador usado)
+- Versión de la política aceptada
 
 **4. Tokens JWT**
 
 - Expiración: **24 horas**
-- Firmados con clave secreta (``SECRET_KEY``)
+- Firmados con clave secreta
 - Incluyen: ``user_id``, ``correo``, ``rol``
 - No almacenan información sensible
 
@@ -297,7 +297,7 @@ Cumplimos con leyes de protección de datos guardando:
 
 ----
 
-🛡️ Mejores Prácticas
+Mejores Prácticas
 =======================
 
 Para Usuarios
@@ -306,7 +306,6 @@ Para Usuarios
 .. tip::
    
    - **Usa contraseñas únicas**: No reutilices contraseñas de otros sitios
-   - **Habilita autenticación de 2 factores** (si está disponible)
    - **No compartas tu token**: Trátalo como tu contraseña
    - **Cierra sesión**: Especialmente en dispositivos compartidos
    - **Actualiza tu contraseña**: Cada 3-6 meses
@@ -316,15 +315,16 @@ Para Desarrolladores
 
 .. code-block:: javascript
 
-   // ✅ CORRECTO: Guardar token de forma segura
+   // ✓ CORRECTO: Guardar token de forma segura
    localStorage.setItem('token', response.access_token);
    
-   // ✅ CORRECTO: Incluir en headers
+   // ✓ CORRECTO: Incluir en headers
    headers: {
      'Authorization': `Bearer ${token}`
    }
    
-   localStorage.setItem('password', password);
+   // ✗ INCORRECTO: Nunca guardes contraseñas
+   // localStorage.setItem('password', password);
 
 .. note::
    

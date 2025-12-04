@@ -20,23 +20,101 @@
   body {
     --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-problematic: #E91E8C;
+  --color-foreground-primary: black;
+  --color-foreground-secondary: #5a5c63;
+  --color-foreground-muted: #72747e;
+  --color-foreground-border: #878787;
+  --color-background-primary: white;
+  --color-background-secondary: #f8f9fb;
+  --color-background-hover: #efeff4;
+  --color-background-border: #eeebee;
   --color-brand-primary: #E91E8C;
   --color-brand-content: #9B59B6;
-  --color-admonition-background: #f8f9fa;
-  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-stack--monospace: 'Fira Code', 'Courier New', monospace;
+  --color-link: #E91E8C;
+  --color-link--hover: #9B59B6;
+  --color-link-underline: #E91E8C;
+  --color-link-underline--hover: #9B59B6;
   
   }
   @media not print {
     body[data-theme="dark"] {
       --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #FF69B4;
+  --color-brand-content: #BA8ED9;
+  --color-background-primary: #1a1a1a;
+  --color-background-secondary: #242424;
+  --color-background-hover: #2e2e2e;
+  --color-background-border: #3d3d3d;
+  --color-sidebar-background: #1a1a1a;
+  --color-sidebar-background-border: #3d3d3d;
+  --color-sidebar-brand-text: #FF69B4;
+  --color-sidebar-caption-text: #BA8ED9;
+  --color-sidebar-link-text: #b8b8b8;
+  --color-sidebar-link-text--top-level: #ffffff;
+  --color-sidebar-item-background--current: #2e2e2e;
+  --color-sidebar-item-background--hover: #2e2e2e;
+  --color-sidebar-item-expander-background: transparent;
+  --color-sidebar-item-expander-background--hover: #3d3d3d;
+  --color-sidebar-search-background: #242424;
+  --color-sidebar-search-background--focus: #2e2e2e;
+  --color-sidebar-search-border: #3d3d3d;
+  --color-sidebar-search-icon: #b8b8b8;
+  --color-foreground-primary: #e8e8e8;
+  --color-foreground-secondary: #b8b8b8;
+  --color-foreground-muted: #888888;
+  --color-foreground-border: #3d3d3d;
+  --color-link: #FF69B4;
+  --color-link--hover: #BA8ED9;
+  --color-link-underline: #FF69B4;
+  --color-link-underline--hover: #BA8ED9;
+  --color-admonition-background: #242424;
+  --color-admonition-title-background: #2e2e2e;
+  --color-inline-code-background: #2e2e2e;
+  --color-highlighted-background: #3d3d3d;
+  --color-header-background: #1a1a1a;
+  --color-header-border: #3d3d3d;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
         --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #FF69B4;
+  --color-brand-content: #BA8ED9;
+  --color-background-primary: #1a1a1a;
+  --color-background-secondary: #242424;
+  --color-background-hover: #2e2e2e;
+  --color-background-border: #3d3d3d;
+  --color-sidebar-background: #1a1a1a;
+  --color-sidebar-background-border: #3d3d3d;
+  --color-sidebar-brand-text: #FF69B4;
+  --color-sidebar-caption-text: #BA8ED9;
+  --color-sidebar-link-text: #b8b8b8;
+  --color-sidebar-link-text--top-level: #ffffff;
+  --color-sidebar-item-background--current: #2e2e2e;
+  --color-sidebar-item-background--hover: #2e2e2e;
+  --color-sidebar-item-expander-background: transparent;
+  --color-sidebar-item-expander-background--hover: #3d3d3d;
+  --color-sidebar-search-background: #242424;
+  --color-sidebar-search-background--focus: #2e2e2e;
+  --color-sidebar-search-border: #3d3d3d;
+  --color-sidebar-search-icon: #b8b8b8;
+  --color-foreground-primary: #e8e8e8;
+  --color-foreground-secondary: #b8b8b8;
+  --color-foreground-muted: #888888;
+  --color-foreground-border: #3d3d3d;
+  --color-link: #FF69B4;
+  --color-link--hover: #BA8ED9;
+  --color-link-underline: #FF69B4;
+  --color-link-underline--hover: #BA8ED9;
+  --color-admonition-background: #242424;
+  --color-admonition-title-background: #2e2e2e;
+  --color-inline-code-background: #2e2e2e;
+  --color-highlighted-background: #3d3d3d;
+  --color-header-background: #1a1a1a;
+  --color-header-border: #3d3d3d;
   
       }
     }
@@ -200,31 +278,31 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">🎯 Comenzando</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instalacion.html">Instalación y Requisitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura del Sistema</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">🔐 Autenticación</span></p>
+<p class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">👤 Módulo de Usuarios</span></p>
+<p class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">📚 Gestión de Libros</span></p>
+<p class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">👨‍💼 Administración</span></p>
+<p class="caption" role="heading"><span class="caption-text">Administración</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">🔧 Técnico</span></p>
+<p class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
@@ -265,17 +343,15 @@
         </div>
         <article role="main" id="furo-main-content">
           <section id="bienvenido-a-aeternum">
-<h1>Bienvenido a Aeternum 📚<a class="headerlink" href="#bienvenido-a-aeternum" title="Link to this heading">¶</a></h1>
-<a class="reference internal image-reference" href="_images/aeternum_logo.png"><img alt="Logo Aeternum" class="align-center" src="_images/aeternum_logo.png" style="width: 200px;" />
-</a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p><strong>Aeternum</strong> es una plataforma moderna de biblioteca virtual que revoluciona la forma en que accedes a los libros.
-Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digital instantáneo.</p>
-<hr class="docutils" />
+<h1>Bienvenido a Aeternum<a class="headerlink" href="#bienvenido-a-aeternum" title="Link to this heading">¶</a></h1>
+<div style="text-align: center; padding: 2rem 0 3rem 0;">
+  <h2 style="font-size: 1.4rem; color: #b8b8b8; max-width: 800px; margin: 0 auto; line-height: 1.8; font-weight: 400;">
+    Una plataforma moderna de biblioteca virtual que revoluciona la forma en que accedes a los libros.
+    Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digital instantáneo.
+  </h2>
+</div><hr class="docutils" />
 <section id="caracteristicas-principales">
-<h2>✨ Características Principales<a class="headerlink" href="#caracteristicas-principales" title="Link to this heading">¶</a></h2>
+<h2>Características Principales<a class="headerlink" href="#caracteristicas-principales" title="Link to this heading">¶</a></h2>
 <div class="feature-grid">
   <div class="feature-card">
     <div class="feature-icon">🔐</div>
@@ -308,14 +384,14 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
   </div>
 
   <div class="feature-card">
-    <div class="feature-icon">👨‍💼</div>
+    <div class="feature-icon">⚙️</div>
     <h3>Panel Admin</h3>
     <p>Gestión completa de libros, usuarios y préstamos para bibliotecarios.</p>
   </div>
 </div></section>
 <hr class="docutils" />
 <section id="inicio-rapido">
-<h2>🚀 Inicio Rápido<a class="headerlink" href="#inicio-rapido" title="Link to this heading">¶</a></h2>
+<h2>Inicio Rápido<a class="headerlink" href="#inicio-rapido" title="Link to this heading">¶</a></h2>
 <p>¿Nuevo en Aeternum? Empieza aquí:</p>
 <ol class="arabic simple">
 <li><p>Lee la <a class="reference internal" href="introduccion.html"><span class="doc">Introducción a Aeternum</span></a> para conocer el proyecto</p></li>
@@ -326,9 +402,9 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </section>
 <hr class="docutils" />
 <section id="contenido-de-la-documentacion">
-<h2>📖 Contenido de la Documentación<a class="headerlink" href="#contenido-de-la-documentacion" title="Link to this heading">¶</a></h2>
+<h2>Contenido de la Documentación<a class="headerlink" href="#contenido-de-la-documentacion" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">🎯 Comenzando</span></p>
+<p class="caption" role="heading"><span class="caption-text">Comenzando</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción a Aeternum</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="introduccion.html#que-es-aeternum">¿Qué es Aeternum?</a></li>
@@ -348,13 +424,13 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">🔐 Autenticación</span></p>
+<p class="caption" role="heading"><span class="caption-text">Autenticación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#iniciar-sesion">🔐 Iniciar Sesión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#registrar-nueva-cuenta">📝 Registrar Nueva Cuenta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#mejores-practicas">🛡️ Mejores Prácticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#iniciar-sesion">Iniciar Sesión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#registrar-nueva-cuenta">Registrar Nueva Cuenta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#notas-de-seguridad">Notas de Seguridad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth_routes.html#mejores-practicas">Mejores Prácticas</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a><ul>
@@ -366,7 +442,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">👤 Módulo de Usuarios</span></p>
+<p class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#dashboard-inicio">🏠 Dashboard / Inicio</a></li>
@@ -384,7 +460,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">📚 Gestión de Libros</span></p>
+<p class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="prestamos.html#prestamos-digitales">📖 Préstamos Digitales</a></li>
@@ -406,7 +482,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">👨‍💼 Administración</span></p>
+<p class="caption" role="heading"><span class="caption-text">Administración</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="administracion.html#funcionalidades-principales">🎯 Funcionalidades Principales</a></li>
@@ -418,7 +494,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">🔧 Técnico</span></p>
+<p class="caption" role="heading"><span class="caption-text">Referencia Técnica</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
@@ -441,7 +517,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </section>
 <hr class="docutils" />
 <section id="stack-tecnologico">
-<h2>🛠️ Stack Tecnológico<a class="headerlink" href="#stack-tecnologico" title="Link to this heading">¶</a></h2>
+<h2>Stack Tecnológico<a class="headerlink" href="#stack-tecnologico" title="Link to this heading">¶</a></h2>
 <div class="table-wrapper colwidths-given docutils container">
 <table class="docutils align-default">
 <colgroup>
@@ -476,6 +552,28 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 </table>
 </div>
 <hr class="docutils" />
+<div style="background: rgba(255, 105, 180, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid #FF69B4;
+            margin: 3rem 0;">
+  <h3 style="color: #FF69B4; margin-top: 0;">¿Necesitas ayuda?</h3>
+  <p style="font-size: 1.1em; line-height: 1.7; margin-bottom: 1rem; color: #e8e8e8;">
+    Estamos aquí para ayudarte a sacar el máximo provecho de Aeternum.
+  </p>
+  <ul style="list-style: none; padding: 0; color: #b8b8b8;">
+    <li style="margin: 0.5rem 0;">📧 Email: soporte@aeternum.com</li>
+    <li style="margin: 0.5rem 0;">🐛 Reportar bug: <a href="https://github.com/Santixxtt/Aeternum/issues" style="color: #FF69B4;">GitHub Issues</a></li>
+    <li style="margin: 0.5rem 0;">📖 Documentación completa en esta misma página</li>
+  </ul>
+</div><hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Desarrollador:</strong> Santiago Tuta
+<strong>Versión actual:</strong> 1.0.0
+<strong>Última actualización:</strong> Enero 2025
+<strong>Licencia:</strong> MIT</p>
+</div>
 </section>
 </section>
 
@@ -506,7 +604,11 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link " href="https://github.com/Santixxtt/Aeternum" aria-label="GitHub"></a>
+              <a class="muted-link " href="https://github.com/Santixxtt/Aeternum" aria-label="GitHub">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
               
             </div>
           </div>
@@ -526,13 +628,13 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Bienvenido a Aeternum 📚</a><ul>
-<li><a class="reference internal" href="#caracteristicas-principales">✨ Características Principales</a></li>
-<li><a class="reference internal" href="#inicio-rapido">🚀 Inicio Rápido</a></li>
-<li><a class="reference internal" href="#contenido-de-la-documentacion">📖 Contenido de la Documentación</a><ul>
+<li><a class="reference internal" href="#">Bienvenido a Aeternum</a><ul>
+<li><a class="reference internal" href="#caracteristicas-principales">Características Principales</a></li>
+<li><a class="reference internal" href="#inicio-rapido">Inicio Rápido</a></li>
+<li><a class="reference internal" href="#contenido-de-la-documentacion">Contenido de la Documentación</a><ul>
 </ul>
 </li>
-<li><a class="reference internal" href="#stack-tecnologico">🛠️ Stack Tecnológico</a></li>
+<li><a class="reference internal" href="#stack-tecnologico">Stack Tecnológico</a></li>
 </ul>
 </li>
 </ul>
@@ -544,10 +646,11 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=d764ce93"></script>
+</div><script src="_static/documentation_options.js?v=54b199d4"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/custom.js"></script>
     </body>
 </html>

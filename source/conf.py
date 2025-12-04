@@ -1,88 +1,94 @@
-# Configuration file for the Sphinx documentation builder.
+# Configuration file for Sphinx - Estilo GitBook
 
 import sys
 import os
 
-# -- Project information -----------------------------------------------------
+# -- Project information
 project = 'Aeternum'
 copyright = '2025, Santiago Tuta'
 author = 'Santiago Tuta'
 release = '1.0.0'
-version = '1.0'
 
-# -- General configuration ---------------------------------------------------
+# -- General configuration
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
-    'sphinx.ext.todo',
-    'sphinx.ext.githubpages',
+    'sphinx_copybutton',  # Botón copiar en código
 ]
 
 templates_path = ['_templates']
 exclude_patterns = []
-
 language = 'es'
 
-# -- Options for HTML output -------------------------------------------------
-html_theme = 'furo'
+# -- HTML output con Sphinx Book Theme (parecido a GitBook)
+html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
-# CSS personalizado
 html_css_files = [
     'custom.css',
 ]
 
-# Logo del proyecto
+html_js_files = [
+    'custom.js',
+]
+
 html_logo = "_static/aeternum_logo.png"
 html_favicon = "_static/favicon.ico"
-
-# Título que aparece en la pestaña del navegador
 html_title = "Aeternum Docs"
 
-# Opciones del tema Furo
+# Configuración del tema Book (estilo GitBook)
 html_theme_options = {
-    "sidebar_hide_name": False,
+    # Logo y branding
+    "logo_only": False,
+    "show_toc_level": 2,
     
-    # Colores personalizados
-    "light_css_variables": {
-        "color-brand-primary": "#E91E8C",
-        "color-brand-content": "#9B59B6",
-        "color-admonition-background": "#f8f9fa",
-        "font-stack": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-        "font-stack--monospace": "'Fira Code', 'Courier New', monospace",
-    },
-    
-    # Links del footer
-    "footer_icons": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/Santixxtt/Aeternum",
-            "html": "",
-            "class": "",
-        },
-    ],
+    # Colores Aeternum
+    "repository_url": "https://github.com/Santixxtt/Aeternum",
+    "use_repository_button": True,
+    "use_edit_page_button": False,
+    "use_issues_button": True,
+    "use_download_button": False,
     
     # Navegación
-    "navigation_with_keys": True,
+    "show_navbar_depth": 2,
+    "show_prev_next": True,
     
-    # Personalización adicional
-    "top_of_page_button": "edit",
+    # Botón custom superior derecha
+    "extra_navbar": """
+        <div style="margin-left: auto;">
+            <a href="https://aeternum.com" 
+               target="_blank"
+               style="background: linear-gradient(135deg, #FF69B4, #BA8ED9);
+                      color: white;
+                      padding: 0.5rem 1.5rem;
+                      border-radius: 8px;
+                      text-decoration: none;
+                      font-weight: 600;
+                      display: inline-block;
+                      transition: all 0.3s ease;">
+                Web Aeternum
+            </a>
+        </div>
+    """,
+    
+    # Búsqueda
+    "search_bar_text": "Buscar...",
+    
+    # Footer
+    "extra_footer": """
+        <div style="text-align: center; padding: 1rem; color: #888;">
+            Hecho con ❤️ por Santiago Tuta | © 2025 Aeternum
+        </div>
+    """,
 }
 
-# Configuración de pygments (syntax highlighting)
+# Pygments (syntax highlighting)
 pygments_style = "monokai"
-pygments_dark_style = "monokai"
 
 # Opciones adicionales
 html_show_sourcelink = False
 html_show_sphinx = False
 
-# Metadatos
-html_context = {
-    "display_github": True,
-    "github_user": "Santixxtt",
-    "github_repo": "Aeternum",
-    "github_version": "main",
-    "conf_py_path": "/docs/",
-}
+# Búsqueda
+html_search_language = 'es'

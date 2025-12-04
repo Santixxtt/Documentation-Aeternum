@@ -1,23 +1,21 @@
-
 .. Aeternum documentation master file
 
 ====================================
-Bienvenido a Aeternum 📚
+Bienvenido a Aeternum
 ====================================
 
-.. image:: _static/aeternum_logo.png
-   :alt: Logo Aeternum
-   :align: center
-   :width: 200px
+.. raw:: html
 
-|
-
-**Aeternum** es una plataforma moderna de biblioteca virtual que revoluciona la forma en que accedes a los libros. 
-Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digital instantáneo.
+   <div style="text-align: center; padding: 2rem 0 3rem 0;">
+     <h2 style="font-size: 1.4rem; color: #b8b8b8; max-width: 800px; margin: 0 auto; line-height: 1.8; font-weight: 400;">
+       Una plataforma moderna de biblioteca virtual que revoluciona la forma en que accedes a los libros. 
+       Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digital instantáneo.
+     </h2>
+   </div>
 
 ----
 
-✨ Características Principales
+Características Principales
 ================================
 
 .. raw:: html
@@ -54,7 +52,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
      </div>
      
      <div class="feature-card">
-       <div class="feature-icon">👨‍💼</div>
+       <div class="feature-icon">⚙️</div>
        <h3>Panel Admin</h3>
        <p>Gestión completa de libros, usuarios y préstamos para bibliotecarios.</p>
      </div>
@@ -62,7 +60,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 
 ----
 
-🚀 Inicio Rápido
+Inicio Rápido
 =================
 
 ¿Nuevo en Aeternum? Empieza aquí:
@@ -74,12 +72,12 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 
 ----
 
-📖 Contenido de la Documentación
+Contenido de la Documentación
 ==================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🎯 Comenzando
+   :caption: Comenzando
 
    introduccion
    instalacion
@@ -87,14 +85,14 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🔐 Autenticación
+   :caption: Autenticación
 
    auth_routes
    password_reset
 
 .. toctree::
    :maxdepth: 2
-   :caption: 👤 Módulo de Usuarios
+   :caption: Módulo de Usuarios
 
    usuario
    perfil
@@ -102,7 +100,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 
 .. toctree::
    :maxdepth: 2
-   :caption: 📚 Gestión de Libros
+   :caption: Gestión de Libros
 
    catalogo
    prestamos
@@ -110,14 +108,14 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 
 .. toctree::
    :maxdepth: 2
-   :caption: 👨‍💼 Administración
+   :caption: Administración
 
    administracion
    gestion_prestamos
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🔧 Técnico
+   :caption: Referencia Técnica
 
    backend
    frontend
@@ -126,7 +124,7 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
 
 ----
 
-🛠️ Stack Tecnológico
+Stack Tecnológico
 ======================
 
 .. list-table::
@@ -149,3 +147,30 @@ Combina lo mejor de dos mundos: préstamos físicos tradicionales y acceso digit
      - SMTP con templates HTML
 
 ----
+
+.. raw:: html
+
+   <div style="background: rgba(255, 105, 180, 0.1); 
+               padding: 2rem; 
+               border-radius: 12px; 
+               border-left: 4px solid #FF69B4; 
+               margin: 3rem 0;">
+     <h3 style="color: #FF69B4; margin-top: 0;">¿Necesitas ayuda?</h3>
+     <p style="font-size: 1.1em; line-height: 1.7; margin-bottom: 1rem; color: #e8e8e8;">
+       Estamos aquí para ayudarte a sacar el máximo provecho de Aeternum.
+     </p>
+     <ul style="list-style: none; padding: 0; color: #b8b8b8;">
+       <li style="margin: 0.5rem 0;">📧 Email: soporte@aeternum.com</li>
+       <li style="margin: 0.5rem 0;">🐛 Reportar bug: <a href="https://github.com/Santixxtt/Aeternum/issues" style="color: #FF69B4;">GitHub Issues</a></li>
+       <li style="margin: 0.5rem 0;">📖 Documentación completa en esta misma página</li>
+     </ul>
+   </div>
+
+----
+
+.. note::
+   
+   **Desarrollador:** Santiago Tuta  
+   **Versión actual:** 1.0.0  
+   **Última actualización:** Enero 2025  
+   **Licencia:** MIT
