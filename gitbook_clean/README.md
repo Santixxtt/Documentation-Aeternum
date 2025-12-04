@@ -3,7 +3,7 @@ description: Plataforma moderna de biblioteca virtual que combina préstamos fí
 layout: landing
 ---
 
-# 📚 Documentación de Aeternum
+# Documentación de Aeternum
 
 Bienvenido a la documentación completa de **Aeternum**, una plataforma moderna de biblioteca virtual que revoluciona el acceso a los libros.
 
@@ -11,7 +11,7 @@ Bienvenido a la documentación completa de **Aeternum**, una plataforma moderna 
 
 ## ⚡ Inicio Rápido
 
-| 📖 Guías de Usuario | 🔧 Documentación Técnica | 🔌 API Reference |
+|  Guías de Usuario |  Documentación Técnica |  API Reference |
 |---------------------|-------------------------|------------------|
 | Aprende a usar la plataforma | Arquitectura y desarrollo | Referencia completa de endpoints |
 | [Ver guías →](usuario.md) | [Ver documentación →](arquitectura.md) | [Ver API →](api.md) |
@@ -22,24 +22,24 @@ Bienvenido a la documentación completa de **Aeternum**, una plataforma moderna 
 
 ### Sistema Dual de Préstamos
 
-- **📖 Préstamos Digitales** - Acceso inmediato, lectura online desde cualquier dispositivo
-- **📦 Préstamos Físicos** - Solicita online, recoge en biblioteca
+- **Préstamos Digitales** - Acceso inmediato, lectura online desde cualquier dispositivo
+- **Préstamos Físicos** - Solicita online, recoge en biblioteca
 
 ### Gestión Completa
 
-- **💝 Lista de Deseos** - Guarda libros para leer más tarde
-- **⭐ Reviews y Ratings** - Califica y comenta libros
-- **📊 Estadísticas** - Tracking de tu progreso de lectura
+- **Lista de Deseos** - Guarda libros para leer más tarde
+- **Reviews y Ratings** - Califica y comenta libros
+- **Estadísticas** - Tracking de tu progreso de lectura
 
 ### Para Bibliotecarios
 
-- **⚙️ Panel de Administración** - Gestión completa del sistema
-- **📚 Catálogo** - Administra libros, usuarios y préstamos
-- **📈 Reportes** - Métricas y estadísticas del sistema
+- **Panel de Administración** - Gestión completa del sistema
+- **Catálogo** - Administra libros, usuarios y préstamos
+- **Reportes** - Métricas y estadísticas del sistema
 
 ---
 
-## 📚 Contenido de la Documentación
+## Contenido de la Documentación
 
 ### Comenzando
 
@@ -78,7 +78,7 @@ Bienvenido a la documentación completa de **Aeternum**, una plataforma moderna 
 
 ---
 
-## 🚀 Stack Tecnológico
+## Stack Tecnológico
 ```
 Frontend:  React 18 + Vite + TailwindCSS
 Backend:   FastAPI (Python 3.11+)
@@ -89,7 +89,7 @@ Auth:      JWT + bcrypt
 
 ---
 
-## 📖 Características Principales
+## Características Principales
 
 {% hint style="info" %}
 **Sistema Dual de Préstamos**
@@ -111,7 +111,7 @@ Esta documentación está en constante actualización. Si encuentras algún erro
 
 ---
 
-## 🎓 Guías Rápidas
+## Guías Rápidas
 
 ### Para Usuarios
 
@@ -136,17 +136,17 @@ Esta documentación está en constante actualización. Si encuentras algún erro
 
 ---
 
-## 📞 Soporte y Contacto
+## Soporte y Contacto
 
 ¿Necesitas ayuda?
 
-* 📧 **Email:** soporte@aeternum.com
-* 🐛 **Reportar bug:** [GitHub Issues](https://github.com/Santixxtt/Aeternum/issues)
-* 📖 **Documentación:** Estás aquí 😊
+* **Email:** soporte@aeternum.com
+* **Reportar bug:** [GitHub Issues](https://github.com/Santixxtt/Aeternum/issues)
+* **Documentación:** Estás aquí 😊
 
 ---
 
-## 🤝 Contribuir
+## Contribuir
 
 ¿Quieres mejorar Aeternum?
 
@@ -166,6 +166,6 @@ Esta documentación está en constante actualización. Si encuentras algún erro
 
 ---
 
-⭐ Si te gusta este proyecto, dale una estrella en [GitHub](https://github.com/Santixxtt/Aeternum)
+ Si te gusta este proyecto, dale una estrella en [GitHub](https://github.com/Santixxtt/Aeternum)
 
 </div>
