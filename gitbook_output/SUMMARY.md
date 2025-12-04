@@ -1,7 +1,8 @@
-# Tabla de Contenido
+# Table of contents
 
+* [Aeternum](README.md)
 
-## 🚀 Comenzando
+## 🚩 Comenzando
 
 * [Bienvenido a Aeternum](index.md)
 * [Introducción](introduccion.md)
