@@ -337,29 +337,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calificaciones"> Calificaciones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
             </nav>
         </div>
@@ -379,10 +378,12 @@ document.write(`
 <p>Solo usuarios autenticados pueden dejar calificaciones y comentarios.</p>
 </div>
 <hr class="docutils" />
-<section id="calificaciones">
-<h2> Calificaciones<a class="headerlink" href="#calificaciones" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Calificaciones</p>
+</div></blockquote>
+<hr class="docutils" />
 <section id="subir-calificacion">
-<h3>Subir Calificación<a class="headerlink" href="#subir-calificacion" title="Link to this heading">#</a></h3>
+<h2>Subir Calificación<a class="headerlink" href="#subir-calificacion" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/rate</span></code></p>
 <p>Permite a un usuario calificar un libro con una puntuación de 1 a 5 estrellas.</p>
 <p><strong>¿Qué hace?</strong></p>
@@ -424,7 +425,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="obtener-calificaciones-de-un-libro">
-<h3>Obtener Calificaciones de un Libro<a class="headerlink" href="#obtener-calificaciones-de-un-libro" title="Link to this heading">#</a></h3>
+<h2>Obtener Calificaciones de un Libro<a class="headerlink" href="#obtener-calificaciones-de-un-libro" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/reviews/ratings/{openlibrary_key}</span></code></p>
 <p>Obtiene estadísticas de calificaciones de un libro específico.</p>
 <p><strong>Respuesta:</strong></p>
@@ -453,7 +454,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="obtener-calificacion-del-usuario">
-<h3>Obtener Calificación del Usuario<a class="headerlink" href="#obtener-calificacion-del-usuario" title="Link to this heading">#</a></h3>
+<h2>Obtener Calificación del Usuario<a class="headerlink" href="#obtener-calificacion-del-usuario" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/reviews/user-rating/{openlibrary_key}</span></code></p>
 <p>Obtiene la calificación que el usuario actual ha dado a un libro específico.</p>
 <p><strong>Uso típico:</strong></p>
@@ -471,13 +472,13 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="comentarios">
-<h2>💬 Comentarios<a class="headerlink" href="#comentarios" title="Link to this heading">#</a></h2>
+<h3>💬 Comentarios<a class="headerlink" href="#comentarios" title="Link to this heading">#</a></h3>
+</section>
+</section>
 <section id="subir-comentario">
-<h3>Subir Comentario<a class="headerlink" href="#subir-comentario" title="Link to this heading">#</a></h3>
+<h2>Subir Comentario<a class="headerlink" href="#subir-comentario" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/comment</span></code></p>
 <p>Permite a un usuario dejar un comentario sobre un libro.</p>
 <p><strong>Datos a enviar:</strong></p>
@@ -512,7 +513,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="obtener-comentarios-de-un-libro">
-<h3>Obtener Comentarios de un Libro<a class="headerlink" href="#obtener-comentarios-de-un-libro" title="Link to this heading">#</a></h3>
+<h2>Obtener Comentarios de un Libro<a class="headerlink" href="#obtener-comentarios-de-un-libro" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/reviews/comments/{openlibrary_key}</span></code></p>
 <p>Obtiene todos los comentarios de un libro ordenados por fecha (más recientes primero).</p>
 <p><strong>Parámetros opcionales:</strong></p>
@@ -557,7 +558,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="actualizar-comentario">
-<h3>Actualizar Comentario<a class="headerlink" href="#actualizar-comentario" title="Link to this heading">#</a></h3>
+<h2>Actualizar Comentario<a class="headerlink" href="#actualizar-comentario" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/reviews/comments/{comment_id}</span></code></p>
 <p>Permite editar un comentario existente (solo el autor puede editarlo).</p>
 <p><strong>Datos a enviar:</strong></p>
@@ -590,7 +591,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="eliminar-comentario">
-<h3>Eliminar Comentario<a class="headerlink" href="#eliminar-comentario" title="Link to this heading">#</a></h3>
+<h2>Eliminar Comentario<a class="headerlink" href="#eliminar-comentario" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/reviews/comments/{comment_id}</span></code></p>
 <p>Elimina un comentario (solo el autor o un administrador pueden hacerlo).</p>
 <p><strong>Respuesta exitosa:</strong></p>
@@ -612,14 +613,14 @@ document.write(`
 <li><p>No autorizado: «No tienes permiso para eliminar este comentario»</p></li>
 <li><p>Comentario no encontrado: «El comentario no existe»</p></li>
 </ul>
-</section>
-</section>
 <hr class="docutils" />
 <section id="moderacion-solo-bibliotecarios">
-<h2>📊 Moderación (Solo Bibliotecarios)<a class="headerlink" href="#moderacion-solo-bibliotecarios" title="Link to this heading">#</a></h2>
+<h3>📊 Moderación (Solo Bibliotecarios)<a class="headerlink" href="#moderacion-solo-bibliotecarios" title="Link to this heading">#</a></h3>
 <p>Los bibliotecarios tienen funciones adicionales de moderación:</p>
+</section>
+</section>
 <section id="reportar-comentario-inapropiado">
-<h3>Reportar Comentario Inapropiado<a class="headerlink" href="#reportar-comentario-inapropiado" title="Link to this heading">#</a></h3>
+<h2>Reportar Comentario Inapropiado<a class="headerlink" href="#reportar-comentario-inapropiado" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/reviews/report/{comment_id}</span></code></p>
 <p>Los usuarios pueden reportar comentarios ofensivos o inapropiados.</p>
 <p><strong>Datos a enviar:</strong></p>
@@ -629,13 +630,13 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="mejores-practicas">
-<h2>🎯 Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Link to this heading">#</a></h2>
+<h3>🎯 Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Link to this heading">#</a></h3>
+</section>
+</section>
 <section id="para-usuarios">
-<h3>Para Usuarios<a class="headerlink" href="#para-usuarios" title="Link to this heading">#</a></h3>
+<h2>Para Usuarios<a class="headerlink" href="#para-usuarios" title="Link to this heading">#</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
 <ul class="simple">
@@ -647,7 +648,7 @@ document.write(`
 </div>
 </section>
 <section id="para-bibliotecarios">
-<h3>Para Bibliotecarios<a class="headerlink" href="#para-bibliotecarios" title="Link to this heading">#</a></h3>
+<h2>Para Bibliotecarios<a class="headerlink" href="#para-bibliotecarios" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <ul class="simple">
@@ -657,11 +658,9 @@ document.write(`
 <li><p>Fomenta una comunidad positiva y constructiva</p></li>
 </ul>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="notas-de-seguridad">
-<h2>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h2>
+<h3>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Protección contra spam</strong>: Límite de 5 comentarios por usuario por día</p></li>
 <li><p><strong>Filtro de contenido</strong>: Palabras ofensivas se detectan automáticamente</p></li>
@@ -669,6 +668,7 @@ document.write(`
 <li><p><strong>Moderación</strong>: Los bibliotecarios pueden eliminar cualquier comentario</p></li>
 <li><p><strong>Anonimato</strong>: No se muestran correos ni datos sensibles en comentarios</p></li>
 </ul>
+</section>
 </section>
 </section>
 
@@ -717,29 +717,28 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calificaciones"> Calificaciones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-calificacion">Subir Calificación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios">💬 Comentarios</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subir-comentario">Subir Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualizar-comentario">Actualizar Comentario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminar-comentario">Eliminar Comentario</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-practicas">🎯 Mejores Prácticas</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-usuarios">Para Usuarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#para-bibliotecarios">Para Bibliotecarios</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
   </nav></div>
 

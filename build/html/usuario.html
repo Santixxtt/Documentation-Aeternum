@@ -346,9 +346,6 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#barra-de-busqueda">Barra de Búsqueda</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modal-del-libro"> Modal del Libro</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-autenticar">Sin Autenticar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#con-autenticacion">Con Autenticación</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estados-de-disponibilidad">Estados de Disponibilidad</a></li>
@@ -358,17 +355,11 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamo-fisico-desde-modal">📦 Préstamo Físico (Desde Modal)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccionar-fecha-de-recogida">Seleccionar Fecha de Recogida</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-deseos"> Lista de Deseos</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-a-lista-de-deseos">Agregar a Lista de Deseos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-lista-de-deseos">Ver Lista de Deseos</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quitar-de-lista">Quitar de Lista</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descargas"> Descargas</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-funciona">¿Cómo funciona?</a></li>
 </ul>
 </li>
@@ -515,13 +506,14 @@ document.write(`
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET /api/books/search?q=principito&amp;genero=ficcion&amp;disponible=true
 </pre></div>
 </div>
-</section>
-</section>
-</section>
 <hr class="docutils" />
-<section id="modal-del-libro">
-<h2> Modal del Libro<a class="headerlink" href="#modal-del-libro" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Modal del Libro</p>
+</div></blockquote>
+<hr class="docutils" />
 <p>Al hacer clic en cualquier libro, se abre un modal con información detallada y opciones de acción.</p>
+</section>
+</section>
 <section id="sin-autenticar">
 <h3>Sin Autenticar<a class="headerlink" href="#sin-autenticar" title="Link to this heading">#</a></h3>
 <p>Si el usuario <strong>no ha iniciado sesión</strong>, el modal muestra:</p>
@@ -549,11 +541,11 @@ document.write(`
 </ul>
 <p><strong>Acciones disponibles:</strong></p>
 <ul class="simple">
-<li><p> <strong>Préstamo Digital</strong> (si está disponible digitalmente)</p></li>
+<li><p><strong>Préstamo Digital</strong> (si está disponible digitalmente)</p></li>
 <li><p>📦 <strong>Préstamo Físico</strong> (si hay copias físicas)</p></li>
-<li><p> <strong>Agregar a Lista de Deseos</strong></p></li>
-<li><p> <strong>Descargar</strong> (si está habilitado)</p></li>
-<li><p> <strong>Calificar y Comentar</strong></p></li>
+<li><p><strong>Agregar a Lista de Deseos</strong></p></li>
+<li><p><strong>Descargar</strong> (si está habilitado)</p></li>
+<li><p><strong>Calificar y Comentar</strong></p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/modal_logueado.png"><img alt="Modal con funciones" class="align-center" src="_images/modal_logueado.png" style="width: 600px;" />
 </a>
@@ -588,16 +580,17 @@ document.write(`
 </ol>
 <a class="reference internal image-reference" href="_images/correo_prestamo_fisico.png"><img alt="Correo de confirmación" class="align-center" src="_images/correo_prestamo_fisico.png" style="width: 500px;" />
 </a>
-</section>
-</section>
 <hr class="docutils" />
-<section id="lista-de-deseos">
-<h2> Lista de Deseos<a class="headerlink" href="#lista-de-deseos" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Lista de Deseos</p>
+</div></blockquote>
+<hr class="docutils" />
 <p>Gestión de libros guardados para leer más tarde.</p>
+</section>
 <section id="agregar-a-lista-de-deseos">
 <h3>Agregar a Lista de Deseos<a class="headerlink" href="#agregar-a-lista-de-deseos" title="Link to this heading">#</a></h3>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/wishlist/add</span></code></p>
-<p>Desde el modal del libro, clic en el icono de corazón </p>
+<p>Desde el modal del libro, clic en el icono de corazón</p>
 <p><strong>Datos enviados:</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;openlibrary_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/works/OL45883W&quot;</span><span class="p">,</span>
@@ -640,13 +633,14 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
-</section>
 <hr class="docutils" />
-<section id="descargas">
-<h2> Descargas<a class="headerlink" href="#descargas" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Descargas</p>
+</div></blockquote>
+<hr class="docutils" />
 <p>Algunos libros tienen habilitada la opción de descarga para leer offline.</p>
+</section>
+</section>
 <section id="como-funciona">
 <h3>¿Cómo funciona?<a class="headerlink" href="#como-funciona" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
@@ -757,7 +751,7 @@ document.write(`
 <h3>Información Mostrada<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Para cada préstamo:</p>
 <ul class="simple">
-<li><p> Portada y título del libro</p></li>
+<li><p>Portada y título del libro</p></li>
 <li><p>📅 Fecha de solicitud</p></li>
 <li><p>📅 Fecha de recogida programada</p></li>
 <li><p>📅 Fecha de devolución</p></li>
@@ -805,7 +799,7 @@ document.write(`
 <li><p>⏰ Recordatorio de recogida (1 día antes)</p></li>
 <li><p>⏰ Recordatorio de devolución (2 días antes)</p></li>
 <li><p>⚠️ Alerta de retraso</p></li>
-<li><p> Libro disponible (si estaba en lista de deseos)</p></li>
+<li><p>Libro disponible (si estaba en lista de deseos)</p></li>
 <li><p>💬 Respuesta a comentario</p></li>
 </ul>
 <div class="admonition tip">
@@ -884,9 +878,6 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#barra-de-busqueda">Barra de Búsqueda</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modal-del-libro"> Modal del Libro</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-autenticar">Sin Autenticar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#con-autenticacion">Con Autenticación</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estados-de-disponibilidad">Estados de Disponibilidad</a></li>
@@ -896,17 +887,11 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamo-fisico-desde-modal">📦 Préstamo Físico (Desde Modal)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccionar-fecha-de-recogida">Seleccionar Fecha de Recogida</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-deseos"> Lista de Deseos</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-a-lista-de-deseos">Agregar a Lista de Deseos</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-lista-de-deseos">Ver Lista de Deseos</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quitar-de-lista">Quitar de Lista</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descargas"> Descargas</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-funciona">¿Cómo funciona?</a></li>
 </ul>
 </li>

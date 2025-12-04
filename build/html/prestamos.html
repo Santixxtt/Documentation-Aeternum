@@ -337,30 +337,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-digitales"> Préstamos Digitales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#registrar-prestamo-digital">Registrar Préstamo Digital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#registrar-prestamo-digital">Registrar Préstamo Digital</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solicitar-prestamo-fisico">Solicitar Préstamo Físico</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-mis-prestamos-fisicos">Ver Mis Préstamos Físicos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelar-prestamo-fisico">Cancelar Préstamo Físico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solicitar-prestamo-fisico">Solicitar Préstamo Físico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-mis-prestamos-fisicos">Ver Mis Préstamos Físicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelar-prestamo-fisico">Cancelar Préstamo Físico</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-y-recordatorios">🔔 Notificaciones y Recordatorios</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-y-recordatorios">🔔 Notificaciones y Recordatorios</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-por-correo">Notificaciones por Correo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-por-correo">Notificaciones por Correo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-de-prestamos">📊 Estadísticas de Préstamos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-de-prestamos">📊 Estadísticas de Préstamos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-personal">Dashboard Personal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-personal">Dashboard Personal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renovacion-de-prestamos">Renovación de Préstamos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#politicas-de-prestamos"> Políticas de Préstamos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#renovacion-de-prestamos">Renovación de Préstamos</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
             </nav>
         </div>
@@ -380,11 +376,13 @@ document.write(`
 <p>Ambos sistemas están integrados para ofrecer la mejor experiencia al usuario.</p>
 </div>
 <hr class="docutils" />
-<section id="prestamos-digitales">
-<h2> Préstamos Digitales<a class="headerlink" href="#prestamos-digitales" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Préstamos Digitales</p>
+</div></blockquote>
+<hr class="docutils" />
 <p>Los préstamos digitales permiten acceso inmediato a la versión digital de un libro para leerlo en línea.</p>
 <section id="registrar-prestamo-digital">
-<h3>Registrar Préstamo Digital<a class="headerlink" href="#registrar-prestamo-digital" title="Link to this heading">#</a></h3>
+<h2>Registrar Préstamo Digital<a class="headerlink" href="#registrar-prestamo-digital" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/prestamos/digital</span></code></p>
 <p>Registra un nuevo préstamo digital cuando un usuario accede a leer un libro online.</p>
 <p><strong>¿Qué hace?</strong></p>
@@ -429,14 +427,14 @@ document.write(`
 <li><p>Límite alcanzado: «Has alcanzado el límite de préstamos simultáneos (3)»</p></li>
 <li><p>Libro no disponible digitalmente: «Este libro no está disponible en formato digital»</p></li>
 </ul>
-</section>
-</section>
 <hr class="docutils" />
 <section id="prestamos-fisicos">
-<h2>📦 Préstamos Físicos<a class="headerlink" href="#prestamos-fisicos" title="Link to this heading">#</a></h2>
+<h3>📦 Préstamos Físicos<a class="headerlink" href="#prestamos-fisicos" title="Link to this heading">#</a></h3>
 <p>Los préstamos físicos permiten solicitar un libro para recogerlo en la biblioteca.</p>
+</section>
+</section>
 <section id="solicitar-prestamo-fisico">
-<h3>Solicitar Préstamo Físico<a class="headerlink" href="#solicitar-prestamo-fisico" title="Link to this heading">#</a></h3>
+<h2>Solicitar Préstamo Físico<a class="headerlink" href="#solicitar-prestamo-fisico" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/prestamos-fisicos/solicitar</span></code></p>
 <p>Crea una solicitud de préstamo físico de un libro.</p>
 <p><strong>¿Qué hace?</strong></p>
@@ -490,7 +488,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="ver-mis-prestamos-fisicos">
-<h3>Ver Mis Préstamos Físicos<a class="headerlink" href="#ver-mis-prestamos-fisicos" title="Link to this heading">#</a></h3>
+<h2>Ver Mis Préstamos Físicos<a class="headerlink" href="#ver-mis-prestamos-fisicos" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/prestamos-fisicos/mis-prestamos</span></code></p>
 <p>Lista todos los préstamos físicos del usuario actual.</p>
 <p><strong>Filtros opcionales:</strong></p>
@@ -551,7 +549,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="cancelar-prestamo-fisico">
-<h3>Cancelar Préstamo Físico<a class="headerlink" href="#cancelar-prestamo-fisico" title="Link to this heading">#</a></h3>
+<h2>Cancelar Préstamo Físico<a class="headerlink" href="#cancelar-prestamo-fisico" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/prestamos-fisicos/cancelar/{prestamo_id}</span></code></p>
 <p>Permite al usuario cancelar un préstamo físico.</p>
 <p><strong>¿Cuándo se puede cancelar?</strong></p>
@@ -575,14 +573,14 @@ document.write(`
 <li><p>No encontrado: «El préstamo no existe»</p></li>
 <li><p>Ya procesado: «Este préstamo ya fue devuelto o cancelado»</p></li>
 </ul>
-</section>
-</section>
 <hr class="docutils" />
 <section id="notificaciones-y-recordatorios">
-<h2>🔔 Notificaciones y Recordatorios<a class="headerlink" href="#notificaciones-y-recordatorios" title="Link to this heading">#</a></h2>
+<h3>🔔 Notificaciones y Recordatorios<a class="headerlink" href="#notificaciones-y-recordatorios" title="Link to this heading">#</a></h3>
 <p>El sistema envía notificaciones automáticas por correo:</p>
+</section>
+</section>
 <section id="notificaciones-por-correo">
-<h3>Notificaciones por Correo<a class="headerlink" href="#notificaciones-por-correo" title="Link to this heading">#</a></h3>
+<h2>Notificaciones por Correo<a class="headerlink" href="#notificaciones-por-correo" title="Link to this heading">#</a></h2>
 <p><strong>Tipos de notificaciones:</strong></p>
 <ol class="arabic simple">
 <li><p><strong>Confirmación de solicitud</strong> (inmediato)</p>
@@ -621,13 +619,13 @@ document.write(`
 </ul>
 </li>
 </ol>
-</section>
-</section>
 <hr class="docutils" />
 <section id="estadisticas-de-prestamos">
-<h2>📊 Estadísticas de Préstamos<a class="headerlink" href="#estadisticas-de-prestamos" title="Link to this heading">#</a></h2>
+<h3>📊 Estadísticas de Préstamos<a class="headerlink" href="#estadisticas-de-prestamos" title="Link to this heading">#</a></h3>
+</section>
+</section>
 <section id="dashboard-personal">
-<h3>Dashboard Personal<a class="headerlink" href="#dashboard-personal" title="Link to this heading">#</a></h3>
+<h2>Dashboard Personal<a class="headerlink" href="#dashboard-personal" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/prestamos/estadisticas</span></code></p>
 <p>Obtiene estadísticas personales de préstamos del usuario.</p>
 <p><strong>Respuesta:</strong></p>
@@ -643,13 +641,14 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
+<hr class="docutils" />
+<blockquote>
+<div><p>Políticas de Préstamos</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="politicas-de-prestamos">
-<h2> Políticas de Préstamos<a class="headerlink" href="#politicas-de-prestamos" title="Link to this heading">#</a></h2>
 <section id="limites-y-restricciones">
-<h3>Límites y Restricciones<a class="headerlink" href="#limites-y-restricciones" title="Link to this heading">#</a></h3>
+<h2>Límites y Restricciones<a class="headerlink" href="#limites-y-restricciones" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 40.0%" />
@@ -687,7 +686,7 @@ document.write(`
 </div>
 </section>
 <section id="renovacion-de-prestamos">
-<h3>Renovación de Préstamos<a class="headerlink" href="#renovacion-de-prestamos" title="Link to this heading">#</a></h3>
+<h2>Renovación de Préstamos<a class="headerlink" href="#renovacion-de-prestamos" title="Link to this heading">#</a></h2>
 <p><strong>Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/prestamos-fisicos/renovar/{prestamo_id}</span></code></p>
 <p>Extiende un préstamo físico por 12 días adicionales.</p>
 <p><strong>Condiciones:</strong></p>
@@ -704,11 +703,9 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="notas-de-seguridad">
-<h2>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h2>
+<h3>🔒 Notas de Seguridad<a class="headerlink" href="#notas-de-seguridad" title="Link to this heading">#</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Advertencia</p>
 <p><strong>Protección de datos:</strong></p>
@@ -729,6 +726,7 @@ document.write(`
 <li><p>Cancela reservas si cambias de opinión (libera el libro para otros)</p></li>
 </ul>
 </div>
+</section>
 </section>
 </section>
 
@@ -777,30 +775,26 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-digitales"> Préstamos Digitales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#registrar-prestamo-digital">Registrar Préstamo Digital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#registrar-prestamo-digital">Registrar Préstamo Digital</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solicitar-prestamo-fisico">Solicitar Préstamo Físico</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-mis-prestamos-fisicos">Ver Mis Préstamos Físicos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelar-prestamo-fisico">Cancelar Préstamo Físico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solicitar-prestamo-fisico">Solicitar Préstamo Físico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ver-mis-prestamos-fisicos">Ver Mis Préstamos Físicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelar-prestamo-fisico">Cancelar Préstamo Físico</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-y-recordatorios">🔔 Notificaciones y Recordatorios</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-y-recordatorios">🔔 Notificaciones y Recordatorios</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-por-correo">Notificaciones por Correo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notificaciones-por-correo">Notificaciones por Correo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-de-prestamos">📊 Estadísticas de Préstamos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-de-prestamos">📊 Estadísticas de Préstamos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-personal">Dashboard Personal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-personal">Dashboard Personal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renovacion-de-prestamos">Renovación de Préstamos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#politicas-de-prestamos"> Políticas de Préstamos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limites-y-restricciones">Límites y Restricciones</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#renovacion-de-prestamos">Renovación de Préstamos</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
   </nav></div>
 

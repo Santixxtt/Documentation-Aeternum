@@ -460,10 +460,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#dashboard-inicio">🏠 Dashboard / Inicio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#catalogo-de-libros">📚 Catálogo de Libros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#modal-del-libro"> Modal del Libro</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#prestamo-fisico-desde-modal">📦 Préstamo Físico (Desde Modal)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#lista-de-deseos"> Lista de Deseos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#descargas"> Descargas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#mi-perfil">👤 Mi Perfil</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#mis-prestamos-fisicos">📋 Mis Préstamos Físicos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usuario.html#notificaciones">🔔 Notificaciones</a></li>
@@ -476,20 +473,27 @@ document.write(`
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="prestamos.html#prestamos-digitales"> Préstamos Digitales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prestamos.html#prestamos-fisicos">📦 Préstamos Físicos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prestamos.html#notificaciones-y-recordatorios">🔔 Notificaciones y Recordatorios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prestamos.html#estadisticas-de-prestamos">📊 Estadísticas de Préstamos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prestamos.html#politicas-de-prestamos"> Políticas de Préstamos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="prestamos.html#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#registrar-prestamo-digital">Registrar Préstamo Digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#solicitar-prestamo-fisico">Solicitar Préstamo Físico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#ver-mis-prestamos-fisicos">Ver Mis Préstamos Físicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#cancelar-prestamo-fisico">Cancelar Préstamo Físico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#notificaciones-por-correo">Notificaciones por Correo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#dashboard-personal">Dashboard Personal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#limites-y-restricciones">Límites y Restricciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prestamos.html#renovacion-de-prestamos">Renovación de Préstamos</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reviews.html">Sistema de Reviews y Calificaciones</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="reviews.html#calificaciones"> Calificaciones</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reviews.html#comentarios">💬 Comentarios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reviews.html#moderacion-solo-bibliotecarios">📊 Moderación (Solo Bibliotecarios)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reviews.html#mejores-practicas">🎯 Mejores Prácticas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reviews.html#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#subir-calificacion">Subir Calificación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#obtener-calificaciones-de-un-libro">Obtener Calificaciones de un Libro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#obtener-calificacion-del-usuario">Obtener Calificación del Usuario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#subir-comentario">Subir Comentario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#obtener-comentarios-de-un-libro">Obtener Comentarios de un Libro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#actualizar-comentario">Actualizar Comentario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#eliminar-comentario">Eliminar Comentario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#reportar-comentario-inapropiado">Reportar Comentario Inapropiado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#para-usuarios">Para Usuarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html#para-bibliotecarios">Para Bibliotecarios</a></li>
 </ul>
 </li>
 </ul>
@@ -500,7 +504,6 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="administracion.html">Panel de Administración</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="administracion.html#funcionalidades-principales">🎯 Funcionalidades Principales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administracion.html#reportes-y-estadisticas">📊 Reportes y Estadísticas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="administracion.html#configuracion-del-sistema"> Configuración del Sistema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="administracion.html#notas-de-seguridad">🔒 Notas de Seguridad</a></li>
 </ul>
 </li>
@@ -512,16 +515,30 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="backend.html">Backend (FastAPI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend (React + Vite)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Documentación API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#autenticacion"> Autenticación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#usuarios">👤 Usuarios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#lista-de-deseos"> Lista de Deseos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#reviews-y-calificaciones"> Reviews y Calificaciones</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#prestamos-digitales"> Préstamos Digitales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#prestamos-fisicos">📦 Préstamos Físicos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#codigos-de-estado-http">🔒 Códigos de Estado HTTP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#autenticacion-en-requests">🔑 Autenticación en Requests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#documentacion-interactiva">📚 Documentación Interactiva</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#rate-limiting">⚡ Rate Limiting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-register">POST /auth/register</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-login">POST /auth/login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-recuperar-contrasena">POST /auth/recuperar-contrasena</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-auth-restablecer-contrasena">POST /auth/restablecer-contrasena</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-user-me">GET /user/me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-users-me">PUT /users/me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#delete-users-me">DELETE /users/me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-users-reactivar-user-id">GET /users/reactivar/{user_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-wishlist-list">GET /wishlist/list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-wishlist-add">POST /wishlist/add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#delete-wishlist-delete-book-id">DELETE /wishlist/delete/{book_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-wishlist-buscar-libro-openlibrary-key">GET /wishlist/buscar-libro/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-reviews-rate">POST /reviews/rate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-reviews-ratings-openlibrary-key">GET /reviews/ratings/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-reviews-comment">POST /reviews/comment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-reviews-comments-openlibrary-key">GET /reviews/comments/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-reviews-comments-comment-id">PUT /reviews/comments/{comment_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#delete-reviews-comments-comment-id">DELETE /reviews/comments/{comment_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-reviews-user-rating-openlibrary-key">GET /reviews/user-rating/{openlibrary_key}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-prestamos-digital">POST /prestamos/digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-prestamos-fisicos-solicitar">POST /prestamos-fisicos/solicitar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-prestamos-fisicos-mis-prestamos">GET /prestamos-fisicos/mis-prestamos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-prestamos-fisicos-cancelar-prestamo-id">PUT /prestamos-fisicos/cancelar/{prestamo_id}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#put-prestamos-fisicos-estado-prestamo-id">PUT /prestamos-fisicos/estado/{prestamo_id}</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="seguridad.html">Seguridad</a></li>

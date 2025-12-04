@@ -337,52 +337,42 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autenticacion"> Autenticación</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-register">POST /auth/register</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-login">POST /auth/login</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-recuperar-contrasena">POST /auth/recuperar-contrasena</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-restablecer-contrasena">POST /auth/restablecer-contrasena</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-register">POST /auth/register</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-login">POST /auth/login</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-recuperar-contrasena">POST /auth/recuperar-contrasena</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-restablecer-contrasena">POST /auth/restablecer-contrasena</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usuarios">👤 Usuarios</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usuarios">👤 Usuarios</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-user-me">GET /user/me</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-users-me">PUT /users/me</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-users-me">DELETE /users/me</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-users-reactivar-user-id">GET /users/reactivar/{user_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-user-me">GET /user/me</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-users-me">PUT /users/me</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-users-me">DELETE /users/me</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-users-reactivar-user-id">GET /users/reactivar/{user_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-list">GET /wishlist/list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-wishlist-add">POST /wishlist/add</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-wishlist-delete-book-id">DELETE /wishlist/delete/{book_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-buscar-libro-openlibrary-key">GET /wishlist/buscar-libro/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-rate">POST /reviews/rate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-ratings-openlibrary-key">GET /reviews/ratings/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-comment">POST /reviews/comment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-comments-openlibrary-key">GET /reviews/comments/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-reviews-comments-comment-id">PUT /reviews/comments/{comment_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-reviews-comments-comment-id">DELETE /reviews/comments/{comment_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-user-rating-openlibrary-key">GET /reviews/user-rating/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-digital">POST /prestamos/digital</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-deseos"> Lista de Deseos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-list">GET /wishlist/list</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-wishlist-add">POST /wishlist/add</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-wishlist-delete-book-id">DELETE /wishlist/delete/{book_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-buscar-libro-openlibrary-key">GET /wishlist/buscar-libro/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-fisicos-solicitar">POST /prestamos-fisicos/solicitar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-prestamos-fisicos-mis-prestamos">GET /prestamos-fisicos/mis-prestamos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-cancelar-prestamo-id">PUT /prestamos-fisicos/cancelar/{prestamo_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-estado-prestamo-id">PUT /prestamos-fisicos/estado/{prestamo_id}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos-de-estado-http">🔒 Códigos de Estado HTTP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autenticacion-en-requests">🔑 Autenticación en Requests</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-interactiva">📚 Documentación Interactiva</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rate-limiting">⚡ Rate Limiting</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviews-y-calificaciones"> Reviews y Calificaciones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-rate">POST /reviews/rate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-ratings-openlibrary-key">GET /reviews/ratings/{openlibrary_key}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-comment">POST /reviews/comment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-comments-openlibrary-key">GET /reviews/comments/{openlibrary_key}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-reviews-comments-comment-id">PUT /reviews/comments/{comment_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-reviews-comments-comment-id">DELETE /reviews/comments/{comment_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-user-rating-openlibrary-key">GET /reviews/user-rating/{openlibrary_key}</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-digitales"> Préstamos Digitales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-digital">POST /prestamos/digital</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-fisicos-solicitar">POST /prestamos-fisicos/solicitar</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-prestamos-fisicos-mis-prestamos">GET /prestamos-fisicos/mis-prestamos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-cancelar-prestamo-id">PUT /prestamos-fisicos/cancelar/{prestamo_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-estado-prestamo-id">PUT /prestamos-fisicos/estado/{prestamo_id}</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos-de-estado-http">🔒 Códigos de Estado HTTP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autenticacion-en-requests">🔑 Autenticación en Requests</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-interactiva">📚 Documentación Interactiva</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rate-limiting">⚡ Rate Limiting</a></li>
 </ul>
             </nav>
         </div>
@@ -405,10 +395,12 @@ document.write(`
 <strong>Autenticación:</strong> JWT Bearer Token</p>
 </div>
 <hr class="docutils" />
-<section id="autenticacion">
-<h2> Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>Autenticación</p>
+</div></blockquote>
+<hr class="docutils" />
 <section id="post-auth-register">
-<h3>POST /auth/register<a class="headerlink" href="#post-auth-register" title="Link to this heading">#</a></h3>
+<h2>POST /auth/register<a class="headerlink" href="#post-auth-register" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -438,7 +430,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="post-auth-login">
-<h3>POST /auth/login<a class="headerlink" href="#post-auth-login" title="Link to this heading">#</a></h3>
+<h2>POST /auth/login<a class="headerlink" href="#post-auth-login" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -463,7 +455,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="post-auth-recuperar-contrasena">
-<h3>POST /auth/recuperar-contrasena<a class="headerlink" href="#post-auth-recuperar-contrasena" title="Link to this heading">#</a></h3>
+<h2>POST /auth/recuperar-contrasena<a class="headerlink" href="#post-auth-recuperar-contrasena" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -485,7 +477,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="post-auth-restablecer-contrasena">
-<h3>POST /auth/restablecer-contrasena<a class="headerlink" href="#post-auth-restablecer-contrasena" title="Link to this heading">#</a></h3>
+<h2>POST /auth/restablecer-contrasena<a class="headerlink" href="#post-auth-restablecer-contrasena" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -505,13 +497,13 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="usuarios">
-<h2>👤 Usuarios<a class="headerlink" href="#usuarios" title="Link to this heading">#</a></h2>
+<h3>👤 Usuarios<a class="headerlink" href="#usuarios" title="Link to this heading">#</a></h3>
+</section>
+</section>
 <section id="get-user-me">
-<h3>GET /user/me<a class="headerlink" href="#get-user-me" title="Link to this heading">#</a></h3>
+<h2>GET /user/me<a class="headerlink" href="#get-user-me" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -539,7 +531,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="put-users-me">
-<h3>PUT /users/me<a class="headerlink" href="#put-users-me" title="Link to this heading">#</a></h3>
+<h2>PUT /users/me<a class="headerlink" href="#put-users-me" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-put">PUT</span>
@@ -573,7 +565,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="delete-users-me">
-<h3>DELETE /users/me<a class="headerlink" href="#delete-users-me" title="Link to this heading">#</a></h3>
+<h2>DELETE /users/me<a class="headerlink" href="#delete-users-me" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-delete">DELETE</span>
@@ -593,7 +585,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="get-users-reactivar-user-id">
-<h3>GET /users/reactivar/{user_id}<a class="headerlink" href="#get-users-reactivar-user-id" title="Link to this heading">#</a></h3>
+<h2>GET /users/reactivar/{user_id}<a class="headerlink" href="#get-users-reactivar-user-id" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -611,13 +603,14 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
+<hr class="docutils" />
+<blockquote>
+<div><p>Lista de Deseos</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="lista-de-deseos">
-<h2> Lista de Deseos<a class="headerlink" href="#lista-de-deseos" title="Link to this heading">#</a></h2>
 <section id="get-wishlist-list">
-<h3>GET /wishlist/list<a class="headerlink" href="#get-wishlist-list" title="Link to this heading">#</a></h3>
+<h2>GET /wishlist/list<a class="headerlink" href="#get-wishlist-list" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -647,7 +640,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="post-wishlist-add">
-<h3>POST /wishlist/add<a class="headerlink" href="#post-wishlist-add" title="Link to this heading">#</a></h3>
+<h2>POST /wishlist/add<a class="headerlink" href="#post-wishlist-add" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -676,7 +669,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="delete-wishlist-delete-book-id">
-<h3>DELETE /wishlist/delete/{book_id}<a class="headerlink" href="#delete-wishlist-delete-book-id" title="Link to this heading">#</a></h3>
+<h2>DELETE /wishlist/delete/{book_id}<a class="headerlink" href="#delete-wishlist-delete-book-id" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-delete">DELETE</span>
@@ -696,7 +689,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="get-wishlist-buscar-libro-openlibrary-key">
-<h3>GET /wishlist/buscar-libro/{openlibrary_key}<a class="headerlink" href="#get-wishlist-buscar-libro-openlibrary-key" title="Link to this heading">#</a></h3>
+<h2>GET /wishlist/buscar-libro/{openlibrary_key}<a class="headerlink" href="#get-wishlist-buscar-libro-openlibrary-key" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -715,13 +708,14 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
+<hr class="docutils" />
+<blockquote>
+<div><p>Reviews y Calificaciones</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="reviews-y-calificaciones">
-<h2> Reviews y Calificaciones<a class="headerlink" href="#reviews-y-calificaciones" title="Link to this heading">#</a></h2>
 <section id="post-reviews-rate">
-<h3>POST /reviews/rate<a class="headerlink" href="#post-reviews-rate" title="Link to this heading">#</a></h3>
+<h2>POST /reviews/rate<a class="headerlink" href="#post-reviews-rate" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -751,7 +745,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="get-reviews-ratings-openlibrary-key">
-<h3>GET /reviews/ratings/{openlibrary_key}<a class="headerlink" href="#get-reviews-ratings-openlibrary-key" title="Link to this heading">#</a></h3>
+<h2>GET /reviews/ratings/{openlibrary_key}<a class="headerlink" href="#get-reviews-ratings-openlibrary-key" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -776,7 +770,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="post-reviews-comment">
-<h3>POST /reviews/comment<a class="headerlink" href="#post-reviews-comment" title="Link to this heading">#</a></h3>
+<h2>POST /reviews/comment<a class="headerlink" href="#post-reviews-comment" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -805,7 +799,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="get-reviews-comments-openlibrary-key">
-<h3>GET /reviews/comments/{openlibrary_key}<a class="headerlink" href="#get-reviews-comments-openlibrary-key" title="Link to this heading">#</a></h3>
+<h2>GET /reviews/comments/{openlibrary_key}<a class="headerlink" href="#get-reviews-comments-openlibrary-key" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -838,7 +832,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="put-reviews-comments-comment-id">
-<h3>PUT /reviews/comments/{comment_id}<a class="headerlink" href="#put-reviews-comments-comment-id" title="Link to this heading">#</a></h3>
+<h2>PUT /reviews/comments/{comment_id}<a class="headerlink" href="#put-reviews-comments-comment-id" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-put">PUT</span>
@@ -866,7 +860,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="delete-reviews-comments-comment-id">
-<h3>DELETE /reviews/comments/{comment_id}<a class="headerlink" href="#delete-reviews-comments-comment-id" title="Link to this heading">#</a></h3>
+<h2>DELETE /reviews/comments/{comment_id}<a class="headerlink" href="#delete-reviews-comments-comment-id" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-delete">DELETE</span>
@@ -887,7 +881,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="get-reviews-user-rating-openlibrary-key">
-<h3>GET /reviews/user-rating/{openlibrary_key}<a class="headerlink" href="#get-reviews-user-rating-openlibrary-key" title="Link to this heading">#</a></h3>
+<h2>GET /reviews/user-rating/{openlibrary_key}<a class="headerlink" href="#get-reviews-user-rating-openlibrary-key" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -905,13 +899,14 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
+<hr class="docutils" />
+<blockquote>
+<div><p>Préstamos Digitales</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="prestamos-digitales">
-<h2> Préstamos Digitales<a class="headerlink" href="#prestamos-digitales" title="Link to this heading">#</a></h2>
 <section id="post-prestamos-digital">
-<h3>POST /prestamos/digital<a class="headerlink" href="#post-prestamos-digital" title="Link to this heading">#</a></h3>
+<h2>POST /prestamos/digital<a class="headerlink" href="#post-prestamos-digital" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -940,13 +935,13 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="prestamos-fisicos">
-<h2>📦 Préstamos Físicos<a class="headerlink" href="#prestamos-fisicos" title="Link to this heading">#</a></h2>
+<h3>📦 Préstamos Físicos<a class="headerlink" href="#prestamos-fisicos" title="Link to this heading">#</a></h3>
+</section>
+</section>
 <section id="post-prestamos-fisicos-solicitar">
-<h3>POST /prestamos-fisicos/solicitar<a class="headerlink" href="#post-prestamos-fisicos-solicitar" title="Link to this heading">#</a></h3>
+<h2>POST /prestamos-fisicos/solicitar<a class="headerlink" href="#post-prestamos-fisicos-solicitar" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-post">POST</span>
@@ -979,7 +974,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="get-prestamos-fisicos-mis-prestamos">
-<h3>GET /prestamos-fisicos/mis-prestamos<a class="headerlink" href="#get-prestamos-fisicos-mis-prestamos" title="Link to this heading">#</a></h3>
+<h2>GET /prestamos-fisicos/mis-prestamos<a class="headerlink" href="#get-prestamos-fisicos-mis-prestamos" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-get">GET</span>
@@ -1018,7 +1013,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="put-prestamos-fisicos-cancelar-prestamo-id">
-<h3>PUT /prestamos-fisicos/cancelar/{prestamo_id}<a class="headerlink" href="#put-prestamos-fisicos-cancelar-prestamo-id" title="Link to this heading">#</a></h3>
+<h2>PUT /prestamos-fisicos/cancelar/{prestamo_id}<a class="headerlink" href="#put-prestamos-fisicos-cancelar-prestamo-id" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-put">PUT</span>
@@ -1039,7 +1034,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="put-prestamos-fisicos-estado-prestamo-id">
-<h3>PUT /prestamos-fisicos/estado/{prestamo_id}<a class="headerlink" href="#put-prestamos-fisicos-estado-prestamo-id" title="Link to this heading">#</a></h3>
+<h2>PUT /prestamos-fisicos/estado/{prestamo_id}<a class="headerlink" href="#put-prestamos-fisicos-estado-prestamo-id" title="Link to this heading">#</a></h2>
 <div class="endpoint-card">
   <div class="endpoint-title">
     <span class="http-method method-put">PUT</span>
@@ -1065,11 +1060,9 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-</section>
 <hr class="docutils" />
 <section id="codigos-de-estado-http">
-<h2>🔒 Códigos de Estado HTTP<a class="headerlink" href="#codigos-de-estado-http" title="Link to this heading">#</a></h2>
+<h3>🔒 Códigos de Estado HTTP<a class="headerlink" href="#codigos-de-estado-http" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 15.0%" />
@@ -1091,7 +1084,7 @@ document.write(`
 <td><p>❌ Error en la solicitud (datos inválidos)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>401</strong></p></td>
-<td><p> No autenticado (token faltante o inválido)</p></td>
+<td><p>No autenticado (token faltante o inválido)</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>403</strong></p></td>
 <td><p>🚫 Prohibido (sin permisos suficientes)</p></td>
@@ -1114,7 +1107,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="autenticacion-en-requests">
-<h2>🔑 Autenticación en Requests<a class="headerlink" href="#autenticacion-en-requests" title="Link to this heading">#</a></h2>
+<h3>🔑 Autenticación en Requests<a class="headerlink" href="#autenticacion-en-requests" title="Link to this heading">#</a></h3>
 <p>Todas las rutas protegidas requieren el header <code class="docutils literal notranslate"><span class="pre">Authorization</span></code>:</p>
 <p><strong>Formato:</strong></p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Authorization: Bearer {tu_token_jwt}
@@ -1145,7 +1138,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="documentacion-interactiva">
-<h2>📚 Documentación Interactiva<a class="headerlink" href="#documentacion-interactiva" title="Link to this heading">#</a></h2>
+<h3>📚 Documentación Interactiva<a class="headerlink" href="#documentacion-interactiva" title="Link to this heading">#</a></h3>
 <p>Aeternum incluye documentación interactiva de la API usando <strong>Swagger UI</strong>:</p>
 <ul class="simple">
 <li><p><strong>Swagger UI:</strong> <a class="reference external" href="https://api.aeternum.com/docs">https://api.aeternum.com/docs</a></p></li>
@@ -1161,7 +1154,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="rate-limiting">
-<h2>⚡ Rate Limiting<a class="headerlink" href="#rate-limiting" title="Link to this heading">#</a></h2>
+<h3>⚡ Rate Limiting<a class="headerlink" href="#rate-limiting" title="Link to this heading">#</a></h3>
 <p>La API implementa rate limiting para prevenir abuso:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
@@ -1196,6 +1189,7 @@ X-RateLimit-Reset: 1642089600
 </pre></div>
 </div>
 <p>Si excedes el límite, recibirás <strong>HTTP 429 Too Many Requests</strong>.</p>
+</section>
 </section>
 </section>
 
@@ -1244,52 +1238,42 @@ X-RateLimit-Reset: 1642089600
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autenticacion"> Autenticación</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-register">POST /auth/register</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-login">POST /auth/login</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-recuperar-contrasena">POST /auth/recuperar-contrasena</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-restablecer-contrasena">POST /auth/restablecer-contrasena</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-register">POST /auth/register</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-login">POST /auth/login</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-recuperar-contrasena">POST /auth/recuperar-contrasena</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-auth-restablecer-contrasena">POST /auth/restablecer-contrasena</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usuarios">👤 Usuarios</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usuarios">👤 Usuarios</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-user-me">GET /user/me</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-users-me">PUT /users/me</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-users-me">DELETE /users/me</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-users-reactivar-user-id">GET /users/reactivar/{user_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-user-me">GET /user/me</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-users-me">PUT /users/me</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-users-me">DELETE /users/me</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-users-reactivar-user-id">GET /users/reactivar/{user_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-list">GET /wishlist/list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-wishlist-add">POST /wishlist/add</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-wishlist-delete-book-id">DELETE /wishlist/delete/{book_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-buscar-libro-openlibrary-key">GET /wishlist/buscar-libro/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-rate">POST /reviews/rate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-ratings-openlibrary-key">GET /reviews/ratings/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-comment">POST /reviews/comment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-comments-openlibrary-key">GET /reviews/comments/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-reviews-comments-comment-id">PUT /reviews/comments/{comment_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-reviews-comments-comment-id">DELETE /reviews/comments/{comment_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-user-rating-openlibrary-key">GET /reviews/user-rating/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-digital">POST /prestamos/digital</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-deseos"> Lista de Deseos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-list">GET /wishlist/list</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-wishlist-add">POST /wishlist/add</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-wishlist-delete-book-id">DELETE /wishlist/delete/{book_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-wishlist-buscar-libro-openlibrary-key">GET /wishlist/buscar-libro/{openlibrary_key}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-fisicos-solicitar">POST /prestamos-fisicos/solicitar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-prestamos-fisicos-mis-prestamos">GET /prestamos-fisicos/mis-prestamos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-cancelar-prestamo-id">PUT /prestamos-fisicos/cancelar/{prestamo_id}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-estado-prestamo-id">PUT /prestamos-fisicos/estado/{prestamo_id}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos-de-estado-http">🔒 Códigos de Estado HTTP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autenticacion-en-requests">🔑 Autenticación en Requests</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-interactiva">📚 Documentación Interactiva</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rate-limiting">⚡ Rate Limiting</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviews-y-calificaciones"> Reviews y Calificaciones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-rate">POST /reviews/rate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-ratings-openlibrary-key">GET /reviews/ratings/{openlibrary_key}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-reviews-comment">POST /reviews/comment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-comments-openlibrary-key">GET /reviews/comments/{openlibrary_key}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-reviews-comments-comment-id">PUT /reviews/comments/{comment_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-reviews-comments-comment-id">DELETE /reviews/comments/{comment_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-reviews-user-rating-openlibrary-key">GET /reviews/user-rating/{openlibrary_key}</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-digitales"> Préstamos Digitales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-digital">POST /prestamos/digital</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prestamos-fisicos">📦 Préstamos Físicos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#post-prestamos-fisicos-solicitar">POST /prestamos-fisicos/solicitar</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-prestamos-fisicos-mis-prestamos">GET /prestamos-fisicos/mis-prestamos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-cancelar-prestamo-id">PUT /prestamos-fisicos/cancelar/{prestamo_id}</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-prestamos-fisicos-estado-prestamo-id">PUT /prestamos-fisicos/estado/{prestamo_id}</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos-de-estado-http">🔒 Códigos de Estado HTTP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autenticacion-en-requests">🔑 Autenticación en Requests</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-interactiva">📚 Documentación Interactiva</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rate-limiting">⚡ Rate Limiting</a></li>
 </ul>
   </nav></div>
 
