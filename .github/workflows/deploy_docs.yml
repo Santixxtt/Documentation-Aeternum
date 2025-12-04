@@ -32,3 +32,8 @@ jobs:
     - name: Deploy to GitHub Pages
       run: |
         ghp-import -n -p -f build/html
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
