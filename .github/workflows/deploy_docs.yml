@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write      # Permite subir a gh-pages
+  contents: write
   pages: write
   id-token: write
 
@@ -29,6 +29,7 @@ jobs:
         pip install sphinx
         pip install sphinx-rtd-theme
         pip install sphinx-copybutton
+        pip install sphinx-book-theme   # <- FALTABA ESTE
         pip install ghp-import
 
     - name: Build documentation
