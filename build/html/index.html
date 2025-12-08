@@ -172,10 +172,6 @@
 <li class="toctree-l1"><a class="reference internal" href="auth_routes.html">Autenticación de Usuarios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password_reset.html">Recuperación de Contraseña</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="prestamos.html">Sistema de Préstamos</a></li>
@@ -343,7 +339,25 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-documentacion">Contenido de la Documentación</a><ul class="visible nav section-nav flex-column">
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-de-base-de-datos">Modelo de Base de Datos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-entidad-relacion-mer">Modelo Entidad-Relación (MER)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-relacional-mr">Modelo Relacional (MR)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esquema-de-base-de-datos">Esquema de Base de Datos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#casos-de-uso">Casos de Uso</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramas-de-casos-de-uso-del-sistema">Diagramas de Casos de Uso del Sistema</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-de-uso-usuario">Caso de Uso: Usuario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-de-uso-bibliotecario">Caso de Uso: Bibliotecario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-de-uso-sistema-completo">Caso de Uso: Sistema Completo</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stack-tecnologico">Stack Tecnológico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agradecimientos">Agradecimientos</a></li>
 </ul>
             </nav>
         </div>
@@ -367,37 +381,31 @@ document.write(`
 <h2>Características Principales<a class="headerlink" href="#caracteristicas-principales" title="Link to this heading">#</a></h2>
 <div class="feature-grid">
   <div class="feature-card">
-    <div class="feature-icon"></div>
     <h3>Autenticación Segura</h3>
     <p>Sistema robusto con JWT, recuperación de contraseña y protección contra ataques de fuerza bruta.</p>
   </div>
 
   <div class="feature-card">
-    <div class="feature-icon"></div>
     <h3>Préstamos Duales</h3>
     <p>Solicita libros físicos o accede a versiones digitales instantáneamente desde cualquier dispositivo.</p>
   </div>
 
   <div class="feature-card">
-    <div class="feature-icon"></div>
     <h3>Lista de Deseos</h3>
     <p>Guarda tus libros favoritos y ten un acceso directo a los libros que mas te gusten.</p>
   </div>
 
   <div class="feature-card">
-    <div class="feature-icon"></div>
     <h3>Reviews & Ratings</h3>
     <p>Califica y comenta libros. Ayuda a otros usuarios a descubrir grandes lecturas.</p>
   </div>
 
   <div class="feature-card">
-    <div class="feature-icon"></div>
     <h3>Descargas</h3>
     <p>Descarga libros para leer sin conexión cuando lo necesites.</p>
   </div>
 
   <div class="feature-card">
-    <div class="feature-icon"></div>
     <h3>Panel Admin</h3>
     <p>Gestión completa de libros, usuarios y préstamos para bibliotecarios.</p>
   </div>
@@ -455,19 +463,6 @@ document.write(`
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Módulo de Usuarios</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usuario.html">Módulo de Usuario</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#dashboard-inicio">🏠 Dashboard / Inicio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#catalogo-de-libros">📚 Catálogo de Libros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#prestamo-fisico-desde-modal">Préstamo Físico (Desde Modal)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#mi-perfil">👤 Mi Perfil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#mis-prestamos-fisicos">📋 Mis Préstamos Físicos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#notificaciones">🔔 Notificaciones</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usuario.html#privacidad-y-seguridad">🔒 Privacidad y Seguridad</a></li>
-</ul>
-</li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Gestión de Libros</span></p>
@@ -543,6 +538,81 @@ document.write(`
 </div>
 </section>
 <hr class="docutils" />
+<section id="modelo-de-base-de-datos">
+<h2>Modelo de Base de Datos<a class="headerlink" href="#modelo-de-base-de-datos" title="Link to this heading">#</a></h2>
+<section id="modelo-entidad-relacion-mer">
+<h3>Modelo Entidad-Relación (MER)<a class="headerlink" href="#modelo-entidad-relacion-mer" title="Link to this heading">#</a></h3>
+<p>El siguiente diagrama muestra el modelo conceptual de la base de datos de Aeternum, incluyendo todas las entidades y sus relaciones.</p>
+<a class="reference internal image-reference" href="_images/mer_aeternum.jpg"><img alt="Modelo Entidad-Relación de Aeternum" class="align-center" src="_images/mer_aeternum.jpg" style="width: 90%;" />
+</a>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Haz clic en la imagen para verla en tamaño completo y examinar las relaciones entre las entidades.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="modelo-relacional-mr">
+<h2>Modelo Relacional (MR)<a class="headerlink" href="#modelo-relacional-mr" title="Link to this heading">#</a></h2>
+<section id="esquema-de-base-de-datos">
+<h3>Esquema de Base de Datos<a class="headerlink" href="#esquema-de-base-de-datos" title="Link to this heading">#</a></h3>
+<p>Este diagrama representa el esquema relacional implementado en MySQL, con todas las tablas, campos y claves foráneas.</p>
+<a class="reference internal image-reference" href="_images/mr_aeternum.jpg"><img alt="Modelo Relacional de Aeternum" class="align-center" src="_images/mr_aeternum.jpg" style="width: 90%;" />
+</a>
+<p><strong>Tablas principales:</strong></p>
+<ul class="simple">
+<li><p><strong>usuarios</strong>: Gestión de cuentas de usuarios y bibliotecarios</p></li>
+<li><p><strong>libros</strong>: Catálogo completo de libros disponibles</p></li>
+<li><p><strong>prestamos_fisicos</strong>: Control de préstamos de copias físicas</p></li>
+<li><p><strong>prestamos_digitales</strong>: Registro de acceso a versiones digitales</p></li>
+<li><p><strong>wishlist</strong>: Listas de deseos personalizadas</p></li>
+<li><p><strong>reviews</strong>: Calificaciones y comentarios de usuarios</p></li>
+<li><p><strong>consentimientos</strong>: Cumplimiento GDPR</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="casos-de-uso">
+<h2>Casos de Uso<a class="headerlink" href="#casos-de-uso" title="Link to this heading">#</a></h2>
+<section id="diagramas-de-casos-de-uso-del-sistema">
+<h3>Diagramas de Casos de Uso del Sistema<a class="headerlink" href="#diagramas-de-casos-de-uso-del-sistema" title="Link to this heading">#</a></h3>
+<p>Los siguientes diagramas ilustran las principales interacciones entre los actores (usuarios y bibliotecarios) y el sistema Aeternum.</p>
+<section id="caso-de-uso-usuario">
+<h4>Caso de Uso: Usuario<a class="headerlink" href="#caso-de-uso-usuario" title="Link to this heading">#</a></h4>
+<a class="reference internal image-reference" href="_images/caso_de_uso_1.jpg"><img alt="Diagrama de Casos de Uso - Usuario" class="align-center" src="_images/caso_de_uso_1.jpg" style="width: 85%;" />
+</a>
+<p>Funcionalidades disponibles para usuarios regulares:</p>
+<ul class="simple">
+<li><p>Registro e inicio de sesión</p></li>
+<li><p>Búsqueda y exploración del catálogo</p></li>
+<li><p>Solicitud de préstamos físicos y digitales</p></li>
+<li><p>Gestión de lista de deseos</p></li>
+<li><p>Calificación y comentarios de libros</p></li>
+<li><p>Administración de perfil personal</p></li>
+</ul>
+</section>
+<section id="caso-de-uso-bibliotecario">
+<h4>Caso de Uso: Bibliotecario<a class="headerlink" href="#caso-de-uso-bibliotecario" title="Link to this heading">#</a></h4>
+<a class="reference internal image-reference" href="_images/caso_de_uso_2.jpg"><img alt="Diagrama de Casos de Uso - Bibliotecario" class="align-center" src="_images/caso_de_uso_2.jpg" style="width: 85%;" />
+</a>
+<p>Funcionalidades administrativas:</p>
+<ul class="simple">
+<li><p>Gestión completa del catálogo de libros</p></li>
+<li><p>Administración de usuarios</p></li>
+<li><p>Control de préstamos físicos</p></li>
+<li><p>Generación de reportes</p></li>
+<li><p>Moderación de contenido</p></li>
+</ul>
+</section>
+<section id="caso-de-uso-sistema-completo">
+<h4>Caso de Uso: Sistema Completo<a class="headerlink" href="#caso-de-uso-sistema-completo" title="Link to this heading">#</a></h4>
+<a class="reference internal image-reference" href="_images/caso_de_uso_3.jpg"><img alt="Diagrama de Casos de Uso - Sistema Completo" class="align-center" src="_images/caso_de_uso_3.jpg" style="width: 85%;" />
+</a>
+<p>Vista general de todos los casos de uso del sistema, incluyendo interacciones con APIs externas y servicios de terceros.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
 <section id="stack-tecnologico">
 <h2>Stack Tecnológico<a class="headerlink" href="#stack-tecnologico" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -577,7 +647,56 @@ document.write(`
 </tbody>
 </table>
 </div>
+</section>
 <hr class="docutils" />
+<section id="agradecimientos">
+<h2>Agradecimientos<a class="headerlink" href="#agradecimientos" title="Link to this heading">#</a></h2>
+<div style="background: linear-gradient(135deg, rgba(255, 105, 180, 0.1), rgba(186, 142, 217, 0.1));
+            padding: 2.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #FF69B4;
+            margin: 3rem 0;">
+  <h3 style="color: #FF69B4; margin-top: 0; font-size: 1.8rem;">Agradecemos a ...</h3>
+
+  <p style="font-size: 1.1em; line-height: 1.8; color: #e8e8e8; margin-bottom: 1.5rem;">
+    Este proyecto no habría sido posible sin el apoyo y colaboración de diversas personas y comunidades.
+  </p>
+
+  <div style="margin: 2rem 0;">
+    <h4 style="color: #BA8ED9; margin-bottom: 1rem;">IA</h4>
+    <p style="color: #b8b8b8; line-height: 1.6;">
+      Gracias a la inteligencia artificial por asistir en gran parte del proyecto, por dar errores mas que soluciones, sacar canas y demás pero se gracias a esta pudimos completar el proyecto.
+    </p>
+  </div>
+
+  <div style="margin: 2rem 0;">
+    <h4 style="color: #BA8ED9; margin-bottom: 1rem;">Open Library API</h4>
+    <p style="color: #b8b8b8; line-height: 1.6;">
+      Por proporcionar acceso gratuito a millones de libros y sus metadatos, haciendo posible
+      un catálogo extenso y actualizado.
+    </p>
+  </div>
+
+  <div style="margin: 2rem 0;">
+    <h4 style="color: #BA8ED9; margin-bottom: 1rem;">Mariana Ruiz</h4>
+    <p style="color: #b8b8b8; line-height: 1.6;">
+      Por el apoyo que dio, creación de código, aportes en diseño y bugs con influencia en funciones de código.
+    </p>
+  </div>
+
+  <div style="margin: 2rem 0;">
+    <h4 style="color: #BA8ED9; margin-bottom: 1rem;">Santiago Tuta</h4>
+    <p style="color: #b8b8b8; line-height: 1.6;">
+      Por apoyar en creación de proyecto, documentación, aportar en diseño y reportees de bugs.
+    </p>
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 105, 180, 0.2);">
+    <p style="color: #FF69B4; font-size: 1.2em; font-weight: 600;">
+      Construyendo un proyecto con el que estemos conformes mientras aprendemos y nos divertimos.
+    </p>
+  </div>
+</div><hr class="docutils" />
 <div style="background: rgba(255, 105, 180, 0.1);
             padding: 2rem;
             border-radius: 12px;
@@ -588,14 +707,15 @@ document.write(`
     Estamos aquí para ayudarte a sacar el máximo provecho de Aeternum.
   </p>
   <ul style="list-style: none; padding: 0; color: #b8b8b8;">
-    <li style="margin: 0.5rem 0;">📧 Email: soporte@aeternum.com</li>
+    <li style="margin: 0.5rem 0;">📧 Email: aeternum538@gmail.com</li>
     <li style="margin: 0.5rem 0;">🐛 Reportar bug: <a href="https://github.com/Santixxtt/Aeternum/issues" style="color: #FF69B4;">GitHub Issues</a></li>
-    <li style="margin: 0.5rem 0;"> Documentación completa en esta misma página</li>
+    <li style="margin: 0.5rem 0;">Documentación completa en esta misma página</li>
   </ul>
 </div><hr class="docutils" />
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p><strong>Desarrollador:</strong> Santiago Tuta
+<p><strong>Desarrollador:</strong> Mariana Ruiz
+<strong>Desarrollador:</strong> Santiago Tuta
 <strong>Versión actual:</strong> 1.0.0
 <strong>Última actualización:</strong> Enero 2025
 <strong>Licencia:</strong> MIT</p>
@@ -644,7 +764,25 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-documentacion">Contenido de la Documentación</a><ul class="visible nav section-nav flex-column">
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-de-base-de-datos">Modelo de Base de Datos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-entidad-relacion-mer">Modelo Entidad-Relación (MER)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-relacional-mr">Modelo Relacional (MR)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esquema-de-base-de-datos">Esquema de Base de Datos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#casos-de-uso">Casos de Uso</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramas-de-casos-de-uso-del-sistema">Diagramas de Casos de Uso del Sistema</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-de-uso-usuario">Caso de Uso: Usuario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-de-uso-bibliotecario">Caso de Uso: Bibliotecario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-de-uso-sistema-completo">Caso de Uso: Sistema Completo</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stack-tecnologico">Stack Tecnológico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agradecimientos">Agradecimientos</a></li>
 </ul>
   </nav></div>
 
